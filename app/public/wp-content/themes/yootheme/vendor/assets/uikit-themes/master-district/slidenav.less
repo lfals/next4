@@ -1,0 +1,59 @@
+//
+// Component: Slidenav
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@slidenav-color:                                @global-emphasis-color;
+@slidenav-hover-color:                          @global-muted-color;
+@slidenav-active-color:                         @slidenav-color;
+
+// Component
+// ========================================================================
+
+.hook-slidenav() {}
+
+.hook-slidenav-hover() {}
+
+.hook-slidenav-active() {}
+
+
+// Icon modifier
+// ========================================================================
+
+.hook-slidenav-previous() {}
+
+.hook-slidenav-next() {}
+
+
+// Size modifier
+// ========================================================================
+
+.hook-slidenav-large() {}
+
+
+// Container
+// ========================================================================
+
+.hook-slidenav-container() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-icon-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+@inverse-slidenav-color:                       @inverse-global-emphasis-color;
+@inverse-slidenav-hover-color:                 fade(@inverse-slidenav-color, 90%);
+@inverse-slidenav-active-color:                fade(@inverse-global-color, 70%);
+
+.hook-inverse-slidenav() {}
+.hook-inverse-slidenav-hover() {}
+.hook-inverse-slidenav-active() {}

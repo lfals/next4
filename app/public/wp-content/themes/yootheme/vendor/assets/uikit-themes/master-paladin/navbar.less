@@ -1,0 +1,187 @@
+//
+// Component: Navbar
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@navbar-background:                             @global-background;
+
+@navbar-nav-item-height:                        60px;
+@navbar-nav-item-padding-horizontal:            @global-gutter;
+@navbar-nav-item-color:                         @global-emphasis-color;
+@navbar-nav-item-hover-color:                   @global-primary-background;
+@navbar-nav-item-onclick-color:                 lighten(@global-primary-background, 10%);
+@navbar-nav-item-active-color:                  @global-primary-background;
+
+@navbar-toggle-color:                           @global-emphasis-color;
+@navbar-toggle-hover-color:                     @global-primary-background;
+
+@navbar-dropdown-width:                         250px;
+@navbar-dropdown-margin:                        @global-border-width;
+@navbar-dropdown-padding:                       @global-gutter;
+@navbar-dropdown-background:                    @global-background;
+
+@navbar-dropdown-nav-item-color:                @global-color;
+@navbar-dropdown-nav-item-hover-color:          @global-primary-background;
+@navbar-dropdown-nav-sublist-item-hover-color:  @global-emphasis-color;
+
+//
+// Master
+//
+
+@navbar-nav-item-line-mode:                     true;
+@navbar-nav-item-line-slide-mode:               left;
+@navbar-nav-item-line-margin-vertical:          -2px;
+@navbar-nav-item-line-margin-horizontal:        @global-gutter;
+@navbar-nav-item-line-height:                   0;
+@navbar-nav-item-line-background:               @global-primary-background;
+
+@navbar-nav-item-line-hover-height:             2px;
+
+@navbar-nav-item-line-onclick-height:           2px;
+@navbar-nav-item-line-onclick-background:       lighten(@global-primary-background, 10%);
+
+@navbar-nav-item-line-active-height:            2px;
+
+@navbar-mode:                                   rail;
+
+@navbar-border-width:                           2px;
+@navbar-border:                                 @global-border;
+
+@navbar-dropdown-border-width:                  @global-border-width;
+@navbar-dropdown-border:                        @global-border;
+
+@navbar-dropbar-box-shadow:                     0 @global-border-width 0 0 @global-border;
+
+
+// Component
+// ========================================================================
+
+.hook-navbar() when (@navbar-mode = rail) and not (@navbar-border-width = 0) {
+
+    .tm-header & {
+        border-top-width: @global-border-width;
+    }
+    
+}
+
+
+// Container
+// ========================================================================
+
+.hook-navbar-container() {}
+
+
+// Nav
+// ========================================================================
+
+.hook-navbar-nav-item() when (@navbar-nav-item-line-mode) {
+    
+    z-index: @navbar-dropdown-z-index + 1;
+
+}
+
+.hook-navbar-nav-item-hover() {}
+
+.hook-navbar-nav-item-onclick() {}
+
+.hook-navbar-nav-item-active() {}
+
+
+// Item
+// ========================================================================
+
+.hook-navbar-item() {}
+
+
+// Toggle
+// ========================================================================
+
+.hook-navbar-toggle() {}
+
+.hook-navbar-toggle-hover() {}
+
+.hook-navbar-toggle-icon() {}
+
+.hook-navbar-toggle-icon-hover() {}
+
+
+// Subtitle
+// ========================================================================
+
+.hook-navbar-subtitle() {}
+
+
+// Style modifiers
+// ========================================================================
+
+.hook-navbar-primary() {}
+
+.hook-navbar-transparent() {}
+
+.hook-navbar-sticky() {}
+
+
+// Dropdown
+// ========================================================================
+
+.hook-navbar-dropdown() {}
+
+.hook-navbar-dropdown-dropbar() {}
+
+
+// Dropdown nav
+// ========================================================================
+
+.hook-navbar-dropdown-nav() {}
+
+.hook-navbar-dropdown-nav-item() {}
+
+.hook-navbar-dropdown-nav-item-hover() {}
+
+.hook-navbar-dropdown-nav-header() {}
+
+.hook-navbar-dropdown-nav-divider() {}
+
+
+// Dropbar
+// ========================================================================
+
+.hook-navbar-dropbar() {}
+
+.hook-navbar-dropbar-slide() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-navbar-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+@inverse-navbar-nav-item-color:                        @inverse-global-color;
+@inverse-navbar-nav-item-hover-color:                  @inverse-global-emphasis-color;
+@inverse-navbar-nav-item-onclick-color:                @inverse-global-color;
+
+//
+// Master
+//
+
+@inverse-navbar-nav-item-line-onclick-background:      fade(@inverse-global-primary-background, 60%);
+
+@inverse-navbar-border:                                @inverse-global-border;
+
+.hook-inverse-navbar-nav-item() {}
+.hook-inverse-navbar-nav-item-hover() {}
+.hook-inverse-navbar-nav-item-onclick() {}
+.hook-inverse-navbar-nav-item-active() {}
+
+.hook-inverse-navbar-item() {}
+
+.hook-inverse-navbar-toggle() {}
+.hook-inverse-navbar-toggle-hover() {}

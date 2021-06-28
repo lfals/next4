@@ -1,0 +1,286 @@
+//
+// Component: Navbar
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+//
+// New
+//
+
+@navbar-mode:                                            ; // none, border, border-always, rail, frame
+@navbar-mode-border-vertical:                            ;
+
+@navbar-border-width:                                    0;
+@navbar-border:                                          transparent;
+@internal-navbar-border-mode:                            ; // overlay
+
+@navbar-dropdown-border-width:                           0;
+@navbar-dropdown-border:                                 transparent;
+
+
+// Component
+// ========================================================================
+
+.hook-navbar() {}
+
+
+// Container
+// ========================================================================
+
+.hook-navbar-container() {}
+
+
+// Nav
+// ========================================================================
+
+.hook-navbar-nav-item() {}
+
+.hook-navbar-nav-item-hover() {}
+
+.hook-navbar-nav-item-onclick() {}
+
+.hook-navbar-nav-item-active() {}
+
+
+// Item
+// ========================================================================
+
+.hook-navbar-item() {}
+
+
+// Toggle
+// ========================================================================
+
+.hook-navbar-toggle() {}
+
+.hook-navbar-toggle-hover() {}
+
+.hook-navbar-toggle-icon() {}
+
+.hook-navbar-toggle-icon-hover() {}
+
+
+// Subtitle
+// ========================================================================
+
+.hook-navbar-subtitle() {}
+
+
+// Style modifiers
+// ========================================================================
+
+.hook-navbar-primary() {}
+
+.hook-navbar-transparent() {}
+
+.hook-navbar-sticky() {}
+
+
+// Dropdown
+// ========================================================================
+
+.hook-navbar-dropdown() when not (@navbar-dropdown-border-width = 0) {
+    border: @navbar-dropdown-border-width solid @navbar-dropdown-border;
+}
+
+.hook-navbar-dropdown-dropbar() when not (@navbar-dropdown-border-width = 0) {
+    border-color: transparent;
+}
+
+
+// Dropdown nav
+// ========================================================================
+
+.hook-navbar-dropdown-nav() {}
+
+.hook-navbar-dropdown-nav-item() {}
+
+.hook-navbar-dropdown-nav-item-hover() {}
+
+.hook-navbar-dropdown-nav-header() {}
+
+.hook-navbar-dropdown-nav-divider() {}
+
+
+// Dropbar
+// ========================================================================
+
+.hook-navbar-dropbar() {}
+
+.hook-navbar-dropbar-slide() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+//
+// Border mode
+//
+
+.hook-navbar-container() when (@navbar-mode = border) and not (@navbar-border-width = 0) {
+    border-bottom: @navbar-border-width solid @navbar-border;
+}
+
+.hook-navbar-misc() when (@navbar-mode = border-always) and not (@navbar-border-width = 0) {
+
+    .uk-navbar-container { border-bottom: @navbar-border-width solid @navbar-border; }
+
+}
+
+.hook-navbar-misc() when ((@navbar-mode = border) and not (@navbar-border-width = 0) and (@internal-navbar-border-mode = overlay)),
+                         ((@navbar-mode = border-always) and not (@navbar-border-width = 0) and (@internal-navbar-border-mode = overlay)) {
+
+    .uk-navbar-left,
+    .uk-navbar-right,
+    .uk-navbar-center { margin-bottom: -@navbar-border-width; }
+
+}
+
+.hook-navbar-misc() when ((@navbar-mode = border) and (@navbar-mode-border-vertical = true)),
+                         ((@navbar-mode = border-always) and (@navbar-mode-border-vertical = true)) {
+
+    .uk-navbar-left {
+        padding-right: @navbar-nav-item-padding-horizontal;
+        border-right: @navbar-border-width solid @navbar-border;
+    }
+
+    .uk-navbar-right {
+        padding-left: @navbar-nav-item-padding-horizontal;
+        border-left: @navbar-border-width solid @navbar-border;
+    }
+
+}
+
+//
+// Rail mode
+//
+
+.hook-navbar() when (@navbar-mode = rail) and not (@navbar-border-width = 0) {
+
+    .tm-header & {
+        border-top: @navbar-border-width solid @navbar-border;
+        border-bottom: @navbar-border-width solid @navbar-border;
+    }
+
+    .tm-header .uk-navbar-sticky > * > & { border-top-color: transparent !important; }
+
+    .tm-header-mobile & { border-bottom: @navbar-border-width solid @navbar-border; }
+
+}
+
+//
+// Frame mode
+//
+
+.hook-navbar() when (@navbar-mode = frame) and not (@navbar-border-width = 0) {
+
+    .tm-header & { border: @navbar-border-width solid @navbar-border; }
+
+}
+
+.hook-navbar-misc() when (@navbar-mode = frame) and not (@navbar-border-width = 0) {
+
+    .tm-header .uk-navbar-container > .uk-container .uk-navbar-left {
+        padding-left: @navbar-nav-item-padding-horizontal;
+        padding-right: @navbar-nav-item-padding-horizontal;
+    }
+
+    .tm-header .uk-navbar-container > .uk-container .uk-navbar-right { padding-right: @navbar-nav-item-padding-horizontal; }
+
+}
+
+.hook-navbar-misc() when (@navbar-mode = frame) and (@navbar-mode-border-vertical = true) {
+
+    .tm-header .uk-navbar-left .uk-navbar-nav,
+    .tm-header .uk-navbar-left .uk-navbar-item,
+    .tm-header .uk-navbar-left .uk-navbar-toggle,
+    .tm-header .uk-navbar-center > :last-child,
+    .tm-header .uk-navbar-right .uk-navbar-nav > li:nth-last-child(n+2) > a { border-right: @navbar-border-width solid @navbar-border; }
+
+    .tm-header .uk-navbar-right .uk-navbar-nav,
+    .tm-header .uk-navbar-right .uk-navbar-item,
+    .tm-header .uk-navbar-right .uk-navbar-toggle,
+    .tm-header .uk-navbar-center .uk-navbar-nav,
+    .tm-header .uk-navbar-center .uk-navbar-item,
+    .tm-header .uk-navbar-center .uk-navbar-toggle,
+    .tm-header .uk-navbar-left .uk-navbar-nav > li:nth-child(n+2) > a,
+    .tm-header .uk-navbar-center .uk-navbar-nav > li:nth-child(n+2) > a { border-left: @navbar-border-width solid @navbar-border; }
+
+}
+
+
+// Inverse
+// ========================================================================
+
+@inverse-navbar-border:                                transparent;
+
+.hook-inverse-navbar-nav-item() {}
+.hook-inverse-navbar-nav-item-hover() {}
+.hook-inverse-navbar-nav-item-onclick() {}
+.hook-inverse-navbar-nav-item-active() {}
+
+.hook-inverse-navbar-item() {}
+
+.hook-inverse-navbar-toggle() {}
+.hook-inverse-navbar-toggle-hover() {}
+
+.hook-inverse() when (@navbar-mode = border) and not (@navbar-border-width = 0) {
+
+    .uk-navbar-container:not(.uk-navbar-transparent),
+    &.uk-navbar-container:not(.uk-navbar-transparent) { border-bottom-color: @inverse-navbar-border; }
+
+}
+
+.hook-inverse() when (@navbar-mode = border-always) and not (@navbar-border-width = 0) {
+
+    .uk-navbar-container,
+    &.uk-navbar-container { border-bottom-color: @inverse-navbar-border; }
+
+}
+
+.hook-inverse() when ((@navbar-mode = border) and (@navbar-mode-border-vertical = true)),
+                     ((@navbar-mode = border-always) and (@navbar-mode-border-vertical = true)) {
+
+    .uk-navbar-left { border-right-color: @inverse-navbar-border; }
+    .uk-navbar-right { border-left-color: @inverse-navbar-border; }
+
+}
+
+.hook-inverse() when (@navbar-mode = rail) and not (@navbar-border-width = 0) {
+
+    .uk-navbar {
+        border-top-color: @inverse-navbar-border;
+        border-bottom-color: @inverse-navbar-border;
+    }
+
+}
+
+.hook-inverse() when (@navbar-mode = frame) and not (@navbar-border-width = 0) {
+
+    .uk-navbar { border-color: @inverse-navbar-border; }
+
+}
+
+.hook-inverse() when (@navbar-mode = frame) and (@navbar-mode-border-vertical = true) {
+
+
+    .uk-navbar-left .uk-navbar-nav,
+    .uk-navbar-left .uk-navbar-item,
+    .uk-navbar-left .uk-navbar-toggle,
+    .uk-navbar-center > :last-child,
+    .uk-navbar-right .uk-navbar-nav > li:nth-last-child(n+2) > a { border-right-color: @inverse-navbar-border; }
+
+    .uk-navbar-right .uk-navbar-nav,
+    .uk-navbar-right .uk-navbar-item,
+    .uk-navbar-right .uk-navbar-toggle,
+    .uk-navbar-center .uk-navbar-nav,
+    .uk-navbar-center .uk-navbar-item,
+    .uk-navbar-center .uk-navbar-toggle,
+    .uk-navbar-left .uk-navbar-nav > li:nth-child(n+2) > a,
+    .uk-navbar-center .uk-navbar-nav > li:nth-child(n+2) > a { border-left-color: @inverse-navbar-border; }
+
+}

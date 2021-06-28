@@ -1,0 +1,100 @@
+//
+// Component: Search
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@search-default-background:                         transparent;
+
+@search-navbar-font-size:                           @global-medium-font-size;
+@search-large-font-size:                            @global-xlarge-font-size;
+
+//
+// Master
+//
+
+@search-default-border-mode:                        -bottom;
+@search-default-border-width:                       @global-border-width;
+@search-default-border:                             @global-border;
+
+@search-default-focus-border:                       @global-secondary-background;
+
+@search-default-font-family:                        @global-primary-font-family;
+@search-default-font-weight:                        @global-primary-font-weight;
+@search-default-font-style:                         @global-primary-font-style;
+@search-default-text-transform:                     @global-primary-text-transform;
+@search-default-letter-spacing:                     @global-primary-letter-spacing;
+
+@search-navbar-font-family:                         @global-primary-font-family;
+@search-navbar-font-weight:                         400;
+@search-navbar-font-style:                          @global-primary-font-style;
+@search-navbar-text-transform:                      @global-primary-text-transform;
+@search-navbar-letter-spacing:                      @global-primary-letter-spacing;
+
+@search-large-font-family:                          @global-primary-font-family;
+@search-large-font-weight:                          400;
+@search-large-font-style:                           @global-primary-font-style;
+@search-large-text-transform:                       @global-primary-text-transform;
+@search-large-letter-spacing:                       @global-primary-letter-spacing;
+
+
+// Component
+// ========================================================================
+
+.hook-search-input() {}
+
+
+// Default modifiers
+// ========================================================================
+
+.hook-search-default-input() {}
+
+.hook-search-default-input-focus() {}
+
+
+// Navbar modifiers
+// ========================================================================
+
+.hook-search-navbar-input() {}
+
+
+// Large modifiers
+// ========================================================================
+
+.hook-search-large-input() {}
+
+
+// Toggle
+// ========================================================================
+
+.hook-search-toggle() {}
+
+.hook-search-toggle-hover() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-search-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+@inverse-search-default-background:            transparent;
+@inverse-search-default-border:                @inverse-global-border;
+
+@inverse-search-default-focus-border:          @inverse-global-primary-background;
+
+.hook-inverse-search-default-input() {}
+.hook-inverse-search-default-input-focus() {}
+
+.hook-inverse-search-navbar-input() {}
+
+.hook-inverse-search-large-input() {}
+
+.hook-inverse-search-toggle() {}
+.hook-inverse-search-toggle-hover() {}

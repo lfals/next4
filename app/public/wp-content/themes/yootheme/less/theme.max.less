@@ -1,0 +1,76 @@
+/*
+
+Name: Max
+Background: White
+Color: Blue
+Type: Material
+Preview: https://downloads-yootheme.storage.googleapis.com/library/max/styles/default.jpg
+
+Style: white-red
+Name: White Red
+Background: White
+Color: Red
+Type: Material
+Preview: https://downloads-yootheme.storage.googleapis.com/library/max/styles/white-red.jpg
+
+Style: white-salmon
+Name: White Salmon
+Background: White
+Color: Red
+Type: Material
+Preview: https://downloads-yootheme.storage.googleapis.com/library/max/styles/white-salmon.jpg
+
+Style: white-turquoise
+Name: White Turquoise
+Background: White
+Color: Turquoise
+Type: Material
+Preview: https://downloads-yootheme.storage.googleapis.com/library/max/styles/white-turquoise.jpg
+
+Style: white-purple
+Name: White Purple
+Background: White
+Color: Purple
+Type: Material
+Preview: https://downloads-yootheme.storage.googleapis.com/library/max/styles/white-purple.jpg
+
+Style: dark-black
+Name: Dark Black
+Background: Dark
+Color: Black
+Type: Material
+Preview: https://downloads-yootheme.storage.googleapis.com/library/max/styles/dark-black.jpg
+
+*/
+
+// Platform
+@import "platform.less";
+
+// UIkit Core
+@import "../vendor/assets/uikit/src/less/uikit.less";
+
+// UIkit Theme
+@import "../vendor/assets/uikit-themes/master/_import.less";
+@import "../vendor/assets/uikit-themes/master-max/_import.less";
+
+// Theme
+@import "theme.less";
+
+
+// Variables
+// ========================================================================
+
+@theme-box-decoration-default-background:                darken(@global-muted-background, 3%);
+@theme-box-decoration-primary-background:                @global-primary-background;
+@theme-box-decoration-secondary-background:              @global-secondary-background;
+
+@inverse-theme-box-decoration-primary-background:        @inverse-global-primary-background;
+@inverse-theme-box-decoration-secondary-background:      @inverse-global-primary-background;
+
+
+// Style
+// ========================================================================
+
+@import (optional) "../vendor/assets/uikit-themes/master-max/styles/@{internal-style}.less";
+
+@internal-style: ;

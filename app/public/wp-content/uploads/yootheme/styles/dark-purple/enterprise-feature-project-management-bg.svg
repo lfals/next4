@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1072" height="555" viewBox="0 0 1072 555">
+  <defs>
+    <radialGradient id="a" cx="-4259.7849" cy="-4504.66662" r="0.5" gradientTransform="matrix(816.83, 0.00002, -0.00001, 549.99999, 3480109.49703, 2477846.33975)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#732EDF" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#732EDF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="b" cx="-4256.9919" cy="-4505.29417" r="0.5" gradientTransform="translate(2277842.23677 2108775.63013) scale(534.99999 467.99999)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#C729F4" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#C729F4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <ellipse cx="583.78785" cy="278.02568" rx="408.41998" ry="275.00002" transform="translate(-13.75068 30.93413) rotate(-3)" opacity="0.35" fill="url(#a)" style="isolation: isolate"/>
+  <ellipse cx="347.43535" cy="298.80748" rx="267.49999" ry="233.99999" transform="translate(-15.16223 18.59287) rotate(-3)" opacity="0.56" fill="url(#b)" style="isolation: isolate"/>
+</svg>

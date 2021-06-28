@@ -1,0 +1,75 @@
+//
+// Component: Table
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@table-header-cell-color: 							@global-emphasis-color;
+@table-header-cell-font-size:                  		(@global-font-size + 1);
+@table-header-cell-font-weight:                 	500;
+
+@table-striped-row-background:                    	#fdfdfd;
+@table-row-active-background:                     	@global-muted-background;
+
+//
+// Master
+//
+
+@table-header-cell-font-family: 					@global-primary-font-family;
+@table-header-cell-text-transform:					none;
+@table-header-cell-letter-spacing:                  -0.5px;
+
+@table-divider-header-border-width:                 2px;
+@table-divider-header-border:                       @global-primary-background;
+
+
+// Component
+// ========================================================================
+
+.hook-table-header-cell() {}
+
+.hook-table-cell() {}
+
+.hook-table-footer() {}
+
+.hook-table-caption() {}
+
+.hook-table-row-active() {}
+
+
+// Style modifiers
+// ========================================================================
+
+.hook-table-divider() {}
+
+.hook-table-striped() {}
+
+.hook-table-hover() {}
+
+
+// Size modifier
+// ========================================================================
+
+.hook-table-small() {}
+
+.hook-table-large() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-table-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+.hook-inverse-table-header-cell() {}
+.hook-inverse-table-caption() {}
+.hook-inverse-table-row-active() {}
+.hook-inverse-table-divider() {}
+.hook-inverse-table-striped() {}
+.hook-inverse-table-hover() {}

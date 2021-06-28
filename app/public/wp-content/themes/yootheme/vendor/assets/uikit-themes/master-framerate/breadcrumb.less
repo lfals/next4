@@ -1,0 +1,63 @@
+//
+// Component: Breadcrumb
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@breadcrumb-item-active-color:                      @global-color;
+
+@breadcrumb-divider:                                "»";
+@breadcrumb-divider-margin-horizontal:              @global-small-margin;
+@breadcrumb-divider-color:                          @global-link-color;
+
+//
+// Master
+//
+
+@breadcrumb-item-font-family:                       @global-font-family;
+@breadcrumb-item-font-weight:                       400;
+@breadcrumb-item-text-transform:                    inherit;
+@breadcrumb-item-letter-spacing:                    inherit;
+@breadcrumb-item-font-style:                        inherit;
+
+
+// Component
+// ========================================================================
+
+.hook-breadcrumb() {}
+
+
+// Items
+// ========================================================================
+
+.hook-breadcrumb-item() {}
+
+.hook-breadcrumb-item-hover() {}
+
+.hook-breadcrumb-item-disabled() {}
+
+.hook-breadcrumb-item-active() {}
+
+.hook-breadcrumb-divider() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-breadcrumb-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+@inverse-breadcrumb-divider-color:             @global-primary-background;
+
+.hook-inverse-breadcrumb-item() {}
+.hook-inverse-breadcrumb-item-hover() {}
+.hook-inverse-breadcrumb-item-disabled() {}
+.hook-inverse-breadcrumb-item-active() {}
+
+.hook-inverse-breadcrumb-divider() {}

@@ -1,0 +1,81 @@
+//
+// Component: Utility
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@dropcap-margin-right:                          12px;
+@dropcap-font-size:                             ((@global-line-height * 3.4) * 1em);
+
+//
+// Master
+//
+
+@dropcap-color:                                 @global-emphasis-color;
+
+//
+// New
+//
+
+@dropcap-font-family:                           @global-primary-font-family;
+@dropcap-font-weight:                           @global-primary-font-weight;
+@dropcap-text-transform:                        uppercase;
+@dropcap-letter-spacing:                        @global-primary-letter-spacing;
+@dropcap-font-style:                            @global-primary-font-style;
+
+
+// Panel
+// ========================================================================
+
+.hook-panel-scrollable() {}
+
+
+// Box-shadow bottom
+// ========================================================================
+
+.hook-box-shadow-bottom() {}
+
+
+// Drop cap
+// ========================================================================
+
+.hook-dropcap() {
+    font-family: @dropcap-font-family;
+    font-weight: @dropcap-font-weight;
+    text-transform: @dropcap-text-transform;
+    letter-spacing: @dropcap-letter-spacing;
+    font-style: @dropcap-font-style;
+    line-height: 0.89;
+}
+
+
+// Logo
+// ========================================================================
+
+.hook-logo() {}
+
+.hook-logo-hover() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-utility-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+//
+// Master
+//
+
+@inverse-dropcap-color:                                 @inverse-global-emphasis-color;
+
+.hook-inverse-dropcap() {}
+
+.hook-inverse-logo() {}
+.hook-inverse-logo-hover() {}

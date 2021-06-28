@@ -1,0 +1,104 @@
+//
+// Component: Form
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@form-background:                               darken(@global-muted-background, 2%);
+@form-focus-background:                         darken(@global-muted-background, 4%);
+
+@form-disabled-background:                      darken(@global-muted-background, 1%);
+
+//
+// Master
+//
+
+@form-border-radius:                            @global-border-radius;
+
+
+// Component
+// ========================================================================
+
+.hook-form() {}
+
+.hook-form-single-line() {}
+
+.hook-form-multi-line() {}
+
+.hook-form-focus() {}
+
+.hook-form-disabled() {}
+
+
+// Style modifiers
+// ========================================================================
+
+.hook-form-danger() {}
+
+.hook-form-success() {}
+
+.hook-form-blank() {}
+
+.hook-form-blank-focus() {}
+
+
+// Radio and checkbox
+// ========================================================================
+
+.hook-form-radio() {}
+
+.hook-form-radio-focus() {}
+
+.hook-form-radio-checked() {}
+
+.hook-form-radio-checked-focus() { }
+
+.hook-form-radio-disabled() {}
+
+
+// Legend
+// ========================================================================
+
+.hook-form-legend() {}
+
+
+// Label
+// ========================================================================
+
+.hook-form-label() {}
+
+
+// Layout
+// ========================================================================
+
+.hook-form-stacked-label() {}
+
+.hook-form-horizontal-label() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-form-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+@inverse-form-focus-background:                fade(@inverse-global-muted-background, 18%);
+
+@inverse-form-radio-checked-background:        @global-primary-background;
+
+.hook-inverse-form() {}
+.hook-inverse-form-focus() {}
+
+.hook-inverse-form-radio() {}
+.hook-inverse-form-radio-focus() {}
+
+.hook-inverse-form-radio-checked() {}
+.hook-inverse-form-radio-checked-focus() {}
+
+.hook-inverse-form-label() {}

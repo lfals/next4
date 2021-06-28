@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 130 130">
+
+  <defs>
+    <linearGradient id="svg-defs-gradient-isquared-icon-support-team" x1="35" y1="95" x2="95" y2="35" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#732EDF"/>
+      <stop offset="0.65" stop-color="#A92AE7"/>
+      <stop offset="1" stop-color="#C729F4"/>
+    </linearGradient>
+    <mask id="svg-defs-mask-isquared-icon-support-team">
+      <path class="uk-preserve" d="M83.1,84.57c.53-2.94-3.15-.79-3.19-5.74,0-5.64,4.8-2.14,2.61-7.33s-3.06.72-7.07-3.24,1.87-4.9-3.35-7a6.6,6.6,0,0,0-1.86-.52c-2.46-.21-.66,3.2-5.42,3.24-5.64,0-2.14-4.8-7.33-2.61s.71,3.06-3.25,7.07-4.9-1.88-7,3.34,2.66,1.65,2.7,7.29c0,4.79-3.46,3-3.15,5.53" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="2"/>
+      <path class="uk-preserve" d="M73.06,78.94a8.12,8.12,0,0,1-2.26,5.63H59a8.14,8.14,0,1,1,14-5.63Z" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="2"/>
+      <rect class="uk-preserve" x="38.36" y="44.81" width="53.29" height="39.76" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="2"/>
+      <line class="uk-preserve" x1="38.36" y1="53.88" x2="91.64" y2="53.88" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="2"/>
+      <circle class="uk-preserve" cx="42.89" cy="49.36" r="1.48"/>
+    </mask>
+  </defs>
+
+  <style>
+
+    img[src*="isquared-icon-support-team.svg"] + svg {
+      filter: drop-shadow(10px 10px 15px rgba(27, 30, 45, 0.4)) drop-shadow(-10px -10px 15px rgba(115, 130, 190, 0.1));
+      will-change: filter;
+    }
+
+  </style>
+
+  <rect class="uk-preserve" x="0" y="0" width="130" height="130" rx="24" fill="#303751" />
+  <rect class="uk-preserve" x="35" y="35" width="60" height="60" fill="url(#svg-defs-gradient-isquared-icon-support-team)" mask="url(#svg-defs-mask-isquared-icon-support-team)" />
+
+</svg>

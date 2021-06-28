@@ -1,0 +1,74 @@
+//
+// Component: Slidenav
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+//
+// New
+//
+
+@slidenav-background:                           transparent;
+@slidenav-hover-background:                     transparent;
+@slidenav-active-background:                    transparent;
+
+@slidenav-margin:                               0;
+
+
+// Component
+// ========================================================================
+
+.hook-slidenav() {
+    background: @slidenav-background;
+    transition: 0.1s ease-in-out;
+    transition-property: color, background-color, border-color, box-shadow;
+}
+
+.hook-slidenav-hover() { background-color: @slidenav-hover-background; }
+
+.hook-slidenav-active() { background-color: @slidenav-active-background; }
+
+
+// Icon modifier
+// ========================================================================
+
+.hook-slidenav-previous() {}
+
+.hook-slidenav-next() {}
+
+
+// Size modifier
+// ========================================================================
+
+.hook-slidenav-large() {}
+
+
+// Container
+// ========================================================================
+
+.hook-slidenav-container() when not (@slidenav-margin = 0) {
+
+    > :first-child { margin-right: @slidenav-margin; }
+
+}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-icon-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+@inverse-slidenav-background:                           transparent;
+@inverse-slidenav-hover-background:                     transparent;
+@inverse-slidenav-active-background:                    transparent;
+
+.hook-inverse-slidenav() { background-color: @inverse-slidenav-background; }
+.hook-inverse-slidenav-hover() { background-color: @inverse-slidenav-hover-background; }
+.hook-inverse-slidenav-active() { background-color: @inverse-slidenav-active-background; }

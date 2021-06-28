@@ -1,0 +1,93 @@
+//
+// Component: Heading
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@heading-medium-line-height:                    1.2;
+
+@heading-small-font-size-m:                     @heading-medium-font-size-l * 0.72;		// 54px
+
+@heading-medium-font-size-l:                    76px;
+
+@heading-divider-padding-bottom:                ~'calc(5px + 0.05em)';
+@heading-divider-border-width:                  ~'calc(1px + 0.04em)';
+
+@heading-bullet-border:                         @global-primary-background;
+
+@heading-line-border-width:                     ~'calc(1.2px + 0.05em)';
+@heading-line-border:                           @global-primary-background;
+@heading-line-height:                           @heading-line-border-width;
+
+//
+// Master
+//
+
+@heading-small-text-shadow:                     -2px -2px 0 @global-secondary-background, 2px 2px 0 @global-primary-background;
+@heading-medium-text-shadow:                    -2px -2px 0 @global-secondary-background, 2px 2px 0 @global-primary-background;
+@internal-heading-medium-mode:                  glitch;
+@internal-heading-large-mode:                   glitch;
+@internal-heading-large-mode:                   glitch;
+@internal-heading-xlarge-mode:                  glitch;
+@internal-heading-2xlarge-mode:                 glitch;
+
+
+// Component
+// ========================================================================
+
+.hook-heading-small() {}
+
+.hook-heading-medium() {}
+
+.hook-heading-large() {}
+
+.hook-heading-xlarge() {}
+
+.hook-heading-2xlarge() {}
+
+
+// Divider
+// ========================================================================
+
+.hook-heading-divider() {}
+
+
+// Bullet
+// ========================================================================
+
+.hook-heading-bullet() {}
+
+
+// Line
+// ========================================================================
+
+.hook-heading-line() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-heading-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+.hook-inverse-heading-small() {}
+
+.hook-inverse-heading-medium() {}
+
+.hook-inverse-heading-large() {}
+
+.hook-inverse-heading-xlarge() {}
+
+.hook-inverse-heading-2xlarge() {}
+
+.hook-inverse-heading-divider() {}
+
+.hook-inverse-heading-bullet() {}
+
+.hook-inverse-heading-line() {}

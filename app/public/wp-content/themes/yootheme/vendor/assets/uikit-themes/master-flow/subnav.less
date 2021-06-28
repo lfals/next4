@@ -1,0 +1,89 @@
+//
+// Component: Subnav
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@subnav-margin-horizontal:                      30px;
+
+@subnav-item-color:                             @global-color;
+@subnav-item-hover-color:                       @global-secondary-background;
+
+@subnav-divider-margin-horizontal:              30px;
+@subnav-divider-border-width:                   1px;
+@subnav-divider-border:                         darken(@global-border, 6%);
+
+@subnav-pill-item-hover-background:             @global-secondary-background;
+@subnav-pill-item-hover-color:                  @global-inverse-color;
+@subnav-pill-item-onclick-background:           @global-secondary-background;
+@subnav-pill-item-active-background:            @global-primary-background;
+@subnav-pill-item-padding-horizontal: 			20px;
+
+//
+// Master
+//
+
+@subnav-pill-item-border-radius:                500px;
+
+@subnav-item-font-size:                         @global-small-font-size;
+
+// Component
+// ========================================================================
+
+.hook-subnav() {}
+
+.hook-subnav-item() {}
+
+.hook-subnav-item-hover() {}
+
+.hook-subnav-item-active() {}
+
+
+// Divider modifier
+// ========================================================================
+
+.hook-subnav-divider() {}
+
+
+// Pill modifier
+// ========================================================================
+
+.hook-subnav-pill-item() {}
+
+.hook-subnav-pill-item-hover() {}
+
+.hook-subnav-pill-item-onclick() {}
+
+.hook-subnav-pill-item-active() {}
+
+
+// Disabled
+// ========================================================================
+
+.hook-subnav-item-disabled() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-subnav-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+.hook-inverse-subnav-item() {}
+.hook-inverse-subnav-item-hover() {}
+.hook-inverse-subnav-item-active() {}
+
+.hook-inverse-subnav-divider() {}
+
+.hook-inverse-subnav-pill-item() {}
+.hook-inverse-subnav-pill-item-hover() {}
+.hook-inverse-subnav-pill-item-onclick() {}
+.hook-inverse-subnav-pill-item-active() {}
+
+.hook-inverse-subnav-item-disabled() {}

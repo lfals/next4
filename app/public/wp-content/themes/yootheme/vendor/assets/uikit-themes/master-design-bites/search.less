@@ -1,0 +1,77 @@
+//
+// Component: Search
+//
+// ========================================================================
+
+@search-default-background:                         darken(@global-muted-background, 2%);
+@search-default-focus-background:                   darken(@global-muted-background, 3%);
+
+@search-navbar-font-size:                           @global-font-size;
+
+@search-large-font-size:                            @global-large-font-size;
+
+//
+// Master
+//
+
+@search-default-border-radius:                      @global-border-radius;
+
+
+// Variables
+// ========================================================================
+
+
+// Component
+// ========================================================================
+
+.hook-search-input() {}
+
+
+// Default modifiers
+// ========================================================================
+
+.hook-search-default-input() {}
+
+.hook-search-default-input-focus() {}
+
+
+// Navbar modifiers
+// ========================================================================
+
+.hook-search-navbar-input() {}
+
+
+// Large modifiers
+// ========================================================================
+
+.hook-search-large-input() {}
+
+
+// Toggle
+// ========================================================================
+
+.hook-search-toggle() {}
+
+.hook-search-toggle-hover() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-search-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+@inverse-search-default-focus-background:      fade(@inverse-global-muted-background, 18%);
+
+.hook-inverse-search-default-input() {}
+.hook-inverse-search-default-input-focus() {}
+
+.hook-inverse-search-navbar-input() {}
+
+.hook-inverse-search-large-input() {}
+
+.hook-inverse-search-toggle() {}
+.hook-inverse-search-toggle-hover() {}

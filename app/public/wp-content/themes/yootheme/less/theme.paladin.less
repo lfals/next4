@@ -1,0 +1,94 @@
+/*
+
+Name: Paladin
+Background: White
+Color: Red
+Type: Flat
+Preview: https://downloads-yootheme.storage.googleapis.com/library/paladin/styles/default.jpg
+
+Style: light-green
+Name: Light Green
+Background: Light
+Color: Green
+Type: Flat
+Preview: https://downloads-yootheme.storage.googleapis.com/library/paladin/styles/light-green.jpg
+
+Style: white-orange
+Name: White Orange
+Background: White
+Color: Orange
+Type: Flat
+Preview: https://downloads-yootheme.storage.googleapis.com/library/paladin/styles/white-orange.jpg
+
+Style: light-blue
+Name: Light Blue
+Background: Light
+Color: Blue
+Type: Flat
+Preview: https://downloads-yootheme.storage.googleapis.com/library/paladin/styles/light-blue.jpg
+
+Style: light-red
+Name: Light Red
+Background: Light
+Color: Red
+Type: Flat
+Preview: https://downloads-yootheme.storage.googleapis.com/library/paladin/styles/light-red.jpg
+
+Style: light-darkblue
+Name: Light Darkblue
+Background: Light
+Color: Darkblue
+Type: Flat
+Preview: https://downloads-yootheme.storage.googleapis.com/library/paladin/styles/light-darkblue.jpg
+
+*/
+
+// Platform
+@import "platform.less";
+
+// UIkit Core
+@import "../vendor/assets/uikit/src/less/uikit.less";
+
+// UIkit Theme
+@import "../vendor/assets/uikit-themes/master/_import.less";
+@import "../vendor/assets/uikit-themes/master-paladin/_import.less";
+
+// Theme
+@import "theme.less";
+
+
+// Variables
+// ========================================================================
+
+//
+// Header
+//
+
+@theme-headerbar-top-padding-bottom:            40px;
+@theme-headerbar-top-padding-top:               40px;
+
+//
+// Section
+//
+
+@section-title-color:                           @global-emphasis-color;
+@section-title-font-size:                       12px;
+@section-title-font-weight:                     600;
+@section-title-text-transform:                  uppercase;
+@section-title-letter-spacing:                  1px;
+
+@internal-section-title-dash-border-height:     40px;
+
+//
+// Inverse
+//
+
+@inverse-section-title-color:                   @inverse-global-emphasis-color;
+
+
+// Style
+// ========================================================================
+
+@import (optional) "../vendor/assets/uikit-themes/master-paladin/styles/@{internal-style}.less";
+
+@internal-style: ;

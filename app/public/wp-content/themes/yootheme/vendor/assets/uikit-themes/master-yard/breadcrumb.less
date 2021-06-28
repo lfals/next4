@@ -1,0 +1,55 @@
+//
+// Component: Breadcrumb
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@breadcrumb-divider:                         "/";
+
+@breadcrumb-item-color: 					 @global-color;
+@breadcrumb-item-hover-color: 				 @global-emphasis-color;
+@breadcrumb-item-active-color: 				 @global-emphasis-color;
+@breadcrumb-item-disabled-color: 			 @global-muted-color;
+
+
+// Component
+// ========================================================================
+
+.hook-breadcrumb() {}
+
+
+// Items
+// ========================================================================
+
+.hook-breadcrumb-item() {}
+
+.hook-breadcrumb-item-hover() {}
+
+.hook-breadcrumb-item-disabled() {}
+
+.hook-breadcrumb-item-active() {}
+
+.hook-breadcrumb-divider() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-breadcrumb-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+@inverse-breadcrumb-item-hover-color:          @inverse-global-emphasis-color;
+@inverse-breadcrumb-item-active-color:         @inverse-global-emphasis-color;
+
+.hook-inverse-breadcrumb-item() {}
+.hook-inverse-breadcrumb-item-hover() {}
+.hook-inverse-breadcrumb-item-disabled() {}
+.hook-inverse-breadcrumb-item-active() {}
+
+.hook-inverse-breadcrumb-divider() {}

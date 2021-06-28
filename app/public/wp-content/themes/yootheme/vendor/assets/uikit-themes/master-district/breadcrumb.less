@@ -1,0 +1,64 @@
+//
+// Component: Breadcrumb
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@breadcrumb-divider-margin-horizontal:              @global-small-margin;
+
+@breadcrumb-item-color:                             @global-emphasis-color;
+@breadcrumb-item-hover-color:                       @global-muted-color;
+@breadcrumb-item-active-color:                      @breadcrumb-item-color;
+
+@breadcrumb-divider-color:                          @global-border;
+
+//
+// New
+//
+
+@breadcrumb-item-disabled-color: 					@global-muted-color;
+
+
+// Component
+// ========================================================================
+
+.hook-breadcrumb() {}
+
+
+// Items
+// ========================================================================
+
+.hook-breadcrumb-item() {}
+
+.hook-breadcrumb-item-hover() {}
+
+.hook-breadcrumb-item-disabled() { color: @breadcrumb-item-disabled-color; }
+
+.hook-breadcrumb-item-active() {}
+
+.hook-breadcrumb-divider() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-breadcrumb-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+@inverse-breadcrumb-item-color:                @inverse-global-emphasis-color;
+@inverse-breadcrumb-item-hover-color:          @inverse-global-color;
+@inverse-breadcrumb-item-active-color:         @inverse-breadcrumb-item-hover-color;
+@inverse-breadcrumb-divider-color:             @inverse-global-emphasis-color;
+
+.hook-inverse-breadcrumb-item() {}
+.hook-inverse-breadcrumb-item-hover() {}
+.hook-inverse-breadcrumb-item-disabled() {}
+.hook-inverse-breadcrumb-item-active() {}
+
+.hook-inverse-breadcrumb-divider() {}

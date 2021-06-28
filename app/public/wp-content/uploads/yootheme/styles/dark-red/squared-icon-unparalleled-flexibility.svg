@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 130 130">
+
+  <defs>
+    <linearGradient id="svg-defs-gradient-squared-icon-unparalleled-flexibility" x1="35" y1="95" x2="95" y2="35" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E52231"/>
+      <stop offset="0.65" stop-color="#E0271A"/>
+      <stop offset="1" stop-color="#e65522"/>
+    </linearGradient>
+    <mask id="svg-defs-mask-squared-icon-unparalleled-flexibility">
+      <circle class="uk-preserve" cx="49.26" cy="51.78" r="9.16" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <circle class="uk-preserve" cx="79.18" cy="79.8" r="9.16" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <line class="uk-preserve" x1="58.42" y1="51.78" x2="68.44" y2="51.78" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <line class="uk-preserve" x1="49.26" y1="60.95" x2="49.26" y2="72.19" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <line class="uk-preserve" x1="79.18" y1="62.53" x2="79.18" y2="70.63" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <rect class="uk-preserve" x="41.66" y="72.2" width="15.19" height="15.19" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <rect class="uk-preserve" x="71.58" y="44.19" width="15.19" height="15.19" transform="translate(59.81 -40.82) rotate(45)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </mask>
+  </defs>
+
+  <style>
+
+    img[src*="squared-icon-unparalleled-flexibility.svg"] + svg {
+      filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.35)) drop-shadow(-10px -10px 15px rgba(255, 255, 255, 0.048));
+      will-change: filter;
+    }
+
+  </style>
+
+  <rect class="uk-preserve" x="0" y="0" width="130" height="130" rx="24" fill="#202326" />
+  <rect class="uk-preserve" x="30" y="30" width="70" height="70" fill="url(#svg-defs-gradient-squared-icon-unparalleled-flexibility)" mask="url(#svg-defs-mask-squared-icon-unparalleled-flexibility)" />
+
+</svg>

@@ -1,0 +1,149 @@
+//
+// Component: Navbar
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@navbar-background:                             @global-background;
+@navbar-nav-item-height:                        100px;
+@navbar-nav-item-color:                         @global-emphasis-color;
+@navbar-nav-item-hover-color:                   @global-emphasis-color;
+@navbar-nav-item-active-color:                  @global-link-color;
+@navbar-nav-item-onclick-color:                 @global-link-color;
+@navbar-toggle-color:                           @global-emphasis-color;
+@navbar-toggle-hover-color:                     @global-link-color;
+@navbar-subtitle-font-size:                     12px;
+@navbar-dropdown-padding:                       25px;
+@navbar-dropdown-nav-item-color:                @global-color;
+@navbar-dropdown-nav-item-hover-color:          @global-muted-color;
+
+//
+// Master
+//
+
+@navbar-nav-item-line-mode:                     true;
+@navbar-nav-item-line-slide-mode:               left;
+@navbar-nav-item-line-margin-vertical:          30px;
+@navbar-nav-item-line-margin-horizontal:        15px;
+@navbar-nav-item-line-transition-duration:      0.3s;
+@navbar-nav-item-line-hover-height:             2px;
+@navbar-nav-item-line-hover-background:         @global-link-color;
+@navbar-nav-item-line-onclick-height:           2px;
+@navbar-nav-item-line-onclick-background:       @global-link-color;
+@navbar-nav-item-line-active-mode:              false;
+@navbar-nav-item-line-active-height:            0;
+@navbar-nav-item-line-active-background:        transparent;
+
+
+// Component
+// ========================================================================
+
+.hook-navbar() {}
+
+
+// Container
+// ========================================================================
+
+.hook-navbar-container() {}
+
+
+// Nav
+// ========================================================================
+
+.hook-navbar-nav-item() {}
+
+.hook-navbar-nav-item-hover() {}
+
+.hook-navbar-nav-item-onclick() {}
+
+.hook-navbar-nav-item-active() {}
+
+
+// Item
+// ========================================================================
+
+.hook-navbar-item() {}
+
+
+// Toggle
+// ========================================================================
+
+.hook-navbar-toggle() {}
+
+.hook-navbar-toggle-hover() {}
+
+.hook-navbar-toggle-icon() {}
+
+.hook-navbar-toggle-icon-hover() {}
+
+
+// Subtitle
+// ========================================================================
+
+.hook-navbar-subtitle() {}
+
+
+// Style modifiers
+// ========================================================================
+
+.hook-navbar-primary() {}
+
+.hook-navbar-transparent() {}
+
+.hook-navbar-sticky() {}
+
+
+// Dropdown
+// ========================================================================
+
+.hook-navbar-dropdown() {}
+
+.hook-navbar-dropdown-dropbar() {}
+
+
+// Dropdown nav
+// ========================================================================
+
+.hook-navbar-dropdown-nav() {}
+
+.hook-navbar-dropdown-nav-item() {}
+
+.hook-navbar-dropdown-nav-item-hover() {}
+
+.hook-navbar-dropdown-nav-header() {}
+
+.hook-navbar-dropdown-nav-divider() {}
+
+
+// Dropbar
+// ========================================================================
+
+.hook-navbar-dropbar() {}
+
+.hook-navbar-dropbar-slide() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-navbar-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+@inverse-navbar-nav-item-color:                @inverse-global-color;
+@inverse-navbar-nav-item-hover-color:          @inverse-global-emphasis-color;
+
+.hook-inverse-navbar-nav-item() {}
+.hook-inverse-navbar-nav-item-hover() {}
+.hook-inverse-navbar-nav-item-onclick() {}
+.hook-inverse-navbar-nav-item-active() {}
+
+.hook-inverse-navbar-item() {}
+
+.hook-inverse-navbar-toggle() {}
+.hook-inverse-navbar-toggle-hover() {}

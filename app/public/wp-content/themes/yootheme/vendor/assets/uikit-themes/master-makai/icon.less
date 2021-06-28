@@ -1,0 +1,63 @@
+//
+// Component: Icon
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@icon-link-hover-color:                         @global-primary-background;
+@icon-link-active-color:                        @global-secondary-background;
+
+@icon-button-hover-background:                  @global-secondary-background;
+@icon-button-hover-color:                       @global-inverse-color;
+
+@icon-button-active-background:                 lighten(@global-secondary-background, 10%);
+@icon-button-active-color:                      @global-inverse-color;
+
+
+// Style modifiers
+// ========================================================================
+
+//
+// Link
+//
+
+.hook-icon-link() {}
+
+.hook-icon-link-hover() {}
+
+.hook-icon-link-active() {}
+
+//
+// Button
+//
+
+.hook-icon-button() {}
+
+.hook-icon-button-hover() {}
+
+.hook-icon-button-active() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-icon-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+@inverse-icon-link-color:                      @global-inverse-color;
+@inverse-icon-link-hover-color:                fade(@global-inverse-color, 90%);
+@inverse-icon-link-active-color:               @global-inverse-color;
+
+.hook-inverse-icon-link() {}
+.hook-inverse-icon-link-hover() {}
+.hook-inverse-icon-link-active() {}
+
+.hook-inverse-icon-button() {}
+.hook-inverse-icon-button-hover() {}
+.hook-inverse-icon-button-active() {}

@@ -1,0 +1,86 @@
+//
+// Component: Icon
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@icon-link-color:                               @global-emphasis-color;
+@icon-link-hover-color:                         @global-color;
+@icon-link-active-color:                        @global-muted-color;
+@icon-button-color:                             @global-inverse-color;
+
+@icon-button-hover-background:                  transparent;
+@icon-button-hover-color:                       @global-emphasis-color;
+
+@icon-button-size:                              30px;
+@icon-button-border-radius:                     @global-border-radius;
+@icon-button-background:                        @global-secondary-background;
+
+@icon-button-active-background:                 transparent;
+
+//
+// Master
+//
+
+@icon-button-border-width:                      @global-border-width;
+
+@icon-button-hover-border:                      @global-secondary-background;
+@icon-button-active-border:                     @global-color;
+
+
+// Style modifiers
+// ========================================================================
+
+//
+// Link
+//
+
+.hook-icon-link() {}
+
+.hook-icon-link-hover() {}
+
+.hook-icon-link-active() {}
+
+//
+// Button
+//
+
+.hook-icon-button() {}
+
+.hook-icon-button-hover() {}
+
+.hook-icon-button-active() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-icon-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+@inverse-icon-button-background:               @inverse-global-primary-background;
+@inverse-icon-button-color:                    @global-emphasis-color;
+@inverse-icon-button-hover-background:         transparent;
+@inverse-icon-button-hover-color:              @inverse-global-emphasis-color;
+@inverse-icon-button-active-background:        transparent;
+
+//
+// Master
+//
+
+@inverse-icon-button-hover-border:             @inverse-global-primary-background;
+@inverse-icon-button-active-border:            fade(@inverse-global-primary-background, 70%);
+
+.hook-inverse-icon-link() {}
+.hook-inverse-icon-link-hover() {}
+.hook-inverse-icon-link-active() {}
+
+.hook-inverse-icon-button() {}
+.hook-inverse-icon-button-hover() {}
+.hook-inverse-icon-button-active() {}

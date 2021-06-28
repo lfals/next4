@@ -1,0 +1,36 @@
+.ht-trabalhe{
+  padding:85px 15px;
+  padding-bottom: 115px;
+  width: 100%;
+  background: #FCFCFC;
+}
+.ht-trabalhe__title{ text-align: center;}
+.ht-trabalhe__content{
+  width: 100%;
+  max-width: 750px;
+  margin:0 auto;
+  margin-bottom: 50px;
+}
+.ht-trabalhe__list{
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: 1fr;
+}
+.ht-trabalhe__item{
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+  background:#ffffff;
+  padding:20px;
+}
+.ht-trabalhe__leia{
+  color: #442057;
+  font-weight: bold;
+}
+.trabalhe__title{ text-align: center;}
+.vaga__title{
+  font-size: 1rem;
+}
+@media(min-width:768px){
+  .ht-trabalhe{ padding: 85px;  }
+  .ht-trabalhe__list{ grid-template-columns: repeat(3,1fr); }
+}

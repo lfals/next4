@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1430" height="1085" viewBox="0 0 1430 1085">
+  <defs>
+    <radialGradient id="svg-defs-gradient-01" cx="843.83" cy="573.99" r="504.02" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#16B6F5" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#16B6F5" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="svg-defs-gradient-02" cx="538.44" cy="652.42" r="372.56" gradientTransform="translate(34.88 -27.29) rotate(3)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1865E0" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#1865E0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <ellipse cx="858.2" cy="572.13" rx="568.46" ry="511.51" opacity="0.73" fill="url(#svg-defs-gradient-01)" style="isolation: isolate"/>
+  <ellipse cx="538.44" cy="652.42" rx="381.92" ry="362.95" transform="translate(-33.41 29.07) rotate(-3)" opacity="0.82" fill="url(#svg-defs-gradient-02)" style="isolation: isolate"/>
+
+</svg>

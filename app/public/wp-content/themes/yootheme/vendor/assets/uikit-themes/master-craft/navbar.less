@@ -1,0 +1,174 @@
+//
+// Component: Navbar
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@navbar-background:                             @global-background;
+
+@navbar-nav-item-height:                        100px;
+@navbar-nav-item-padding-horizontal:            40px;
+@navbar-nav-item-color:                         @global-color;
+@navbar-nav-item-font-size:                     @global-font-size;
+@navbar-nav-item-font-family:                   @global-primary-font-family;
+@navbar-nav-item-hover-color:                   @global-emphasis-color;
+
+@navbar-toggle-color:                           @global-color;
+@navbar-toggle-hover-color:                     @global-primary-background;
+
+@navbar-subtitle-font-size:                     13px;
+
+@navbar-dropdown-width:                         300px;
+@navbar-dropdown-padding:                       40px;
+@navbar-dropdown-background:                    @global-secondary-background;
+@navbar-dropdown-color:                         @global-inverse-color;
+
+@navbar-dropdown-nav-item-color:                @global-inverse-color;
+@navbar-dropdown-nav-item-hover-color:          @global-primary-background;
+@navbar-dropdown-nav-item-active-color:         @global-primary-background;
+@navbar-dropdown-nav-header-color:              fade(@global-inverse-color, 50%);
+@navbar-dropdown-nav-divider-border-width:      @global-border-width;
+@navbar-dropdown-nav-divider-border:            fade(@global-border, 15%);
+@navbar-dropdown-nav-sublist-item-color:        @global-inverse-color;
+@navbar-dropdown-nav-sublist-item-hover-color:  @global-primary-background;
+
+//
+// Master
+//
+
+@internal-navbar-nav-item-background-image:     "../../../../uikit-themes/master-craft/images/navbar-item-line.svg";
+@internal-navbar-nav-item-background-size:      auto;
+
+@navbar-nav-item-line-mode:                     true;
+@navbar-nav-item-line-margin-vertical:          25px;
+@navbar-nav-item-line-margin-horizontal:        25px;
+@navbar-nav-item-line-height:                   10px;
+
+@navbar-nav-item-line-hover-height:             @navbar-nav-item-line-height;
+
+@navbar-nav-item-line-active-height:            @navbar-nav-item-line-height;
+
+@navbar-nav-item-line-onclick-height:           @navbar-nav-item-line-height;
+
+@navbar-dropdown-nav-item-padding-vertical:     2px;
+
+@navbar-dropdown-grid-divider-border:           fade(@global-border, 15%);
+
+@navbar-nav-item-font-weight:                   @global-primary-font-weight;
+@navbar-nav-item-text-transform:                @global-primary-text-transform;
+
+@navbar-dropdown-nav-font-size:                 @global-font-size;
+@navbar-dropdown-nav-font-family:               @global-primary-font-family;
+@navbar-dropdown-nav-font-weight:               @global-primary-font-weight;
+@navbar-dropdown-nav-text-transform:            @global-primary-text-transform;
+
+
+// Component
+// ========================================================================
+
+.hook-navbar() {}
+
+
+// Container
+// ========================================================================
+
+.hook-navbar-container() {}
+
+
+// Nav
+// ========================================================================
+
+.hook-navbar-nav-item() {}
+
+.hook-navbar-nav-item-hover() {}
+
+.hook-navbar-nav-item-onclick() {}
+
+.hook-navbar-nav-item-active() {}
+
+
+// Item
+// ========================================================================
+
+.hook-navbar-item() {}
+
+
+// Toggle
+// ========================================================================
+
+.hook-navbar-toggle() {}
+
+.hook-navbar-toggle-hover() {}
+
+.hook-navbar-toggle-icon() {}
+
+.hook-navbar-toggle-icon-hover() {}
+
+
+// Subtitle
+// ========================================================================
+
+.hook-navbar-subtitle() {}
+
+
+// Style modifiers
+// ========================================================================
+
+.hook-navbar-primary() {}
+
+.hook-navbar-transparent() {}
+
+.hook-navbar-sticky() {}
+
+
+// Dropdown
+// ========================================================================
+
+.hook-navbar-dropdown() {}
+
+.hook-navbar-dropdown-dropbar() {}
+
+
+// Dropdown nav
+// ========================================================================
+
+.hook-navbar-dropdown-nav() {}
+
+.hook-navbar-dropdown-nav-item() {}
+
+.hook-navbar-dropdown-nav-item-hover() {}
+
+.hook-navbar-dropdown-nav-header() {}
+
+.hook-navbar-dropdown-nav-divider() {}
+
+
+// Dropbar
+// ========================================================================
+
+.hook-navbar-dropbar() {}
+
+.hook-navbar-dropbar-slide() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-navbar-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+.hook-inverse-navbar-nav-item() {}
+.hook-inverse-navbar-nav-item-hover() {}
+.hook-inverse-navbar-nav-item-onclick() {}
+.hook-inverse-navbar-nav-item-active() {}
+
+.hook-inverse-navbar-item() {}
+
+.hook-inverse-navbar-toggle() {}
+.hook-inverse-navbar-toggle-hover() {}

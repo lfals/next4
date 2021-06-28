@@ -1,0 +1,131 @@
+//
+// Component: Form
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@form-padding-horizontal:                       @global-small-gutter;
+
+@form-background:                               darken(@global-background, 1%);
+
+@form-focus-background:                         darken(@global-background, 3%);
+
+@form-disabled-background:                      darken(@global-background, 3%);
+
+@form-large-padding-horizontal:                 20px;
+@form-large-font-size:                          18px;
+
+@form-radio-checked-icon-color:                 @global-background;
+@form-radio-background:                         @global-background;
+@form-radio-disabled-background:                darken(@global-muted-background, 5%);
+
+//
+// Master
+//
+
+@form-border-radius:                            500px;
+
+@form-multi-line-border-radius:                 8px;
+
+@form-box-shadow:                               inset 3px 3px 6px rgba(57, 65, 124, 0.1), inset -3px -3px 6px #fff;
+@form-focus-box-shadow:                         inset 1px 1px 2px rgba(80,110,140, 0.2), inset -1px -1px 2px #fff;
+@form-disabled-box-shadow:                      inset 1px 1px 1px rgba(80, 110, 140, 0.25), inset -1px -1px 4px rgba(255, 255, 255, 0.6);
+
+@form-radio-box-shadow:                         inset 1px 1px 2px rgba(80,110,140, 0.2), inset -1px -1px 2px rgba(255, 255, 255, 0.9);
+@form-radio-focus-box-shadow:                   inset 1px 1px 2px rgba(80,110,140, 0);
+@form-radio-checked-box-shadow:                 inset 1px 1px 2px rgba(80,110,140, 0);
+
+
+// Component
+// ========================================================================
+
+.hook-form() {}
+
+.hook-form-single-line() {}
+
+.hook-form-multi-line() {}
+
+.hook-form-focus() {}
+
+.hook-form-disabled() {}
+
+
+// Style modifiers
+// ========================================================================
+
+.hook-form-danger() {}
+.uk-form-danger:focus {}
+
+.hook-form-success() {}
+.uk-form-success:focus {}
+
+.hook-form-blank() {}
+
+.hook-form-blank-focus() {}
+
+
+// Radio and checkbox
+// ========================================================================
+
+.hook-form-radio() {}
+
+.hook-form-radio-focus() {}
+
+.hook-form-radio-checked() {}
+
+.hook-form-radio-checked-focus() {}
+
+.hook-form-radio-disabled() {}
+
+
+// Legend
+// ========================================================================
+
+.hook-form-legend() {}
+
+
+// Label
+// ========================================================================
+
+.hook-form-label() {}
+
+
+// Layout
+// ========================================================================
+
+.hook-form-stacked-label() {}
+
+.hook-form-horizontal-label() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-form-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+@inverse-form-focus-background:                 fadein(@inverse-global-muted-background, 10%);
+
+//
+// Master
+//
+
+@inverse-form-box-shadow:                       inset 3px 3px 6px rgba(0,0,0, 0.4), inset -3px -3px 6px rgba(255, 255, 255, 0.04);
+@inverse-form-focus-box-shadow:                 inset 1px 1px 2px rgba(0,0,0, 0.6), inset -1px -1px 2px rgba(255, 255, 255, 0.04);
+
+.hook-inverse-form() {}
+.hook-inverse-form-focus() {}
+
+.hook-inverse-form-radio() {}
+.hook-inverse-form-radio-focus() {}
+
+.hook-inverse-form-radio-checked() {}
+.hook-inverse-form-radio-checked-focus() {}
+
+.hook-inverse-form-label() {}

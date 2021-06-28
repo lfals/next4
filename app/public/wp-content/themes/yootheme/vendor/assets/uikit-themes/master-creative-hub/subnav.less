@@ -1,0 +1,87 @@
+//
+// Component: Subnav
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@subnav-divider-margin-horizontal:              26px;
+
+@subnav-item-color:                             @global-emphasis-color;
+@subnav-item-hover-color:                       @global-link-color;
+@subnav-item-active-color:                      @global-link-color;
+
+@subnav-divider-border-height:                  1.1em;
+
+@subnav-pill-item-padding-vertical:             9px;
+@subnav-pill-item-padding-horizontal:           20px;
+
+//
+// Master
+//
+
+@subnav-pill-item-border-radius:                500px;
+
+
+// Component
+// ========================================================================
+
+.hook-subnav() {}
+
+.hook-subnav-item() {}
+
+.hook-subnav-item-hover() {}
+
+.hook-subnav-item-active() {}
+
+
+// Divider modifier
+// ========================================================================
+
+.hook-subnav-divider() {}
+
+
+// Pill modifier
+// ========================================================================
+
+.hook-subnav-pill-item() {}
+
+.hook-subnav-pill-item-hover() {}
+
+.hook-subnav-pill-item-onclick() {}
+
+.hook-subnav-pill-item-active() {}
+
+
+// Disabled
+// ========================================================================
+
+.hook-subnav-item-disabled() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-subnav-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+@inverse-subnav-item-color:                     @inverse-global-color;
+@inverse-subnav-item-hover-color:               @inverse-global-emphasis-color;
+
+.hook-inverse-subnav-item() {}
+.hook-inverse-subnav-item-hover() {}
+.hook-inverse-subnav-item-active() {}
+
+.hook-inverse-subnav-divider() {}
+
+.hook-inverse-subnav-pill-item() {}
+.hook-inverse-subnav-pill-item-hover() {}
+.hook-inverse-subnav-pill-item-onclick() {}
+.hook-inverse-subnav-pill-item-active() {}
+
+.hook-inverse-subnav-item-disabled() {}

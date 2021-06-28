@@ -1,0 +1,76 @@
+//
+// Component: Lightbox
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+
+@lightbox-background:                           @global-background;
+
+@lightbox-item-color:                        	@global-emphasis-color;
+
+@lightbox-toolbar-padding-vertical:             @global-margin;
+@lightbox-toolbar-padding-horizontal:           @global-small-margin;
+@lightbox-toolbar-background:                   @lightbox-background;
+@lightbox-toolbar-color:                        @global-color;
+
+@lightbox-toolbar-icon-padding:                 @global-margin;
+@lightbox-toolbar-icon-color: 					@global-inverse-color;
+
+@lightbox-button-background:                    transparent;
+@lightbox-button-color:                         @global-emphasis-color;
+
+@lightbox-button-hover-color:                   fade(@lightbox-button-color, 60%);
+
+//
+// New
+//
+
+@lightbox-toolbar-icon-background: 				@global-secondary-background;
+
+
+// Component
+// ========================================================================
+
+.hook-lightbox() {}
+
+
+// Item
+// ========================================================================
+
+.hook-lightbox-item() {}
+
+
+// Toolbar
+// ========================================================================
+
+.hook-lightbox-toolbar() {}
+
+
+// Toolbar Icon
+// ========================================================================
+
+.hook-lightbox-toolbar-icon() {
+	margin: -@lightbox-toolbar-padding-vertical -@lightbox-toolbar-padding-horizontal -@lightbox-toolbar-padding-vertical 0;
+    float: right;
+	background: @lightbox-toolbar-icon-background;
+}
+
+.hook-lightbox-toolbar-icon-hover() {}
+
+
+// Button
+// ========================================================================
+
+.hook-lightbox-button() {}
+
+.hook-lightbox-button-hover() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-lightbox-misc() {}

@@ -1,0 +1,55 @@
+//
+// Component: Label
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@label-background:                               transparent;
+@label-border:                                   @global-link-color;
+@label-color:                                    darken(@global-link-color, 10%);
+@label-success-background:                       transparent;
+@label-success-border:                           @global-success-background;
+@label-success-color:                            darken(@global-success-background, 15%);
+@label-warning-background:                       transparent;
+@label-warning-border:                           @global-warning-background;
+@label-warning-color:                            darken(@global-warning-background, 10%);
+@label-danger-background:                        transparent;
+@label-danger-border:                            @global-danger-background;
+@label-danger-color:                             darken(@global-danger-background, 15%);
+
+//
+// Master
+//
+
+@label-border-width:                             @global-border-width;
+
+
+// Component
+// ========================================================================
+
+.hook-label() {}
+
+
+// Color modifiers
+// ========================================================================
+
+.hook-label-success() {}
+
+.hook-label-warning() {}
+
+.hook-label-danger() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-label-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+.hook-inverse-label() {}

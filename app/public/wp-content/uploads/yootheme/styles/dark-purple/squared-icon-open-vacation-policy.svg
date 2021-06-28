@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 130 130">
+
+  <defs>
+    <linearGradient id="svg-defs-gradient-squared-icon-open-vacation-policy" x1="35" y1="95" x2="95" y2="35" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#732EDF"/>
+      <stop offset="0.65" stop-color="#A92AE7"/>
+      <stop offset="1" stop-color="#C729F4"/>
+    </linearGradient>
+    <mask id="svg-defs-mask-squared-icon-open-vacation-policy">
+      <line class="uk-preserve" x1="51.73" y1="69.43" x2="57.02" y2="89.02" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+      <line class="uk-preserve" x1="85.22" y1="38.86" x2="85.22" y2="41.5" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+      <line class="uk-preserve" x1="85.22" y1="60.91" x2="85.22" y2="63.55" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+      <line class="uk-preserve" x1="97.57" y1="51.2" x2="94.93" y2="51.2" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+      <line class="uk-preserve" x1="75.52" y1="51.2" x2="72.88" y2="51.2" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+      <line class="uk-preserve" x1="93.95" y1="42.47" x2="92.09" y2="44.34" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+      <line class="uk-preserve" x1="78.36" y1="58.07" x2="76.49" y2="59.94" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+      <line class="uk-preserve" x1="93.95" y1="59.94" x2="92.09" y2="58.07" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+      <line class="uk-preserve" x1="78.36" y1="44.34" x2="76.49" y2="42.47" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+      <path class="uk-preserve" d="M33,88.76h0c7.07,3.29,17,3.29,28.19-.7,16.69-6,27.6-4.41,35.35.53l1.06.63" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+      <circle class="uk-preserve" cx="85.22" cy="51.2" r="5.6" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="2"/>
+      <path class="uk-preserve" d="M58,63.26l-15,4.05c-.19-5.94,1.62-10.59,4.93-11.48S55.2,58,58,63.26Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path class="uk-preserve" d="M58,63.26c.5,2.23-2.33,4.9-6.41,6s-7.87.23-8.56-2" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path class="uk-preserve" d="M68.74,60.36c.54,2.22-1.35,4.64-4.27,5.43s-5.78-.34-6.43-2.53" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path class="uk-preserve" d="M43.07,67.31c.54,2.22-1.35,4.64-4.27,5.43s-5.77-.35-6.43-2.53" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path class="uk-preserve" d="M68.74,60.36,32.37,70.21C34.05,64,39.52,58.46,47,56.11h0A1,1,0,0,1,49,55.57h0C56.64,53.83,64.15,55.85,68.74,60.36Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </mask>
+  </defs>
+
+  <style>
+
+    img[src*="squared-icon-open-vacation-policy.svg"] + svg {
+      filter: drop-shadow(10px 10px 15px rgba(27, 30, 45, 0.4)) drop-shadow(-10px -10px 15px rgba(115, 130, 190, 0.1));
+      will-change: filter;
+    }
+
+  </style>
+
+  <rect class="uk-preserve" x="0" y="0" width="130" height="130" rx="24" fill="#303751" />
+  <rect class="uk-preserve" x="30" y="35" width="70" height="60" fill="url(#svg-defs-gradient-squared-icon-open-vacation-policy)" mask="url(#svg-defs-mask-squared-icon-open-vacation-policy)" />
+
+</svg>

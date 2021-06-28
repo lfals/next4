@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+
+  <defs>
+    <linearGradient id="svg-defs-gradient-icon-community-chat" x1="15" y1="65" x2="65" y2="15" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E52231"/>
+      <stop offset="0.65" stop-color="#E0271A"/>
+      <stop offset="1" stop-color="#e65522"/>
+    </linearGradient>
+    <mask id="svg-defs-mask-icon-community-chat">
+      <path class="uk-preserve" d="M63.878,48.4,66.76,59.172,54.827,52.448a32.453,32.453,0,0,1-5.776.949c-.849.061-1.7.1-2.574.1-.2,0-.406,0-.6-.012-14.432-.246-26.069-9.6-26.4-21.18-.012-.173-.012-.345-.012-.517,0-11.982,12.1-21.7,27.017-21.7s27.035,9.714,27.035,21.7C73.509,38.46,69.765,44.42,63.878,48.4Z" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="2"/>
+      <path class="uk-preserve" d="M49.052,53.4c-2.906,6.945-11.079,11.969-20.713,11.969a27.229,27.229,0,0,1-7.043-.923L11.58,69.91l2.389-8.863c-4.581-3.226-7.478-7.954-7.478-13.225,0-7.154,5.319-13.3,12.967-16.033" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="2"/>
+      <circle class="uk-preserve" cx="40.033" cy="32.811" r="2.006" fill="#fff"/>
+      <circle class="uk-preserve" cx="46.483" cy="32.811" r="2.006" fill="#fff"/>
+      <circle class="uk-preserve" cx="52.932" cy="32.811" r="2.006" fill="#fff"/>
+    </mask>
+  </defs>
+
+  <rect class="uk-preserve" x="2" y="2" width="76" height="76" fill="url(#svg-defs-gradient-icon-community-chat)" mask="url(#svg-defs-mask-icon-community-chat)"/>
+
+</svg>

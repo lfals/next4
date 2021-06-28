@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+
+  <defs>
+    <linearGradient id="svg-defs-gradient-icon-infrastructure" x1="15" y1="65" x2="65" y2="15" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7141F1"/>
+      <stop offset="0.7" stop-color="#4D6BD8"/>
+      <stop offset="1" stop-color="#3183E2"/>
+    </linearGradient>
+    <mask id="svg-defs-mask-icon-infrastructure">
+      <rect class="uk-preserve" x="30.106" y="9.736" width="19.788" height="19.788" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="2"/>
+      <rect class="uk-preserve" x="10.318" y="50.476" width="19.788" height="19.788" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="2"/>
+      <rect class="uk-preserve" x="49.894" y="50.476" width="19.788" height="19.788" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="2"/>
+      <polyline class="uk-preserve" points="59.788 50.476 59.788 40.198 20.037 40.198 20.037 50.476" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="2"/>
+      <line class="uk-preserve" x1="39.418" y1="29.524" x2="39.418" y2="40.617" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="2"/>
+    </mask>
+  </defs>
+
+  <rect class="uk-preserve" x="3" y="3" width="74" height="74" fill="url(#svg-defs-gradient-icon-infrastructure)" mask="url(#svg-defs-mask-icon-infrastructure)"/>
+
+</svg>

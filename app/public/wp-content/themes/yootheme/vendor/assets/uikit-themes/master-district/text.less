@@ -1,0 +1,66 @@
+//
+// Component: Base
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@text-lead-font-size:                           20px;
+@text-lead-line-height:                         1.4;
+
+@text-meta-font-size:                           12px;
+
+@text-large-font-size:                          20px;
+@text-large-line-height:                        1.4;
+
+@text-primary-color:                           	darken(saturate(@global-primary-background, 8%), 15%);
+@text-background-color:                         darken(saturate(@global-primary-background, 10%), 15%);
+
+//
+// Master
+//
+
+@text-lead-font-weight:                         500;
+
+@text-meta-font-weight:                         @global-primary-font-weight;
+@text-meta-text-transform:                      uppercase;
+@text-meta-letter-spacing:                      1px;
+
+
+// Style modifiers
+// ========================================================================
+
+.hook-text-lead() {}
+
+.hook-text-meta() {}
+
+
+// Size modifiers
+// ========================================================================
+
+.hook-text-small() {}
+
+.hook-text-large() {}
+
+
+// Background modifier
+// ========================================================================
+
+.hook-text-background() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-text-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+@inverse-text-primary-color:                   @inverse-global-emphasis-color;
+
+.hook-inverse-text-lead() {}
+.hook-inverse-text-meta() {}

@@ -1,0 +1,108 @@
+//
+// Component: Form
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@form-background:                               @global-background;
+@form-focus-background:                         @form-background;
+@form-large-font-size:                          @global-font-size;
+@form-radio-checked-background:                 @global-link-hover-color;
+@form-radio-checked-focus-background:           @global-link-hover-color;
+
+//
+// Master
+//
+
+@form-border:                                   #f5f5f5;
+@form-focus-border:                             darken(@form-border, 5%);
+@form-border-width:                             @global-border-width;
+@form-blank-focus-border:                       #f5f5f5;
+@form-blank-focus-border-style:                 dashed;
+
+@form-danger-border:                            #ffecec;
+@form-success-border:                           @global-secondary-background;
+
+
+// Component
+// ========================================================================
+
+.hook-form() {}
+
+.hook-form-single-line() {}
+
+.hook-form-multi-line() {}
+
+.hook-form-focus() {}
+
+.hook-form-disabled() {}
+
+
+// Style modifiers
+// ========================================================================
+
+.hook-form-danger() {}
+
+.hook-form-success() {}
+
+.hook-form-blank() {}
+
+.hook-form-blank-focus() {}
+
+
+// Radio and checkbox
+// ========================================================================
+
+.hook-form-radio() {}
+
+.hook-form-radio-focus() {}
+
+.hook-form-radio-checked() {}
+
+.hook-form-radio-checked-focus() { }
+
+.hook-form-radio-disabled() {}
+
+
+// Legend
+// ========================================================================
+
+.hook-form-legend() {}
+
+
+// Label
+// ========================================================================
+
+.hook-form-label() {}
+
+
+// Layout
+// ========================================================================
+
+.hook-form-stacked-label() {}
+
+.hook-form-horizontal-label() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-form-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+.hook-inverse-form() {}
+.hook-inverse-form-focus() {}
+
+.hook-inverse-form-radio() {}
+.hook-inverse-form-radio-focus() {}
+
+.hook-inverse-form-radio-checked() {}
+.hook-inverse-form-radio-checked-focus() {}
+
+.hook-inverse-form-label() {}

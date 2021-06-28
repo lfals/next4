@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="216" height="216" viewBox="0 0 216 216">
+
+  <style>
+
+    img[src*="enterprise-features-01.svg"] + svg {
+      filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.35)) drop-shadow(-10px -10px 15px rgba(255, 255, 255, 0.048));
+      will-change: filter;
+    }
+
+  </style>
+
+  <defs>
+    <linearGradient id="Unbenannter_Verlauf_59" x1="75.55" y1="1138.06" x2="150.3" y2="1105.46" gradientTransform="translate(0 -1024)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff6f47"/>
+      <stop offset="0.41" stop-color="#ff6951"/>
+      <stop offset="1" stop-color="#ff5c68"/>
+    </linearGradient>
+    <linearGradient id="Unbenannter_Verlauf_49" x1="151.1" y1="1142.15" x2="76.26" y2="1089.68" gradientTransform="translate(0 -1024)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e52231" stop-opacity="0"/>
+      <stop offset="0.06" stop-color="#e52231" stop-opacity="0.02"/>
+      <stop offset="0.13" stop-color="#e52231" stop-opacity="0.07"/>
+      <stop offset="0.2" stop-color="#e52231" stop-opacity="0.15"/>
+      <stop offset="0.27" stop-color="#e52231" stop-opacity="0.27"/>
+      <stop offset="0.34" stop-color="#e52231" stop-opacity="0.42"/>
+      <stop offset="0.41" stop-color="#e52231" stop-opacity="0.61"/>
+      <stop offset="0.48" stop-color="#e52231" stop-opacity="0.83"/>
+      <stop offset="0.53" stop-color="#e52231"/>
+      <stop offset="0.56" stop-color="#e52231" stop-opacity="0.87"/>
+      <stop offset="0.6" stop-color="#e52231" stop-opacity="0.67"/>
+      <stop offset="0.65" stop-color="#e52231" stop-opacity="0.49"/>
+      <stop offset="0.7" stop-color="#e52231" stop-opacity="0.34"/>
+      <stop offset="0.76" stop-color="#e52231" stop-opacity="0.22"/>
+      <stop offset="0.81" stop-color="#e52231" stop-opacity="0.12"/>
+      <stop offset="0.87" stop-color="#e52231" stop-opacity="0.05"/>
+      <stop offset="0.93" stop-color="#e52231" stop-opacity="0.01"/>
+      <stop offset="1" stop-color="#e52231" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="Unbenannter_Verlauf_50" x1="151.08" y1="1121.98" x2="76.29" y2="1174.38" gradientTransform="translate(0 -1024)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e0271a"/>
+      <stop offset="0.36" stop-color="#e0271a" stop-opacity="0.62"/>
+      <stop offset="0.8" stop-color="#e0271a" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#e0271a" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="Unbenannter_Verlauf_12" x1="89.45" y1="1083.19" x2="89.45" y2="1180.81" gradientTransform="translate(0 -1024)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e64c22"/>
+      <stop offset="0.2" stop-color="#e64c22"/>
+      <stop offset="0.82" stop-color="#e64c22" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+
+  <circle class="uk-preserve" cx="108" cy="108" r="108" fill="#1b2023"/>
+    <path class="uk-preserve" d="M154.34,106.16a16.42,16.42,0,0,0-7.19-11.87h0L98.68,62a16.52,16.52,0,0,0-21,2.23,16.22,16.22,0,0,0-4.76,11.48v64.5a16.84,16.84,0,0,0,16.83,16.45,16.31,16.31,0,0,0,9.09-2.86l48.29-32A16.84,16.84,0,0,0,154.34,106.16Z" fill="url(#Unbenannter_Verlauf_59)"/>
+    <path class="uk-preserve" d="M137.93,124.75a16.55,16.55,0,0,1-9.17-2.77L80.25,89.5A16.54,16.54,0,0,1,98.6,62h0l48.5,32.36a16.53,16.53,0,0,1-9.17,30.41Z" opacity="0.25" fill="url(#Unbenannter_Verlauf_49)" style="isolation: isolate"/>
+    <path class="uk-preserve" d="M89.43,156.81a16.53,16.53,0,0,1-9.13-30.33l48.5-32.19a16.54,16.54,0,0,1,18.3,27.56L98.6,154.2A16.74,16.74,0,0,1,89.43,156.81Z" fill="url(#Unbenannter_Verlauf_50)"/>
+    <path class="uk-preserve" d="M89.43,156.81a16.53,16.53,0,0,1-16.54-16.53h0V75.74a16.56,16.56,0,0,1,33.11,0v64.54a16.53,16.53,0,0,1-16.53,16.53Z" fill="url(#Unbenannter_Verlauf_12)"/>
+</svg>

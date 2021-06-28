@@ -1,0 +1,97 @@
+/*
+
+Name: Fuse
+Background: White
+Color: Black
+Type: Flat
+Preview: https://downloads-yootheme.storage.googleapis.com/library/fuse/styles/default.jpg
+
+Style: white-red
+Name: White Red
+Background: White
+Color: Red
+Type: Flat
+Preview: https://downloads-yootheme.storage.googleapis.com/library/fuse/styles/white-red.jpg
+
+Style: white-bordeaux
+Name: White Bordeaux
+Background: White
+Color: Red
+Type: Flat
+Preview: https://downloads-yootheme.storage.googleapis.com/library/fuse/styles/white-bordeaux.jpg
+
+Style: light-green
+Name: Light Green
+Background: light
+Color: Green
+Type: Skeuomorphic
+Preview: https://downloads-yootheme.storage.googleapis.com/library/fuse/styles/light-green.jpg
+
+Style: dark-yellow
+Name: Dark Yellow
+Background: Dark
+Color: Yellow
+Type: Flat
+Preview: https://downloads-yootheme.storage.googleapis.com/library/fuse/styles/dark-yellow.jpg
+
+Style: dark-brown
+Name: Dark Brown
+Background: Dark
+Color: Brown
+Type: Flat
+Preview: https://downloads-yootheme.storage.googleapis.com/library/fuse/styles/dark-brown.jpg
+
+*/
+
+// Platform
+@import "platform.less";
+
+// UIkit Core
+@import "../vendor/assets/uikit/src/less/uikit.less";
+
+// UIkit Theme
+@import "../vendor/assets/uikit-themes/master/_import.less";
+@import "../vendor/assets/uikit-themes/master-fuse/_import.less";
+
+// Theme
+@import "theme.less";
+
+
+// Variables
+// ========================================================================
+
+//
+// Box Decoration
+//
+
+@theme-box-decoration-z-index:                           1;
+
+@theme-box-decoration-default-transform-horizontal:      -15px;
+@theme-box-decoration-default-transform-vertical:        15px;
+@theme-box-decoration-default-background:                transparent;
+@theme-box-decoration-default-border-width:              @global-border-width;
+@theme-box-decoration-default-border:                    @global-border;
+
+@theme-box-decoration-primary-transform-horizontal:      15px;
+@theme-box-decoration-primary-transform-vertical:        15px;
+@theme-box-decoration-primary-background:                transparent;
+@theme-box-decoration-primary-border-width:              @global-border-width;
+@theme-box-decoration-primary-border:                    @global-border;
+
+@theme-box-decoration-secondary-transform-horizontal:    15px;
+@theme-box-decoration-secondary-transform-vertical:      -15px;
+@theme-box-decoration-secondary-background:              transparent;
+@theme-box-decoration-secondary-border-width:            @global-border-width;
+@theme-box-decoration-secondary-border:                  @global-border;
+
+@inverse-theme-box-decoration-default-border:            @inverse-global-border;
+@inverse-theme-box-decoration-primary-border:            @inverse-global-border;
+@inverse-theme-box-decoration-secondary-border:          @inverse-global-border;
+
+
+// Style
+// ========================================================================
+
+@import (optional) "../vendor/assets/uikit-themes/master-fuse/styles/@{internal-style}.less";
+
+@internal-style: ;

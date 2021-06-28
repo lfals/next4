@@ -1,0 +1,73 @@
+//
+// Component: Notification
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@notification-message-background:                     @global-background;
+
+@notification-message-primary-color:                  darken(saturate(@global-primary-background, 15%), 25%);
+@notification-message-success-color:                  @global-success-background;
+@notification-message-warning-color:                  @global-warning-background;
+@notification-message-danger-color:                   @global-danger-background;
+
+//
+// Master
+//
+
+@notification-message-border-width:                   @global-border-width;
+@notification-message-border:                         @global-border;
+
+@notification-message-primary-background:             @global-background;
+@notification-message-success-background:             @global-background;
+@notification-message-warning-background:             @global-background;
+@notification-message-danger-background:              @global-background;
+
+@notification-message-primary-border:                 darken(@global-primary-background, 15%);
+@notification-message-success-border:                 @global-success-background;
+@notification-message-warning-border:                 @global-warning-background;
+@notification-message-danger-border:                  @global-danger-background;
+
+@notification-message-primary-color-mode:             none;
+@notification-message-success-color-mode:             none;
+@notification-message-warning-color-mode:             none;
+@notification-message-danger-color-mode:              none;
+
+
+// Component
+// ========================================================================
+
+.hook-notification() {}
+
+
+// Message
+// ========================================================================
+
+.hook-notification-message() {}
+
+
+// Close
+// ========================================================================
+
+.hook-notification-close() {}
+
+
+// Style modifiers
+// ========================================================================
+
+.hook-notification-message-primary() {}
+
+.hook-notification-message-success() {}
+
+.hook-notification-message-warning() {}
+
+.hook-notification-message-danger() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-notification-misc() {}

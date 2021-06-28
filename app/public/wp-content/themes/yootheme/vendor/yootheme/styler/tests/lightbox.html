@@ -1,0 +1,31 @@
+<div class="uk-section uk-section-default uk-flex uk-flex-middle" uk-height-viewport>
+    <div class="uk-width-1-1">
+        <div class="uk-container uk-text-center">
+
+            <a id="js-lightbox" class="uk-button uk-button-default" href="">Open</a>
+
+        </div>
+    </div>
+</div>
+
+<script>
+
+    (function () {
+
+        var base = $customizer.base + '/vendor/assets/uikit/tests/images/';
+
+        UIkit.util.on('#js-lightbox', 'click', function (e) {
+            e.preventDefault();
+
+            UIkit.lightboxPanel({
+                items: [
+                    {source: base + 'size1.jpg', title: '900x600', type: 'image', caption: '<h4 class="uk-margin-remove">Image 1</h4>Lorem ipsum dolor sit amet'},
+                    {source: base + 'size2.jpg', title: '700x500', type: 'image', caption: '<h4 class="uk-margin-remove">Image 2</h4>Lorem ipsum dolor sit amet'},
+                    {source: base + 'photo.jpg', title: '700x500', type: 'image', caption: '<h4 class="uk-margin-remove">Image 3</h4>Lorem ipsum dolor sit amet'},
+                ]
+            }).show();
+        });
+
+    })();
+
+</script>

@@ -1,0 +1,76 @@
+//
+// Component: Slidenav
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@slidenav-padding-vertical:                     12px;
+@slidenav-padding-horizontal:                   15px;
+
+@slidenav-active-color:                         @global-color;
+
+@slidenav-large-padding-vertical:               16px;
+@slidenav-large-padding-horizontal:             20px;
+
+//
+// Master
+//
+
+@slidenav-border-width:                         1px;
+
+@slidenav-border:                               fade(@global-color, 60%);
+@slidenav-hover-border:                         @global-color;
+@slidenav-active-border:                        @global-color;
+
+@slidenav-margin:                               10px;
+
+
+// Component
+// ========================================================================
+
+.hook-slidenav() {}
+
+.hook-slidenav-hover() {}
+
+.hook-slidenav-active() {}
+
+
+// Icon modifier
+// ========================================================================
+
+.hook-slidenav-previous() {}
+
+.hook-slidenav-next() {}
+
+
+// Size modifier
+// ========================================================================
+
+.hook-slidenav-large() {}
+
+
+// Container
+// ========================================================================
+
+.hook-slidenav-container() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-icon-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+@inverse-slidenav-border:                               fade(@global-inverse-color, 60%);
+@inverse-slidenav-hover-border:                         @global-inverse-color;
+@inverse-slidenav-active-border:                        @global-inverse-color;
+
+.hook-inverse-slidenav() {}
+.hook-inverse-slidenav-hover() {}
+.hook-inverse-slidenav-active() {}

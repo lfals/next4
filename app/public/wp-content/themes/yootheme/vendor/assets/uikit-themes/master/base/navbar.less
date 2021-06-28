@@ -1,0 +1,476 @@
+//
+// Component: Navbar
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@navbar-dropdown-grid-gutter-horizontal:        (@navbar-dropdown-padding * 2);
+
+//
+// New
+//
+
+@navbar-backdrop-filter:                        ;
+
+@navbar-padding-top:                            0;
+@navbar-padding-bottom:                         0;
+@navbar-padding-top-m:                          0;
+@navbar-padding-bottom-m:                       0;
+
+@navbar-nav-item-transition-duration:           0.1s;
+
+@internal-navbar-nav-item-mode:                 none; // none, flicker
+
+@navbar-nav-item-line-mode:                     false;  //    true / false
+@navbar-nav-item-line-position-mode:            bottom; //    top / bottom
+@navbar-nav-item-line-slide-mode:               ;       //    left / center
+@navbar-nav-item-line-margin-vertical:          0;
+@navbar-nav-item-line-margin-horizontal:        0;
+@navbar-nav-item-line-height:                   1px;
+@navbar-nav-item-line-background:               transparent;
+@navbar-nav-item-line-border-radius:            0;
+@navbar-nav-item-line-transition-duration:      0.1s;
+
+@navbar-nav-item-line-hover-height:             1px;
+@navbar-nav-item-line-hover-background:         @global-primary-background;
+
+@navbar-nav-item-line-onclick-height:           1px;
+@navbar-nav-item-line-onclick-background:       @global-primary-background;
+
+@navbar-nav-item-line-active-mode:              true;  //    true / false
+@navbar-nav-item-line-active-height:            1px;
+@navbar-nav-item-line-active-background:        @global-primary-background;
+
+@navbar-nav-item-line-opacity:                  1;
+@navbar-nav-item-line-hover-opacity:            1;
+@navbar-nav-item-line-active-opacity:           1;
+
+@navbar-primary-nav-item-padding-horizontal:    @navbar-nav-item-padding-horizontal;
+@navbar-primary-nav-item-padding-horizontal-m:  @navbar-primary-nav-item-padding-horizontal;
+
+@navbar-dropdown-nav-margin-horizontal:         0;
+
+@navbar-dropdown-nav-item-padding-vertical:     @nav-item-padding-vertical;
+@navbar-dropdown-nav-item-padding-horizontal:   @nav-item-padding-horizontal;
+
+@navbar-dropdown-nav-item-hover-background:     transparent;
+
+@navbar-dropdown-nav-divider-margin-vertical:   @nav-divider-margin-vertical;
+
+@navbar-dropdown-nav-sublist-padding-left:      (@navbar-dropdown-nav-item-padding-horizontal + @nav-sublist-deeper-padding-left);
+
+@navbar-dropdown-grid-divider-border-width:     @global-border-width;
+@navbar-dropdown-grid-divider-border:           @navbar-dropdown-nav-divider-border;
+
+
+// Component
+// ========================================================================
+
+.hook-navbar() {}
+
+
+// Container
+// ========================================================================
+
+//
+// 1. Needed to create a new position context because of `backdrop-filter`
+//    `z-index` is taken from `uk-navbar-center`
+//
+
+.hook-navbar-container() when not (@navbar-backdrop-filter = ~'') {
+    backdrop-filter: @navbar-backdrop-filter;
+    -webkit-backdrop-filter: @navbar-backdrop-filter;
+    // 1
+    position: relative;
+    z-index: @global-z-index - 10;
+}
+
+
+// Nav
+// ========================================================================
+
+.hook-navbar-nav-item() {
+    transition: @navbar-nav-item-transition-duration ease-in-out;
+    transition-property: color, background-color, border-color, box-shadow;
+}
+
+.hook-navbar-nav-item-hover() when (@internal-navbar-nav-item-mode = flicker) {
+    animation: uk-flicker 0.2s ease both;
+}
+
+.hook-navbar-nav-item-onclick() {}
+
+.hook-navbar-nav-item-active() {}
+
+//
+// Line
+//
+
+.hook-navbar-nav-item() when (@navbar-nav-item-line-mode) {
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        z-index: -1;
+        @{navbar-nav-item-line-position-mode}: @navbar-nav-item-line-margin-vertical;
+        height: @navbar-nav-item-line-height;
+        background-color: @navbar-nav-item-line-background;
+        transition: @navbar-nav-item-line-transition-duration ease-in-out;
+        transition-property: background-color, border-color, box-shadow, height, left, right, opacity;
+        .hook-navbar-nav-item-line;
+    }
+}
+
+.hook-navbar-nav-item() when (@navbar-nav-item-line-mode) and not (@navbar-nav-item-line-border-radius = 0) {
+    &::before { border-radius: @navbar-nav-item-line-border-radius; }
+}
+
+.hook-navbar-nav-item-hover() when (@navbar-nav-item-line-mode) {
+    &::before { .hook-navbar-nav-item-hover-line; }
+}
+
+.hook-navbar-nav-item-onclick() when (@navbar-nav-item-line-mode) {
+    &::before { .hook-navbar-nav-item-onclick-line; }
+}
+
+.hook-navbar-nav-item-active() when (@navbar-nav-item-line-mode) and (@navbar-nav-item-line-active-mode) {
+    &::before { .hook-navbar-nav-item-active-line; }
+}
+
+//
+// Left
+//
+
+.hook-navbar-nav-item-line() {
+    left: @navbar-nav-item-line-margin-horizontal;
+}
+
+//
+// Right
+//
+
+// No Slide
+.hook-navbar-nav-item-line() when (@navbar-nav-item-line-slide-mode = ~'') {
+    right: @navbar-nav-item-line-margin-horizontal;
+}
+
+// Slide
+// 0 can't be unitless when using `calc`
+// 102% because of Safari rounding issue
+
+.hook-navbar-nav-item-line() when (@navbar-nav-item-line-slide-mode = left) and (@navbar-nav-item-line-margin-horizontal = 0) {
+    right: 100%;
+}
+
+.hook-navbar-nav-item-line() when (@navbar-nav-item-line-slide-mode = left) and not (@navbar-nav-item-line-margin-horizontal = 0) {
+    right: ~'calc(102% - @{navbar-nav-item-line-margin-horizontal})';
+}
+
+.hook-navbar-nav-item-hover-line() when (@navbar-nav-item-line-slide-mode = left) {
+    right: @navbar-nav-item-line-margin-horizontal;
+}
+
+.hook-navbar-nav-item-active-line() when (@navbar-nav-item-line-slide-mode = left) {
+    right: @navbar-nav-item-line-margin-horizontal;
+}
+
+// Center
+.hook-navbar-nav-item-line() when (@navbar-nav-item-line-slide-mode = center) {
+    left: 50%;
+    right: 50%;
+}
+
+.hook-navbar-nav-item-hover-line() when (@navbar-nav-item-line-slide-mode = center) {
+    left: @navbar-nav-item-line-margin-horizontal;
+    right: @navbar-nav-item-line-margin-horizontal;
+}
+
+.hook-navbar-nav-item-active-line() when (@navbar-nav-item-line-slide-mode = center) {
+    left: @navbar-nav-item-line-margin-horizontal;
+    right: @navbar-nav-item-line-margin-horizontal;
+}
+
+//
+// Background
+//
+
+.hook-navbar-nav-item-hover-line() when not (@navbar-nav-item-line-background = @navbar-nav-item-line-hover-background) {
+    background-color: @navbar-nav-item-line-hover-background;
+}
+
+.hook-navbar-nav-item-onclick-line() when not (@navbar-nav-item-line-background = @navbar-nav-item-line-onclick-background) {
+    background-color: @navbar-nav-item-line-onclick-background;
+}
+
+.hook-navbar-nav-item-active-line() when not (@navbar-nav-item-line-background = @navbar-nav-item-line-active-background) {
+    background-color: @navbar-nav-item-line-active-background;
+}
+
+//
+// Height
+//
+
+.hook-navbar-nav-item-hover-line() when not (@navbar-nav-item-line-height = @navbar-nav-item-line-hover-height) {
+    height: @navbar-nav-item-line-hover-height;
+}
+
+.hook-navbar-nav-item-onclick-line() when not (@navbar-nav-item-line-height = @navbar-nav-item-line-onclick-height) {
+    height: @navbar-nav-item-line-onclick-height;
+}
+
+.hook-navbar-nav-item-active-line() when not (@navbar-nav-item-line-height = @navbar-nav-item-line-active-height) {
+    height: @navbar-nav-item-line-active-height;
+}
+
+//
+// Opacity
+//
+
+.hook-navbar-nav-item-line() when not (@navbar-nav-item-line-opacity = @navbar-nav-item-line-hover-opacity) {
+    opacity: @navbar-nav-item-line-opacity;
+}
+
+.hook-navbar-nav-item-hover-line() when not (@navbar-nav-item-line-opacity = @navbar-nav-item-line-hover-opacity) {
+    opacity: @navbar-nav-item-line-hover-opacity;
+}
+
+.hook-navbar-nav-item-active-line() when not (@navbar-nav-item-line-opacity = @navbar-nav-item-line-active-opacity) {
+    opacity: @navbar-nav-item-line-active-opacity;
+}
+
+
+
+// Item
+// ========================================================================
+
+.hook-navbar-item() {}
+
+
+// Toggle
+// ========================================================================
+
+.hook-navbar-toggle() {}
+
+.hook-navbar-toggle-hover() {}
+
+.hook-navbar-toggle-icon() {}
+
+.hook-navbar-toggle-icon-hover() {}
+
+
+// Subtitle
+// ========================================================================
+
+.hook-navbar-subtitle() {}
+
+
+// Style modifiers
+// ========================================================================
+
+.hook-navbar-primary() when not (@navbar-primary-nav-item-padding-horizontal = @navbar-nav-item-padding-horizontal) {
+
+    .uk-navbar-nav > li > a,
+    .uk-navbar-item,
+    .uk-navbar-toggle {
+        padding-left: @navbar-primary-nav-item-padding-horizontal;
+        padding-right: @navbar-primary-nav-item-padding-horizontal;
+    }
+
+}
+
+.hook-navbar-primary() when not (@navbar-primary-nav-item-padding-horizontal-m = @navbar-primary-nav-item-padding-horizontal) {
+
+    /* Tablet landscape and bigger */
+    @media (min-width: @breakpoint-medium) {
+
+        .uk-navbar-nav > li > a,
+        .uk-navbar-item,
+        .uk-navbar-toggle {
+            padding-left: @navbar-primary-nav-item-padding-horizontal-m;
+            padding-right: @navbar-primary-nav-item-padding-horizontal-m;
+        }
+
+    }
+
+}
+
+.hook-navbar-transparent() {}
+
+.hook-navbar-sticky() {}
+
+
+// Dropdown
+// ========================================================================
+
+.hook-navbar-dropdown() {}
+
+.hook-navbar-dropdown-dropbar() { background: transparent; }
+
+
+// Dropdown nav
+// ========================================================================
+
+.hook-navbar-dropdown-nav() {
+    margin-left: @navbar-dropdown-nav-margin-horizontal;
+    margin-right: @navbar-dropdown-nav-margin-horizontal;
+}
+
+.hook-navbar-dropdown-nav-item() { padding: @navbar-dropdown-nav-item-padding-vertical @navbar-dropdown-nav-item-padding-horizontal; }
+
+.hook-navbar-dropdown-nav-item-hover() when not (@navbar-dropdown-nav-item-hover-background = transparent) {
+    background-color: @navbar-dropdown-nav-item-hover-background;
+}
+
+.hook-navbar-dropdown-nav-item-active() when not (@navbar-dropdown-nav-item-hover-background = transparent) {
+
+    &:hover { color: @navbar-dropdown-nav-item-hover-color; }
+}
+
+.hook-navbar-dropdown-nav-header() { padding: @navbar-dropdown-nav-item-padding-vertical @navbar-dropdown-nav-item-padding-horizontal; }
+
+.hook-navbar-dropdown-nav-divider() {
+    margin-top: @navbar-dropdown-nav-divider-margin-vertical;
+    margin-bottom: @navbar-dropdown-nav-divider-margin-vertical;
+}
+
+
+// Dropbar
+// ========================================================================
+
+.hook-navbar-dropbar() {}
+
+.hook-navbar-dropbar-slide() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-navbar-misc() {
+
+    /*
+     * Navbar
+     */
+
+    .uk-navbar-container > .uk-container .uk-navbar-left {
+        margin-left: -@navbar-nav-item-padding-horizontal;
+        margin-right: -@navbar-nav-item-padding-horizontal;
+    }
+    .uk-navbar-container > .uk-container .uk-navbar-right { margin-right: -@navbar-nav-item-padding-horizontal; }
+
+    /*
+     * Nav
+     */
+
+    /* Dropdown nav sub */
+    .uk-navbar-dropdown-nav .uk-nav-sub { padding-left: @navbar-dropdown-nav-sublist-padding-left; }
+
+    /*
+     * Grid Divider
+     */
+
+    .uk-navbar-dropdown-grid > * { position: relative; }
+
+    .uk-navbar-dropdown-grid > :not(.uk-first-column)::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: (@navbar-dropdown-grid-gutter-horizontal / 2);
+        border-left: @navbar-dropdown-grid-divider-border-width solid @navbar-dropdown-grid-divider-border;
+    }
+
+    /* Vertical */
+    .uk-navbar-dropdown-grid.uk-grid-stack > .uk-grid-margin::before {
+        content: "";
+        position: absolute;
+        top: -(@navbar-dropdown-grid-gutter-vertical / 2);
+        left: @navbar-dropdown-grid-gutter-horizontal;
+        right: 0;
+        border-top: @navbar-dropdown-grid-divider-border-width solid @navbar-dropdown-grid-divider-border;
+    }
+
+}
+
+.hook-navbar-misc() when not (@navbar-padding-top = 0),
+                         not (@navbar-padding-bottom = 0) {
+
+    .uk-navbar-container {
+        padding-top: @navbar-padding-top;
+        padding-bottom: @navbar-padding-bottom;
+    }
+
+}
+
+// .hook-navbar-misc() when not (@navbar-padding-top = 0),
+//                          not (@navbar-padding-bottom = 0) {
+
+//     [class*='uk-navbar-dropdown-top']:not(.uk-navbar-dropdown-dropbar) { margin-top: -@navbar-dropdown-margin + @navbar-padding-top; }
+//     [class*='uk-navbar-dropdown-bottom']:not(.uk-navbar-dropdown-dropbar) { margin-top: @navbar-dropdown-margin + @navbar-padding-bottom; }
+
+// }
+
+.hook-navbar-misc() when not (@navbar-padding-top-m = 0),
+                         not (@navbar-padding-bottom-m = 0) {
+
+    // Apply only if sticky. If navbar is in content flow the scroll position would change. Happens in sticky-on-up mode.
+    .tm-header .uk-sticky-fixed > .uk-navbar-container:not(.uk-navbar-transparent) {
+        transition: 0.2s linear;
+        transition-property: padding;
+    }
+
+    // Remove extra padding when scrolled below itself.
+    .tm-header :not(.uk-sticky-below) > .uk-navbar-container {
+        padding-top: @navbar-padding-top-m;
+        padding-bottom: @navbar-padding-bottom-m;
+    }
+
+    // // Align dropdowns if extra padding is applied.
+    // .tm-header :not(.uk-sticky-below) > .uk-navbar-container [class*='uk-navbar-dropdown-top']:not(.uk-navbar-dropdown-dropbar) { margin-top: -(@navbar-dropdown-margin + @navbar-padding-top-m); }
+    // .tm-header :not(.uk-sticky-below) > .uk-navbar-container [class*='uk-navbar-dropdown-bottom']:not(.uk-navbar-dropdown-dropbar) { margin-top: (@navbar-dropdown-margin + @navbar-padding-bottom-m); }
+
+
+}
+
+
+// Inverse
+// ========================================================================
+
+@inverse-navbar-nav-item-line-background:               transparent;
+@inverse-navbar-nav-item-line-hover-background:         @inverse-global-primary-background;
+@inverse-navbar-nav-item-line-onclick-background:       @inverse-global-primary-background;
+@inverse-navbar-nav-item-line-active-background:        @inverse-global-primary-background;
+
+.hook-inverse-navbar-nav-item() when (@navbar-nav-item-line-mode) {
+
+    &::before { background-color: @inverse-navbar-nav-item-line-background; }
+
+}
+
+.hook-inverse-navbar-nav-item-hover() when (@navbar-nav-item-line-mode) and not (@inverse-navbar-nav-item-line-background = @inverse-navbar-nav-item-line-hover-background) {
+
+    &::before { background-color: @inverse-navbar-nav-item-line-hover-background; }
+
+}
+
+.hook-inverse-navbar-nav-item-onclick() when (@navbar-nav-item-line-mode) and not (@inverse-navbar-nav-item-line-background = @inverse-navbar-nav-item-line-onclick-background) {
+
+    &::before { background-color: @inverse-navbar-nav-item-line-onclick-background; }
+
+}
+
+.hook-inverse-navbar-nav-item-active() when (@navbar-nav-item-line-mode) and (@navbar-nav-item-line-active-mode) and not (@inverse-navbar-nav-item-line-background = @inverse-navbar-nav-item-line-active-background) {
+
+    &::before { background-color: @inverse-navbar-nav-item-line-active-background; }
+
+}
+
+.hook-inverse-navbar-item() {}
+
+.hook-inverse-navbar-toggle() {}
+.hook-inverse-navbar-toggle-hover() {}

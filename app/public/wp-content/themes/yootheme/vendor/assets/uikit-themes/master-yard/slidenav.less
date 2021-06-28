@@ -1,0 +1,74 @@
+//
+// Component: Slidenav
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@slidenav-padding-horizontal:                   18px;
+@slidenav-padding-vertical:                     21px;
+
+@slidenav-color:                                @global-emphasis-color;
+@slidenav-hover-color:                          @global-color;
+@slidenav-active-color:                         @global-muted-color;
+
+@slidenav-large-padding-horizontal:             36px;
+@slidenav-large-padding-vertical:               38px;
+
+//
+// Master
+//
+
+@slidenav-background:                           @global-background;
+@slidenav-hover-background:                     @global-background;
+@slidenav-active-background:                    @global-background;
+
+
+// Component
+// ========================================================================
+
+.hook-slidenav() {}
+
+.hook-slidenav-hover() {}
+
+.hook-slidenav-active() {}
+
+
+// Icon modifier
+// ========================================================================
+
+.hook-slidenav-previous() {}
+
+.hook-slidenav-next() {}
+
+
+// Size modifier
+// ========================================================================
+
+.hook-slidenav-large() {}
+
+
+// Container
+// ========================================================================
+
+.hook-slidenav-container() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-icon-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+@inverse-slidenav-background:                           @global-emphasis-color;
+@inverse-slidenav-hover-background:                     fade(@global-emphasis-color, 70%);
+@inverse-slidenav-active-background:                    fade(@global-emphasis-color, 70%);
+
+.hook-inverse-slidenav() {}
+.hook-inverse-slidenav-hover() {}
+.hook-inverse-slidenav-active() {}

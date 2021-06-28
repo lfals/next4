@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150">
+
+  <defs>
+    <linearGradient id="svg-defs-gradient-home-feature-innovate-floating-icon" x1="15" y1="65" x2="65" y2="15" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#732EDF"/>
+      <stop offset="0.65" stop-color="#A92AE7"/>
+      <stop offset="1" stop-color="#C729F4"/>
+    </linearGradient>
+    <mask id="svg-defs-mask-home-feature-innovate-floating-icon">
+      <path class="uk-preserve" d="M92.38,72.43A17.66,17.66,0,0,1,87.1,85.05,13.92,13.92,0,0,0,83,94.93V104a4.2,4.2,0,0,1-4.2,4.2H77.64v1.1a1.28,1.28,0,0,1-1.29,1.28H72.93a1.28,1.28,0,0,1-1.28-1.28v-1.1H70.47a4.2,4.2,0,0,1-4.2-4.2V94.93a13.91,13.91,0,0,0-3.82-9.6L62.09,85A17.73,17.73,0,1,1,92.38,72.43Z" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="2"/>
+      <line class="uk-preserve" x1="107.53" y1="72.45" x2="99.09" y2="72.45" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <line class="uk-preserve" x1="50.21" y1="72.45" x2="41.77" y2="72.45" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <line class="uk-preserve" x1="74.65" y1="39.57" x2="74.65" y2="48.01" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <line class="uk-preserve" x1="97.9" y1="49.2" x2="91.93" y2="55.17" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <line class="uk-preserve" x1="57.36" y1="89.73" x2="51.4" y2="95.7" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <line class="uk-preserve" x1="97.9" y1="95.7" x2="91.93" y2="89.73" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <line class="uk-preserve" x1="57.36" y1="55.17" x2="51.4" y2="49.2" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <line class="uk-preserve" x1="66.09" y1="96.9" x2="83.05" y2="96.9" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="2"/>
+    </mask>
+  </defs>
+
+  <style>
+
+    img[src*="home-feature-innovate-floating-icon.svg"] + svg {
+      background-color: rgba(51,54,88, 0.8);
+      border-radius: 30px;
+    }
+
+    @supports (backdrop-filter:blur(0)) or (-webkit-backdrop-filter:blur(0)) {
+
+      img[src*="home-feature-innovate-floating-icon.svg"] + svg {
+        background-color: rgba(115,46,223, 0.04);
+        -webkit-backdrop-filter: blur(12px);
+        backdrop-filter: blur(12px);
+      }
+
+    }
+
+  </style>
+
+  <rect class="uk-preserve" x="30" y="30" width="90" height="90" fill="url(#svg-defs-gradient-home-feature-innovate-floating-icon)" mask="url(#svg-defs-mask-home-feature-innovate-floating-icon)"/>
+
+</svg>

@@ -1,0 +1,394 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:600,400,300';
+@import 'https://fonts.googleapis.com/css?family=Montserrat:600';
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono';
+
+//
+// No conflict mode
+//
+
+.uk-noconflict {
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: @base-body-font-family;
+    font-size: @base-body-font-size;
+    font-weight: @base-body-font-weight;
+    line-height: @base-body-line-height;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    color: @base-body-color;
+
+    //
+    // Needed for WordPress
+    //
+
+    a:focus { box-shadow: none; }
+
+    li { margin-bottom: 0; }
+
+    .hook-form-radio() { box-shadow: none; }
+    .hook-form-radio-focus() { box-shadow: none; }
+
+    .hook-form-radio-checked() {
+        &::before { content: ''; }
+    }
+
+    //
+    // Import components
+    //
+
+    @import "../../../../assets/uikit/src/less/uikit.less";
+
+    //
+    // Import theme
+    //
+
+    @import "../../../theme/assets/less/uikit/_import.less";
+
+    //
+    // Variables
+    //
+
+    @breakpoint-xlarge:                             1400px;
+
+    @global-z-index:                                600000;
+
+    @internal-form-select-image:                    "../../../../../../vendor/yootheme/theme/assets/less/uikit/images/form-select.svg";
+
+    @height-small-height:                           150px !important;
+    @height-medium-height:                          300px !important;
+    @height-large-height:                           450px !important;
+
+    //
+    // Import website builder
+    //
+
+    @import "../../../theme/assets/less/admin/_import.less";
+
+
+    /* WordPress
+    ========================================================================== */
+
+    /*
+     * Sidebar
+     * 1. Clip absolute positioned panel sections
+     * 2. Needed to make `overflow: hidden` work on absolute positioned elements
+     * 3. Prepare transition to the left
+     * 4. Needed to reset WordPress behavior
+     */
+
+    .yo-wp-sidebar {
+        /* 1 */
+        overflow: hidden;
+        /* 2 + 3 */
+        position: relative;
+        /* 3 */
+        left: 0;
+        -webkit-transition: left 0.18s cubic-bezier(0.645, 0.045, 0.355, 1);
+        transition: left 0.18s cubic-bezier(0.645, 0.045, 0.355, 1);
+        /* 4 */
+        visibility: visible;
+    }
+
+    /*
+     * Hide sidebar by transitioning it to the left/right
+     * 1. Prevent hiding when our customizer is open
+     */
+
+    .section-open & .yo-wp-sidebar:not(.yo-open), // 1
+    .in-sub-panel & .yo-wp-sidebar { left: -100%; }
+
+    .in-themes-panel & .yo-wp-sidebar { left: 100%; }
+
+    /*
+     * 1. Reset `position: relative` so sidebar sections can be positioned at top and reset `overflow: hidden`
+     */
+
+    .yo-wp-sidebar.yo-open {
+        /* 1 */
+        overflow: visible;
+        position: static;
+    }
+
+    /*
+     * Nav
+     */
+
+    .yo-wp-nav {
+        position: relative;
+        left: 0;
+        -webkit-transition: left 0.18s cubic-bezier(0.645, 0.045, 0.355, 1);
+        transition: left 0.18s cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+
+    .section-open & .yo-open .yo-wp-nav { left: -100%; }
+
+    /*
+     * Section
+     * 1. Position sidebar sections at top
+     * 2. Overlay WordPress icons
+     * 3. Fade WordPress default background color into our
+     * 4. Same transition as WordPress
+     */
+ 
+    .yo-wp-sidebar-section {
+        /* 1 */
+        top: 0;
+        /* 2 */
+        z-index: 1;
+        /* 3 */
+        background-color: #eee;
+        /* 4 */
+        -webkit-transition: left 0.18s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0.18s cubic-bezier(0.645, 0.045, 0.355, 1);
+        transition: left 0.18s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0.18s cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+
+    /* 3 */
+    .yo-wp-sidebar-section { background-color: #f5f5f5; }
+
+    /*
+     * Nav List
+     */
+
+    .yo-wp-nav-list {
+        margin-top: 20px;
+        // Reset
+        padding: 0;
+    }
+
+    .yo-wp-nav-list .control-section {
+        // WP Style
+        border: none;
+    }
+
+    .yo-wp-nav-list .accordion-section-title {
+        // Reset
+        margin-bottom: 0;
+        // WP Style
+        background-color: #fff;
+        border-left: 4px solid #fff;
+        border-bottom: 1px solid #ddd;
+        color: #555d66;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;;
+        text-transform: none;
+        font-weight: 600;
+        -webkit-font-smoothing: auto;
+        -moz-osx-font-smoothing: auto;
+        -webkit-transition: 0.15s ease-in-out;
+        transition: 0.15s ease-in-out;
+        -webkit-transition-property: color, background-color, border-color;
+        transition-property: color, background-color, border-color;
+
+        // WP Style
+        &::after {
+            content: "\f345";
+            color: #a0a5aa;
+        }
+
+        &:hover::after { color: #0073aa; }
+
+    }
+
+    // WP Style
+    .yo-wp-nav-list .control-section:last-child .accordion-section-title { border-bottom-color: #ddd; }
+
+    .customize-section-title {
+        // Reset
+        margin: -@theme-sidebar-padding-vertical -@theme-sidebar-padding-horizontal 25px -@theme-sidebar-padding-horizontal;
+        // Needed for `yo-wp-sidebar-tabs-nav`
+        position: relative;
+
+        h3 {
+            // Reset
+            margin: 0;
+            // WP Style
+            font-size: 20px !important;
+            color: #555d66;
+            font-weight: 200;
+            line-height: 26px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            text-transform: none;
+            -webkit-font-smoothing: auto;
+            -moz-osx-font-smoothing: auto;
+            // Needed
+            text-transform: capitalize;
+        }
+
+    }
+
+    #customize-controls & .yo-sidebar-subheading {
+        font-size: 12px;
+    }
+
+    .customize-help-toggle {
+        position: absolute;
+        top: 4px;
+        right: 1px;
+        padding: 20px;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        box-shadow: none;
+        -webkit-appearance: none;
+        background: 0 0;
+        color: #555d66;
+        border: none;
+    }
+
+    .customize-help-toggle::before {
+        position: absolute;
+        top: 5px;
+        left: 6px;
+        padding: 4px;
+    }
+
+    .customize-help-toggle:hover,
+    .customize-help-toggle:focus { color: #0073aa; }
+
+    .customize-help-toggle:focus { outline: 0; }
+
+    .customize-help-toggle:focus::before {
+        border-radius: 100%;
+        box-shadow: 0 0 0 1px #5b9dd9, 0 0 2px 1px rgba(30,140,190,.8);
+    }
+
+    /*
+     * Tabs
+     */
+
+    .yo-sidebar-tabs .uk-subnav {
+        position: absolute;
+        top: 42px;
+        right: 50px;
+    }
+
+    .yo-sidebar-tabs .yo-sidebar-heading {
+        display: none;
+    }
+
+    .yo-sidebar-tabs-content { top: 110px; }
+
+    /*
+     * Finder (Modal for Unsplash)
+     */
+
+    .yo-wp-modal-body { padding: 16px; }
+
+    .yo-wp-modal-body .yo-modal-subheader { margin-top: 0; }
+
+    .yo-wp-modal-body .yo-finder-body {
+        margin-left: -16px;
+        margin-right: -16px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    /*
+     * Save Builder
+     */
+
+    .yo-savebar {
+        margin-top: 9px;
+        float: right;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+        -webkit-font-smoothing: auto;
+        -moz-osx-font-smoothing: auto;
+    }
+
+    /*
+     * Hide Builder Headline
+     */
+
+    .yo-wp-builder {
+        position: relative;
+        margin-top: -62px !important;
+    }
+    .yo-wp-builder-margin-bottom { margin-bottom: 62px !important; }
+
+    .yo-wp-builder .yo-sidebar-heading,
+    .yo-wp-builder button.uk-icon { display: none; }
+
+    .yo-wp-builder button {
+        margin-left: auto;
+        background: #eee !important;
+    }
+
+    /*
+     * TinyMCE Skin
+     */
+
+    .mce-tinymce {
+        border: 1px solid #e5e5e5 !important;
+        box-shadow: none;
+        box-sizing: border-box;
+    }
+
+    .mce-top-part::before { display: none; }
+
+    .mce-toolbar-grp {
+        border-bottom-color: #e5e5e5;
+        background: #fafafa;
+    }
+
+    /* Paragraph select box */
+    .mce-menubtn.mce-fixed-width span {
+        width: 84px;
+        padding-left: 0;
+    }
+
+    // End of uk-noconflict
+}
+
+@z-index: 600000;
+
+/*
+ * TinyMCE
+ */
+
+ /* Modal */
+#mce-modal-block { z-index: @z-index + 10 !important; }
+/* Modal dialog */
+.mce-window { z-index: @z-index + 10 + 1 !important; }
+
+/* Link picker */
+.mce-inline-toolbar-grp,
+/* Color picker */
+.mce-floatpanel { z-index: @z-index + 10 + 2 !important; }
+
+/* Tooltip */
+.mce-tooltip,
+/* Link picker edit: modal */
+#wp-link-wrap,
+/* Link picker edit: dialog */
+#wp-link-backdrop { z-index: @z-index + 10 + 3 !important; }
+
+/* Fix customizer overlapping TinyMCE in fullscreen mode */
+body.mce-fullscreen .yo-wp-sidebar-section { z-index: auto; }
+
+//
+// Import codemirror
+//
+
+@import (inline) '../../../../../node_modules/codemirror/lib/codemirror.css';
+@import (inline) '../../../../../node_modules/codemirror/addon/hint/show-hint.css';
+
+.CodeMirror-hints { z-index: @z-index + 20; }
+
+//
+// Builder Widget Icon
+//
+
+#available-widgets [class*="builder"] .widget-title:before { content: "\f538"; }
+
+.disabled {
+    &.customize-controls-close {
+        pointer-events: none;
+        opacity: 0.5;
+    }
+    &.button.save {
+        pointer-events: none;
+    }
+}

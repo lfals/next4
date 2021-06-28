@@ -1,0 +1,262 @@
+//
+// Component: Heading
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+//
+// New
+//
+
+@heading-small-color:                          @global-emphasis-color;
+@heading-small-font-family:                    @global-primary-font-family;
+@heading-small-font-weight:                    @global-primary-font-weight;
+@heading-small-text-transform:                 @global-primary-text-transform;
+@heading-small-letter-spacing:                 @global-primary-letter-spacing;
+@heading-small-font-style:                     @global-primary-font-style;
+
+@heading-small-text-shadow:                    none;
+
+@heading-medium-color:                         @global-emphasis-color;
+@heading-medium-font-family:                   @global-primary-font-family;
+@heading-medium-font-weight:                   @global-primary-font-weight;
+@heading-medium-text-transform:                @global-primary-text-transform;
+@heading-medium-letter-spacing:                @global-primary-letter-spacing;
+@heading-medium-font-style:                    @global-primary-font-style;
+
+@heading-medium-text-shadow:                   none;
+
+@heading-large-color:                          @global-emphasis-color;
+@heading-large-font-family:                    @global-primary-font-family;
+@heading-large-font-weight:                    @global-primary-font-weight;
+@heading-large-text-transform:                 @global-primary-text-transform;
+@heading-large-letter-spacing:                 @global-primary-letter-spacing;
+@heading-large-font-style:                     @global-primary-font-style;
+
+@heading-large-text-shadow:                    none;
+
+@heading-xlarge-color:                         @global-emphasis-color;
+@heading-xlarge-font-family:                   @global-primary-font-family;
+@heading-xlarge-font-weight:                   @global-primary-font-weight;
+@heading-xlarge-text-transform:                @global-primary-text-transform;
+@heading-xlarge-letter-spacing:                @global-primary-letter-spacing;
+@heading-xlarge-font-style:                    @global-primary-font-style;
+
+@heading-xlarge-text-shadow:                   none;
+
+@heading-2xlarge-color:                        @global-emphasis-color;
+@heading-2xlarge-font-family:                  @global-primary-font-family;
+@heading-2xlarge-font-weight:                  @global-primary-font-weight;
+@heading-2xlarge-text-transform:               @global-primary-text-transform;
+@heading-2xlarge-letter-spacing:               @global-primary-letter-spacing;
+@heading-2xlarge-font-style:                   @global-primary-font-style;
+
+@heading-2xlarge-text-shadow:                  none;
+
+
+// Component
+// ========================================================================
+
+//
+// Small
+//
+
+.hook-heading-small() { color: @heading-small-color; }
+
+.hook-heading-small() when not (@heading-small-font-family = inherit) {
+    font-family: @heading-small-font-family;
+}
+
+.hook-heading-small() when not (@heading-small-font-weight = inherit) {
+    font-weight: @heading-small-font-weight;
+}
+
+.hook-heading-small() when not (@heading-small-text-transform = inherit) {
+    text-transform: @heading-small-text-transform;
+}
+
+.hook-heading-small() when not (@heading-small-letter-spacing = inherit) {
+    letter-spacing: @heading-small-letter-spacing;
+}
+
+.hook-heading-small() when not (@heading-small-font-style = inherit) {
+    font-style: @heading-small-font-style;
+}
+
+.hook-heading-small() when not (@heading-small-text-shadow = none) {
+    text-shadow: @heading-small-text-shadow;
+}
+
+//
+// Medium
+//
+
+.hook-heading-medium() { color: @heading-medium-color; }
+
+.hook-heading-medium() when not (@heading-medium-font-family = inherit) {
+    font-family: @heading-medium-font-family;
+}
+
+.hook-heading-medium() when not (@heading-medium-font-weight = inherit) {
+    font-weight: @heading-medium-font-weight;
+}
+
+.hook-heading-medium() when not (@heading-medium-text-transform = inherit) {
+    text-transform: @heading-medium-text-transform;
+}
+
+.hook-heading-medium() when not (@heading-medium-letter-spacing = inherit) {
+    letter-spacing: @heading-medium-letter-spacing;
+}
+
+.hook-heading-medium() when not (@heading-medium-font-style = inherit) {
+    font-style: @heading-medium-font-style;
+}
+
+.hook-heading-medium() when not (@heading-medium-text-shadow = none) {
+    text-shadow: @heading-medium-text-shadow;
+}
+
+//
+// Large
+//
+
+.hook-heading-large() { color: @heading-large-color; }
+
+.hook-heading-large() when not (@heading-large-font-family = inherit) {
+    font-family: @heading-large-font-family;
+}
+
+.hook-heading-large() when not (@heading-large-font-weight = inherit) {
+    font-weight: @heading-large-font-weight;
+}
+
+.hook-heading-large() when not (@heading-large-text-transform = inherit) {
+    text-transform: @heading-large-text-transform;
+}
+
+.hook-heading-large() when not (@heading-large-letter-spacing = inherit) {
+    letter-spacing: @heading-large-letter-spacing;
+}
+
+.hook-heading-large() when not (@heading-large-font-style = inherit) {
+    font-style: @heading-large-font-style;
+}
+
+.hook-heading-large() when not (@heading-large-text-shadow = none) {
+    text-shadow: @heading-large-text-shadow;
+}
+
+//
+// XLarge
+//
+
+.hook-heading-xlarge() { color: @heading-xlarge-color; }
+
+.hook-heading-xlarge() when not (@heading-xlarge-font-family = inherit) {
+    font-family: @heading-xlarge-font-family;
+}
+
+.hook-heading-xlarge() when not (@heading-xlarge-font-weight = inherit) {
+    font-weight: @heading-xlarge-font-weight;
+}
+
+.hook-heading-xlarge() when not (@heading-xlarge-text-transform = inherit) {
+    text-transform: @heading-xlarge-text-transform;
+}
+
+.hook-heading-xlarge() when not (@heading-xlarge-letter-spacing = inherit) {
+    letter-spacing: @heading-xlarge-letter-spacing;
+}
+
+.hook-heading-xlarge() when not (@heading-xlarge-font-style = inherit) {
+    font-style: @heading-xlarge-font-style;
+}
+
+.hook-heading-xlarge() when not (@heading-xlarge-text-shadow = none) {
+    text-shadow: @heading-xlarge-text-shadow;
+}
+
+//
+// 2XLarge
+//
+
+.hook-heading-2xlarge() { color: @heading-2xlarge-color; }
+
+.hook-heading-2xlarge() when not (@heading-2xlarge-font-family = inherit) {
+    font-family: @heading-2xlarge-font-family;
+}
+
+.hook-heading-2xlarge() when not (@heading-2xlarge-font-weight = inherit) {
+    font-weight: @heading-2xlarge-font-weight;
+}
+
+.hook-heading-2xlarge() when not (@heading-2xlarge-text-transform = inherit) {
+    text-transform: @heading-2xlarge-text-transform;
+}
+
+.hook-heading-2xlarge() when not (@heading-2xlarge-letter-spacing = inherit) {
+    letter-spacing: @heading-2xlarge-letter-spacing;
+}
+
+.hook-heading-2xlarge() when not (@heading-2xlarge-font-style = inherit) {
+    font-style: @heading-2xlarge-font-style;
+}
+
+.hook-heading-2xlarge() when not (@heading-2xlarge-text-shadow = none) {
+    text-shadow: @heading-2xlarge-text-shadow;
+}
+
+
+// Divider
+// ========================================================================
+
+.hook-heading-divider() {}
+
+
+// Bullet
+// ========================================================================
+
+.hook-heading-bullet() {}
+
+
+// Line
+// ========================================================================
+
+.hook-heading-line() {}
+
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-heading-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+@inverse-heading-small-color:                  @inverse-global-emphasis-color;
+@inverse-heading-medium-color:                 @inverse-global-emphasis-color;
+@inverse-heading-large-color:                  @inverse-global-emphasis-color;
+@inverse-heading-xlarge-color:                 @inverse-global-emphasis-color;
+@inverse-heading-2xlarge-color:                @inverse-global-emphasis-color;
+
+.hook-inverse-heading-small() { color: @inverse-heading-small-color; }
+
+.hook-inverse-heading-medium() { color: @inverse-heading-medium-color; }
+
+.hook-inverse-heading-large() { color: @inverse-heading-large-color; }
+
+.hook-inverse-heading-xlarge() { color: @inverse-heading-xlarge-color; }
+
+.hook-inverse-heading-2xlarge() { color: @inverse-heading-2xlarge-color; }
+
+.hook-inverse-heading-divider() {}
+
+.hook-inverse-heading-bullet() {}
+
+.hook-inverse-heading-line() {}

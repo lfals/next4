@@ -1,0 +1,122 @@
+/*
+
+Name: Framerate
+Background: White
+Color: Yellow
+Type: Flat
+Preview: https://downloads-yootheme.storage.googleapis.com/library/framerate/styles/default.jpg
+
+Style: black-red
+Name: Black Red
+Background: Black
+Color: Red
+Type: Flat
+Preview: https://downloads-yootheme.storage.googleapis.com/library/framerate/styles/black-red.jpg
+
+Style: black-blue
+Name: Black Blue
+Background: Black
+Color: Blue
+Type: Flat
+Preview: https://downloads-yootheme.storage.googleapis.com/library/framerate/styles/black-blue.jpg
+
+Style: dark-blue
+Name: Dark Blue
+Background: Dark
+Color: Blue
+Type: Flat
+Preview: https://downloads-yootheme.storage.googleapis.com/library/framerate/styles/dark-blue.jpg
+
+Style: white-purple
+Name: White Purple
+Background: White
+Color: Purple
+Type: Flat
+Preview: https://downloads-yootheme.storage.googleapis.com/library/framerate/styles/white-purple.jpg
+
+Style: light-orange
+Name: Light Orange
+Background: Light
+Color: Orange
+Type: Flat
+Preview: https://downloads-yootheme.storage.googleapis.com/library/framerate/styles/light-orange.jpg
+
+*/
+
+// Platform
+@import "platform.less";
+
+// UIkit Core
+@import "../vendor/assets/uikit/src/less/uikit.less";
+
+// UIkit Theme
+@import "../vendor/assets/uikit-themes/master/_import.less";
+@import "../vendor/assets/uikit-themes/master-framerate/_import.less";
+
+// Theme
+@import "theme.less";
+
+
+// Variables
+// ========================================================================
+
+//
+// Page
+//
+
+@theme-page-border-width:                       15px;
+
+/* Tablet landscape and bigger */
+@media (min-width: @breakpoint-medium) {
+
+    .tm-page when not (@theme-page-border-width = 0) {
+        border@{theme-page-border-mode}-width: 0 @theme-page-border-width @theme-page-border-width @theme-page-border-width;
+    }
+
+}
+
+/* Desktop and bigger */
+@media (min-width: @breakpoint-large) {
+
+    .tm-page when not (@theme-page-border-width = 0) {
+        border@{theme-page-border-mode}-width: 0 @theme-page-border-width-l @theme-page-border-width-l @theme-page-border-width-l;
+    }
+
+}
+
+//
+// Toolbar
+//
+
+@theme-toolbar-color-mode:                      none;
+@theme-toolbar-padding-top:                     15px;
+@theme-toolbar-padding-bottom:                  5px;
+@theme-toolbar-background:                      @global-background;
+
+//
+// Section
+//
+
+@section-title-color:                           @global-emphasis-color;
+
+@internal-section-title-dash-border-height:     40px;
+@internal-section-title-dash-border-width:      2px;
+@internal-section-title-dash-color:             @global-primary-background;
+
+@inverse-section-title-color:                   @global-inverse-color;
+
+//
+// Box Decoration
+//
+
+@theme-box-decoration-primary-background:       @global-primary-background;
+
+@theme-box-decoration-secondary-background:     @global-secondary-background;
+
+
+// Style
+// ========================================================================
+
+@import (optional) "../vendor/assets/uikit-themes/master-framerate/styles/@{internal-style}.less";
+
+@internal-style: ;

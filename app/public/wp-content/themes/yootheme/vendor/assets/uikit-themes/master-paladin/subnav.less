@@ -1,0 +1,119 @@
+//
+// Component: Subnav
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@subnav-margin-horizontal:                      25px;
+
+@subnav-item-hover-color:                       @global-primary-background;
+
+@subnav-divider-margin-horizontal:              15px;
+
+@subnav-pill-item-padding-horizontal:           15px;
+@subnav-pill-item-background:                   transparent;
+@subnav-pill-item-color:                        @global-emphasis-color;
+@subnav-pill-item-hover-background:             transparent;
+@subnav-pill-item-hover-color:                  darken(@subnav-pill-item-color, 10%);
+@subnav-pill-item-onclick-background:           transparent;
+@subnav-pill-item-active-background:            transparent;
+@subnav-pill-item-active-color:                 @global-primary-background;
+
+//
+// Master
+//
+
+@subnav-pill-item-border-width:                 @global-border-width;
+
+@subnav-pill-item-border:                       @global-border;
+@subnav-pill-item-hover-border:                 fade(@global-emphasis-color, 70%);
+@subnav-pill-item-active-border:                @global-primary-background;
+@subnav-pill-item-onclick-border:               fade(@global-emphasis-color, 30%);
+
+@subnav-pill-item-border-radius:                @global-border-radius;
+
+//
+// New
+//
+
+@subnav-pill-margin-horizontal:                 15px;
+
+
+// Component
+// ========================================================================
+
+.hook-subnav() {}
+
+.hook-subnav-item() {}
+
+.hook-subnav-item-hover() {}
+
+.hook-subnav-item-active() {}
+
+
+// Divider modifier
+// ========================================================================
+
+.hook-subnav-divider() {}
+
+
+// Pill modifier
+// ========================================================================
+
+.hook-subnav-pill-item() {}
+
+.hook-subnav-pill-item-hover() {}
+
+.hook-subnav-pill-item-onclick() {}
+
+.hook-subnav-pill-item-active() {}
+
+
+// Disabled
+// ========================================================================
+
+.hook-subnav-item-disabled() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-subnav-misc() {
+    .uk-subnav-pill > * { padding-left: @subnav-pill-margin-horizontal; }
+}
+
+
+// Inverse
+// ========================================================================
+
+@inverse-subnav-pill-item-hover-background:   transparent;
+@inverse-subnav-pill-item-onclick-color:      transparent;
+@inverse-subnav-pill-item-onclick-color:      @inverse-global-muted-color;
+@inverse-subnav-pill-item-active-background:  transparent;
+@inverse-subnav-pill-item-active-color:       @inverse-global-emphasis-color;
+
+
+//
+// Master
+//
+
+@inverse-subnav-pill-item-border:             @inverse-global-border;
+@inverse-subnav-pill-item-hover-border:       fade(@inverse-global-primary-background, 90%);
+@inverse-subnav-pill-item-onclick-border:     fade(@inverse-global-primary-background, 60%);
+@inverse-subnav-pill-item-active-border:      @inverse-global-primary-background;
+
+.hook-inverse-subnav-item() {}
+.hook-inverse-subnav-item-hover() {}
+.hook-inverse-subnav-item-active() {}
+
+.hook-inverse-subnav-divider() {}
+
+.hook-inverse-subnav-pill-item() {}
+.hook-inverse-subnav-pill-item-hover() {}
+.hook-inverse-subnav-pill-item-onclick() {}
+.hook-inverse-subnav-pill-item-active() {}
+
+.hook-inverse-subnav-item-disabled() {}

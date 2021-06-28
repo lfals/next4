@@ -1,0 +1,128 @@
+//
+// Component: Card
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@card-hover-background:                        @global-background;
+
+@card-default-background:                      @global-background;
+@card-default-hover-background:                @global-background;
+
+@card-primary-hover-background:                spin(lighten(@card-primary-background, 4%), 6%);
+
+@card-secondary-hover-background:              lighten(@card-secondary-background, 7%);
+
+//
+// Master
+//
+
+@internal-card-primary-gradient:               linear-gradient(155deg, @card-primary-background 0%, spin(@card-primary-background, 9%) 100%);
+@internal-card-primary-hover-gradient:         linear-gradient(90deg, darken(@card-primary-background, 2%) 0%, spin(@card-primary-background, 13%) 100%);
+
+@internal-card-secondary-gradient:             linear-gradient(5deg, lighten(@card-secondary-background, 5%) 0%, @card-secondary-background 100%);
+@internal-card-secondary-hover-gradient:       linear-gradient(155deg, @card-secondary-background 0%, lighten(@card-secondary-background, 7%) 100%);
+
+@card-hover-box-shadow:                        @global-xlarge-box-shadow;
+
+@card-default-box-shadow:                      @global-xlarge-box-shadow;
+@card-default-hover-box-shadow:                @global-medium-box-shadow;
+
+@card-primary-box-shadow:                      8px 20px 45px fade(@global-primary-background, 12%);
+@card-primary-hover-box-shadow:                5px 15px 32px fade(@global-primary-background, 20%);
+
+@card-secondary-box-shadow:                    @global-xlarge-box-shadow;
+@card-secondary-hover-box-shadow:              @global-medium-box-shadow;
+
+@card-badge-font-size:                         @global-small-font-size;
+
+
+// Component
+// ========================================================================
+
+.hook-card() {}
+
+
+// Sections
+// ========================================================================
+
+.hook-card-body() {}
+
+.hook-card-header() {}
+
+.hook-card-footer() {}
+
+
+// Media
+// ========================================================================
+
+.hook-card-media() {}
+
+.hook-card-media-top() {}
+
+.hook-card-media-bottom() {}
+
+.hook-card-media-left() {}
+
+.hook-card-media-right() {}
+
+
+// Title
+// ========================================================================
+
+.hook-card-title() {}
+
+
+// Badge
+// ========================================================================
+
+.hook-card-badge() {}
+
+
+// Hover modifier
+// ========================================================================
+
+.hook-card-hover() {}
+
+
+// Style modifiers
+// ========================================================================
+
+.hook-card-default() {}
+
+.hook-card-default-title() {}
+
+.hook-card-default-hover() {}
+
+.hook-card-default-header() {}
+
+.hook-card-default-footer() {}
+
+//
+// Primary
+//
+
+.hook-card-primary() {}
+
+.hook-card-primary-title() {}
+
+.hook-card-primary-hover() {}
+
+//
+// Secondary
+//
+
+.hook-card-secondary() {}
+
+.hook-card-secondary-title() {}
+
+.hook-card-secondary-hover() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-card-misc() {}

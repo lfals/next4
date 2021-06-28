@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+
+  <defs>
+    <linearGradient id="svg-defs-gradient-icon-ci-cd" x1="15" y1="65" x2="65" y2="15" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7141F1"/>
+      <stop offset="0.7" stop-color="#4D6BD8"/>
+      <stop offset="1" stop-color="#3183E2"/>
+    </linearGradient>
+    <mask id="svg-defs-mask-icon-ci-cd">
+      <path class="uk-preserve" d="M44.974,46.531c4.167,4.682,10.393,10.15,16.787,10.048,22.491-1.246,21.911-33.3-.536-33.84-10.687.374-19.073,13.605-21.106,17.054C38.646,42.406,29.944,56.93,18.775,57.261c-22.447-.525-23.027-32.594-.536-33.84,6.322-.1,12.444,5.225,16.611,9.9" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+      <polyline class="uk-preserve" points="34.739 24.428 34.88 33.328 25.97 33.469" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </mask>
+  </defs>
+
+  <rect class="uk-preserve" x="0" y="1" width="80" height="78" fill="url(#svg-defs-gradient-icon-ci-cd)" mask="url(#svg-defs-mask-icon-ci-cd)"/>
+
+</svg>

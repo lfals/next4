@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="195" height="195" viewBox="0 0 195 195">
+
+  <defs>
+    <linearGradient id="svg-defs-feature-infrastructure-floating-icon" x1="73" y1="446" x2="115" y2="404" gradientTransform="translate(0 -316.11)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#732EDF"/>
+      <stop offset="0.65" stop-color="#A92AE7"/>
+      <stop offset="1" stop-color="#C729F4"/>
+    </linearGradient>
+  </defs>
+
+  <mask id="svg-mask-feature-infrastructure-floating-icon">
+    <rect class="uk-preserve" x="83.96" y="57.47" width="26.38" height="26.38" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="4"/>
+    <rect class="uk-preserve" x="57.58" y="111.78" width="26.38" height="26.38" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="4"/>
+    <rect class="uk-preserve" x="110.34" y="111.78" width="26.38" height="26.38" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="4"/>
+    <polyline class="uk-preserve" points="123.53 111.78 123.53 98.08 70.54 98.08 70.54 111.78" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="4"/>
+    <line class="uk-preserve" x1="96.37" y1="83.85" x2="96.37" y2="98.65" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="4"/>
+  </mask>
+
+  <style>
+
+    img[src*="feature-infrastructure-floating-icon.svg"] + svg {
+      background-color: rgba(51,54,88, 0.8);
+      border-radius: 50px;
+    }
+
+    @supports (backdrop-filter:blur(0)) or (-webkit-backdrop-filter:blur(0)) {
+
+      img[src*="feature-infrastructure-floating-icon.svg"] + svg {
+        background-color: rgba(115,46,223, 0.04);
+        -webkit-backdrop-filter: blur(12px);
+        backdrop-filter: blur(12px);
+      }
+
+    }
+
+  </style>
+
+  <rect class="uk-preserve" x="50" y="50" width="95" height="95" fill="url(#svg-defs-feature-infrastructure-floating-icon)" mask="url(#svg-mask-feature-infrastructure-floating-icon)"/>
+
+</svg>

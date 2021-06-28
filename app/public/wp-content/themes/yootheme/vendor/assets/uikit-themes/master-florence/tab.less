@@ -1,0 +1,78 @@
+//
+// Component: Tab
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@tab-item-color:                                @global-color;
+@tab-item-hover-color:                          fade(@tab-item-color, 70%);
+
+//
+// Master
+//
+
+@tab-border:                                    transparent;
+
+@tab-item-border-width:                         3px;
+@tab-item-hover-border:                         @global-primary-background;
+@tab-item-font-size:                            @global-small-font-size;
+@tab-item-line-height:                          24px;
+
+@tab-item-letter-spacing:                       1.5px;
+
+
+// Component
+// ========================================================================
+
+.hook-tab() {}
+
+// Items
+// ========================================================================
+
+.hook-tab-item() {}
+
+.hook-tab-item-hover() {}
+
+.hook-tab-item-active() {}
+
+.hook-tab-item-disabled() {}
+
+
+// Position modifiers
+// ========================================================================
+
+.hook-tab-bottom() {}
+
+.hook-tab-bottom-item() {}
+
+.hook-tab-left() {}
+
+.hook-tab-left-item() {}
+
+.hook-tab-right() {}
+
+.hook-tab-right-item() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-tab-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+@inverse-tab-border:                        transparent;
+@inverse-tab-item-hover-border:             @inverse-global-border;
+@inverse-tab-item-hover-color:              @inverse-global-muted-color;
+
+.hook-inverse-tab() {}
+
+.hook-inverse-tab-item() {}
+.hook-inverse-tab-item-hover() {}
+.hook-inverse-tab-item-active() {}
+.hook-inverse-tab-item-disabled() {}

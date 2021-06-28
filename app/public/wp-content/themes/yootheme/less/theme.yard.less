@@ -1,0 +1,106 @@
+/*
+
+Name: Yard
+Background: White
+Color: Yellow
+Type: Flat
+Preview: https://downloads-yootheme.storage.googleapis.com/library/yard/styles/default.jpg
+
+Style: white-orange
+Name: White Orange
+Background: White
+Color: Orange
+Type: Material
+Preview: https://downloads-yootheme.storage.googleapis.com/library/yard/styles/white-orange.jpg
+
+Style: white-red
+Name: White Red
+Background: White
+Color: Red
+Type: Material
+Preview: https://downloads-yootheme.storage.googleapis.com/library/yard/styles/white-red.jpg
+
+Style: white-blue
+Name: White Blue
+Background: White
+Color: Blue
+Type: Material
+Preview: https://downloads-yootheme.storage.googleapis.com/library/yard/styles/white-blue.jpg
+
+Style: white-darkblue
+Name: White Darkblue
+Background: White
+Color: blue
+Type: Material
+Preview: https://downloads-yootheme.storage.googleapis.com/library/yard/styles/white-darkblue.jpg
+
+Style: dark-orange
+Name: Dark Orange
+Background: Dark
+Color: Orange
+Type: Material
+Preview: https://downloads-yootheme.storage.googleapis.com/library/yard/styles/dark-orange.jpg
+
+*/
+
+// Platform
+@import "platform.less";
+
+// UIkit Core
+@import "../vendor/assets/uikit/src/less/uikit.less";
+
+// UIkit Theme
+@import "../vendor/assets/uikit-themes/master/_import.less";
+@import "../vendor/assets/uikit-themes/master-yard/_import.less";
+
+// Theme
+@import "theme.less";
+
+
+//
+// Variables
+// ========================================================================
+
+//
+// Page Border
+//
+
+@theme-page-border-width:                                30px;
+@theme-page-border-width-l:                              50px;
+
+.tm-page when not (@theme-page-border-width = 0) { border-top-width: 0; }
+
+//
+// Section
+//
+
+@internal-section-title-mode:                            ;
+@section-title-letter-spacing:                           none;
+
+//
+// Box Decoration
+//
+
+@theme-box-decoration-default-background:                transparent;
+@theme-box-decoration-default-border-width:              3px;
+@theme-box-decoration-default-border:                    @global-primary-background;
+
+@theme-box-decoration-primary-background:                transparent;
+@theme-box-decoration-primary-border-width:              3px;
+@theme-box-decoration-primary-border:                    @global-primary-background;
+
+@theme-box-decoration-secondary-background:              transparent;
+@theme-box-decoration-secondary-border-width:            3px;
+@theme-box-decoration-secondary-border:                  @global-primary-background;
+
+@inverse-theme-box-decoration-default-border:            @inverse-global-primary-background;
+@inverse-theme-box-decoration-primary-border:            @inverse-global-primary-background;
+@inverse-theme-box-decoration-secondary-border:          @inverse-global-primary-background;
+
+
+// Style
+// ========================================================================
+
+@import (optional) "../vendor/assets/uikit-themes/master-yard/styles/@{internal-style}.less";
+
+@internal-style: ;

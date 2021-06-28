@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+
+  <defs>
+    <linearGradient id="svg-defs-gradient-icon-file" x1="15" y1="65" x2="65" y2="15" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7141F1"/>
+      <stop offset="0.7" stop-color="#4D6BD8"/>
+      <stop offset="1" stop-color="#3183E2"/>
+    </linearGradient>
+    <mask id="svg-defs-mask-icon-file">
+    <polygon class="uk-preserve" points="62.297 27.945 62.297 70.029 17.703 70.029 17.703 9.971 44.334 9.971 44.334 9.994 62.297 27.945" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <polyline class="uk-preserve" points="62.297 27.945 44.334 27.945 44.334 9.994" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <line class="uk-preserve" x1="26.254" y1="55.165" x2="47.597" y2="55.165" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <line class="uk-preserve" x1="26.254" y1="41.996" x2="47.597" y2="41.996" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <line class="uk-preserve" x1="26.254" y1="48.522" x2="40.966" y2="48.522" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </mask>
+  </defs>
+
+  <rect class="uk-preserve" x="3" y="3" width="74" height="74" fill="url(#svg-defs-gradient-icon-file)" mask="url(#svg-defs-mask-icon-file)"/>
+
+</svg>

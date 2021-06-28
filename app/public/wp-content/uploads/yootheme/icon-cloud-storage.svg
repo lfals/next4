@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  
+  <defs>
+    <linearGradient id="svg-defs-gradient-icon-cloud-storage" x1="15" y1="65" x2="65" y2="15" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7141F1"/>
+      <stop offset="0.7" stop-color="#4D6BD8"/>
+      <stop offset="1" stop-color="#3183E2"/>
+    </linearGradient>
+    <mask id="svg-defs-mask-icon-cloud-storage">
+      <path class="uk-preserve" d="M23.827,54.233H17.991a11.317,11.317,0,0,1-1.506-22.546,18.914,18.914,0,0,1,37.207-4.152,13.953,13.953,0,1,1,5.659,26.654H53.592" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <polyline class="uk-preserve" points="32.32 51.376 38.82 44.876 45.32 51.376" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path class="uk-preserve" d="M38.82,66.614V44.876" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </mask>
+  </defs>
+
+    <rect class="uk-preserve" x="5" y="5" width="70" height="70" fill="url(#svg-defs-gradient-icon-cloud-storage)" mask="url(#svg-defs-mask-icon-cloud-storage)"/>
+
+</svg>

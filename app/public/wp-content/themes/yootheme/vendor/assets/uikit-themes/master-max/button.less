@@ -1,0 +1,154 @@
+//
+// Component: Button
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@button-font-size:                              @global-small-font-size;
+
+@button-default-background:                     @global-background;
+@button-default-hover-background:               @button-default-background;
+@button-default-hover-color:                    @global-link-color;
+@button-default-active-background:              @button-default-background;
+@button-link-hover-text-decoration:             none;
+
+@button-secondary-hover-background:             lighten(@button-secondary-background, 10%);
+@button-secondary-active-background:            lighten(@button-secondary-background, 15%);
+
+@button-text-color:                             @global-color;
+@button-text-hover-color:                       @global-link-color;
+
+//
+// Master
+//
+
+@button-border-radius:                          @global-border-radius;
+@button-small-border-radius:                    @global-border-radius;
+@button-large-border-radius:                    @global-border-radius;
+
+@button-text-transform:                         uppercase;
+
+@button-default-box-shadow:                     @global-small-box-shadow;
+@button-default-hover-box-shadow:               @global-large-box-shadow;
+
+@button-text-mode:                              arrow;
+
+
+// Component
+// ========================================================================
+
+.hook-button() {}
+
+.hook-button-hover() {}
+
+.hook-button-focus() {}
+
+.hook-button-active() {}
+
+
+// Style modifiers
+// ========================================================================
+
+.hook-button-default() {}
+
+.hook-button-default-hover() {}
+
+.hook-button-default-active() {}
+
+//
+// Primary
+//
+
+.hook-button-primary() {}
+
+.hook-button-primary-hover() {}
+
+.hook-button-primary-active() {}
+
+//
+// Secondary
+//
+
+.hook-button-secondary() {}
+
+.hook-button-secondary-hover() {}
+
+.hook-button-secondary-active() {}
+
+//
+// Danger
+//
+
+.hook-button-danger() {}
+
+.hook-button-danger-hover() {}
+
+.hook-button-danger-active() {}
+
+
+// Disabled
+// ========================================================================
+
+.hook-button-disabled() {}
+
+
+// Size modifiers
+// ========================================================================
+
+.hook-button-small() {}
+
+.hook-button-large() {}
+
+
+// Text modifier
+// ========================================================================
+
+.hook-button-text() {}
+
+.hook-button-text-hover() {}
+
+.hook-button-text-disabled() {}
+
+
+// Link modifier
+// ========================================================================
+
+.hook-button-link() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-button-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+@inverse-button-default-hover-background:      fade(@inverse-button-default-background, 85%);
+@inverse-button-default-active-background:     fade(@inverse-button-default-background, 75%);
+@inverse-button-primary-hover-background:      fade(@inverse-button-primary-background, 85%);
+@inverse-button-primary-active-background:     fade(@inverse-button-primary-background, 75%);
+@inverse-button-secondary-hover-background:    fade(@inverse-button-secondary-background, 85%);
+@inverse-button-secondary-active-background:   fade(@inverse-button-secondary-background, 75%);
+
+.hook-inverse-button-default() {}
+.hook-inverse-button-default-hover() {}
+.hook-inverse-button-default-active() {}
+
+.hook-inverse-button-primary() {}
+.hook-inverse-button-primary-hover() {}
+.hook-inverse-button-primary-active() {}
+
+.hook-inverse-button-secondary() {}
+.hook-inverse-button-secondary-hover() {}
+.hook-inverse-button-secondary-active() {}
+
+.hook-inverse-button-text() {}
+.hook-inverse-button-text-hover() {}
+.hook-inverse-button-text-disabled() {}
+
+.hook-inverse-button-link() {}

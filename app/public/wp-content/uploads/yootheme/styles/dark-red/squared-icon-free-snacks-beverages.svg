@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 130 130">
+
+  <defs>
+    <linearGradient id="svg-defs-gradient-squared-icon-free-snacks-beverages" x1="35" y1="95" x2="95" y2="35" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E52231"/>
+      <stop offset="0.65" stop-color="#E0271A"/>
+      <stop offset="1" stop-color="#e65522"/>
+    </linearGradient>
+    <mask id="svg-defs-mask-squared-icon-free-snacks-beverages">
+      <path class="uk-preserve" d="M47.74,59.44V76.51a8.16,8.16,0,0,0,8.16,8.16H69.77a8.16,8.16,0,0,0,8.16-8.16V59.44Z" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="2"/>
+      <line class="uk-preserve" x1="43.36" y1="88.63" x2="81.88" y2="88.63" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path class="uk-preserve" d="M77.93,59.44a8.88,8.88,0,0,1,0,17.75" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="2"/>
+      <path class="uk-preserve" d="M70.7,41.37A3.84,3.84,0,0,1,72.38,44c0,1.52-.7,2.09-1.72,3S69,48.77,69,50a3.85,3.85,0,0,0,1.75,2.85" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path class="uk-preserve" d="M63.08,41.37A3.84,3.84,0,0,1,64.76,44c0,1.52-.71,2.09-1.72,3s-1.71,1.75-1.71,3a3.85,3.85,0,0,0,1.75,2.85" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path class="uk-preserve" d="M55.45,41.37S57.14,42.5,57.14,44s-.71,2.09-1.72,3c-1.16,1.06-1.71,1.75-1.71,3a3.85,3.85,0,0,0,1.74,2.85" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </mask>
+  </defs>
+
+  <style>
+
+    img[src*="squared-icon-free-snacks-beverages.svg"] + svg {
+      filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.35)) drop-shadow(-10px -10px 15px rgba(255, 255, 255, 0.048));
+      will-change: filter;
+    }
+
+  </style>
+
+  <rect class="uk-preserve" x="0" y="0" width="130" height="130" rx="24" fill="#202326" />
+  <rect class="uk-preserve" x="35" y="35" width="60" height="60" fill="url(#svg-defs-gradient-squared-icon-free-snacks-beverages)" mask="url(#svg-defs-mask-squared-icon-free-snacks-beverages)" />
+
+</svg>

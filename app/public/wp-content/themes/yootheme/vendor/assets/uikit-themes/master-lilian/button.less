@@ -1,0 +1,159 @@
+//
+// Component: Button
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@button-font-size:                              @global-small-font-size;
+@button-small-font-size:                        11px;
+@button-large-font-size:                        @global-small-font-size;
+
+@button-padding-horizontal:                     20px;
+@button-small-padding-horizontal:               @global-small-gutter;
+@button-large-padding-horizontal:               @global-gutter;
+
+@button-default-background:                     transparent;
+@button-default-color:                          @global-primary-background;
+@button-default-hover-background:               transparent;
+@button-default-hover-color:                    darken(@button-default-color, 10%);
+@button-default-active-background:              transparent;
+@button-default-active-color:                   darken(@button-default-color, 15%);
+
+@internal-button-text-hover-background-image:   "../../master-lilian/images/link-hover-brush.png";
+
+//
+// Master
+//
+
+@button-border-width:                           @global-border-width;
+
+@button-default-border:                         @global-primary-background;
+@button-default-hover-border:                   darken(@button-default-border, 5%);
+@button-default-active-border:                  darken(@button-default-border, 10%);
+
+
+// Component
+// ========================================================================
+
+.hook-button() {}
+
+.hook-button-hover() {}
+
+.hook-button-focus() {}
+
+.hook-button-active() {}
+
+
+// Style modifiers
+// ========================================================================
+
+.hook-button-default() {}
+
+.hook-button-default-hover() {}
+
+.hook-button-default-active() {}
+
+//
+// Primary
+//
+
+.hook-button-primary() {}
+
+.hook-button-primary-hover() {}
+
+.hook-button-primary-active() {}
+
+//
+// Secondary
+//
+
+.hook-button-secondary() {}
+
+.hook-button-secondary-hover() {}
+
+.hook-button-secondary-active() {}
+
+//
+// Danger
+//
+
+.hook-button-danger() {}
+
+.hook-button-danger-hover() {}
+
+.hook-button-danger-active() {}
+
+
+// Disabled
+// ========================================================================
+
+.hook-button-disabled() {}
+
+
+// Size modifiers
+// ========================================================================
+
+.hook-button-small() {}
+
+.hook-button-large() {}
+
+
+// Text modifier
+// ========================================================================
+
+.hook-button-text() {}
+
+.hook-button-text-hover() {}
+
+.hook-button-text-disabled() {}
+
+
+// Link modifier
+// ========================================================================
+
+.hook-button-link() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-button-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+@inverse-button-default-background:             rgba(255, 255, 255, 0);
+@inverse-button-default-color:                  rgba(255, 255, 255, 0.7);
+@inverse-button-default-hover-color:            #ffffff;
+@inverse-button-default-active-color:           #ffffff;
+
+//
+// Master
+//
+
+@inverse-button-default-border:                 rgba(255, 255, 255, 0.7);
+@inverse-button-default-hover-border:           #ffffff;
+@inverse-button-default-active-border:          #ffffff;
+
+
+.hook-inverse-button-default() {}
+.hook-inverse-button-default-hover() {}
+.hook-inverse-button-default-active() {}
+
+.hook-inverse-button-primary() {}
+.hook-inverse-button-primary-hover() {}
+.hook-inverse-button-primary-active() {}
+
+.hook-inverse-button-secondary() {}
+.hook-inverse-button-secondary-hover() {}
+.hook-inverse-button-secondary-active() {}
+
+.hook-inverse-button-text() {}
+.hook-inverse-button-text-hover() {}
+.hook-inverse-button-text-disabled() {}
+
+.hook-inverse-button-link() {}

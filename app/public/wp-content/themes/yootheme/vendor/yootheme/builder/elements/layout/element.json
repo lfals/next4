@@ -1,0 +1,9 @@
+{
+    "name": "layout",
+    "title": "Layout",
+    "container": true,
+    "templates": {
+        "render": "./templates/template.php",
+        "content": "./templates/template.php"
+    }
+}

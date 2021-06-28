@@ -1,0 +1,61 @@
+//
+// Component: Totop
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@totop-padding:                                 16px;
+
+@totop-color:                                   @global-emphasis-color;
+@totop-hover-color:                             @global-primary-background;
+@totop-active-color:                            darken(@global-primary-background, 10%);
+
+
+//
+// Master
+//
+
+@totop-background:                              @global-background;
+@totop-hover-background:                        @global-background;
+@totop-active-background:                       @global-background;
+
+@totop-border-radius:                           500px;
+
+@totop-box-shadow:                              @global-large-box-shadow;
+@totop-hover-box-shadow:                        @global-medium-box-shadow;
+@totop-active-box-shadow:                       @global-small-box-shadow;
+
+
+// Component
+// ========================================================================
+
+.hook-totop() {}
+
+.hook-totop-hover() {}
+
+.hook-totop-active() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-icon-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+//
+// Master
+//
+
+@inverse-totop-box-shadow:                      -5px -5px 15px rgba(255, 255, 255, 0.03), 4px 4px 12px rgba(0,0,0, 0.2);
+@inverse-totop-hover-box-shadow:                -2px -2px 5px rgba(255, 255, 255, 0.03), 2px 2px 4px rgba(0,0,0, 0.2);
+@inverse-totop-active-box-shadow:               -1px -1px 1px rgba(255, 255, 255, 0.03), 1px 1px 1px rgba(0,0,0, 0.3);
+
+.hook-inverse-totop() {}
+.hook-inverse-totop-hover() {}
+.hook-inverse-totop-active() {}

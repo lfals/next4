@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 130 130">
+
+  <defs>
+    <linearGradient id="svg-defs-gradient-squared-icon-coordinate-progress" x1="35" y1="95" x2="95" y2="35" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E52231"/>
+      <stop offset="0.65" stop-color="#E0271A"/>
+      <stop offset="1" stop-color="#e65522"/>
+    </linearGradient>
+    <mask id="svg-defs-mask-squared-icon-coordinate-progress">
+      <path class="uk-preserve" d="M53.04161,50.58145h20.556a7.06568,7.06568,0,0,1,7.045,7.045V58.188a7.06569,7.06569,0,0,1-7.045,7.045H55.75608l-4.42838,0a7.06568,7.06568,0,0,0-7.045,7.045v.56157a7.06568,7.06568,0,0,0,7.045,7.045H72.85358" fill="none" stroke="#fff" stroke-width="1.66377"/>
+      <polyline class="uk-preserve" points="68.361 74.53 73.616 79.785 68.361 85.04" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <circle class="uk-preserve" cx="82.48473" cy="79.44259" r="5.52659" fill="none" stroke="#fff" stroke-width="2"/>
+      <circle class="uk-preserve" cx="47.51502" cy="50.48611" r="5.52659" fill="none" stroke="#fff" stroke-width="2"/>
+    </mask>
+  </defs>
+
+  <style>
+
+    img[src*="squared-icon-coordinate-progress.svg"] + svg {
+      filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.35)) drop-shadow(-10px -10px 15px rgba(255, 255, 255, 0.048));
+      will-change: filter;
+    }
+
+  </style>
+
+  <rect class="test uk-preserve" x="0" y="0" width="130" height="130" rx="24" fill="#202326" />
+  <rect class="uk-preserve" x="35" y="35" width="60" height="60" fill="url(#svg-defs-gradient-squared-icon-coordinate-progress)" mask="url(#svg-defs-mask-squared-icon-coordinate-progress)" />
+
+</svg>

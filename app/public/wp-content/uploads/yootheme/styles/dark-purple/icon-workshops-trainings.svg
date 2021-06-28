@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+
+  <defs>
+    <linearGradient id="svg-defs-gradient-icon-workshops-trainings" x1="15" y1="65" x2="65" y2="15" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#732EDF"/>
+      <stop offset="0.65" stop-color="#A92AE7"/>
+      <stop offset="1" stop-color="#C729F4"/>
+    </linearGradient>
+    <mask id="svg-defs-mask-icon-workshops-trainings">
+      <path class="uk-preserve" d="M38.923,42.215,6.978,30.938a.752.752,0,0,1,0-1.419L38.74,18.306a3.242,3.242,0,0,1,2.137-.008L73.094,29.4a.835.835,0,0,1,0,1.58L40.693,42.22A2.679,2.679,0,0,1,38.923,42.215Z" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="2"/>
+      <path class="uk-preserve" d="M15.851,34.07v19.7c0,3.992,10.631,8.11,23.745,8.11s23.745-4.118,23.745-8.11V34.234" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="2"/>
+      <line class="uk-preserve" x1="9.759" y1="31.588" x2="9.759" y2="44.02" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="2"/>
+      <path class="uk-preserve" d="M12.433,52.211H7.086l.753-6.271a1.925,1.925,0,0,1,3.85,0Z" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="2"/>
+    </mask>
+  </defs>
+
+  <rect class="uk-preserve" x="5" y="5" width="70" height="70" fill="url(#svg-defs-gradient-icon-workshops-trainings)" mask="url(#svg-defs-mask-icon-workshops-trainings)"/>
+
+</svg>

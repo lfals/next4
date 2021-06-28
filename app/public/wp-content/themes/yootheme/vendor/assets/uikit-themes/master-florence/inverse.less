@@ -1,0 +1,23 @@
+//
+// Component: Inverse
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@inverse-global-color:                            fade(@global-inverse-color, 60%);
+@inverse-global-muted-color:                      fade(@inverse-global-color, 40%);
+@inverse-global-inverse-color:                    @global-secondary-background;
+
+@inverse-global-muted-background:                 fade(@global-inverse-color, 10%);
+@inverse-global-primary-background:               fade(@global-primary-background, 20%);
+
+@inverse-global-border:                           fade(@global-inverse-color, 10%);
+
+
+// Component
+// ========================================================================
+
+.hook-inverse() {}

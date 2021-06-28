@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 130 130">
+
+  <defs>
+    <linearGradient id="svg-defs-gradient-squared-icon-thriving-community" x1="35" y1="95" x2="95" y2="35" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fe3966"/>
+      <stop offset="0.5" stop-color="#ff4538"/>
+      <stop offset="1" stop-color="#ff8a42"/>
+    </linearGradient>
+    <mask id="svg-defs-mask-squared-icon-thriving-community">
+      <path class="uk-preserve" d="M46,92.06a11.83,11.83,0,1,1,23.65,0" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <circle class="uk-preserve" cx="57.78" cy="73.41" r="6.82" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="2"/>
+      <path class="uk-preserve" d="M68.58,87.05A8.52,8.52,0,0,1,84,92" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <circle class="uk-preserve" cx="75.52" cy="78.57" r="4.92" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="2"/>
+      <path class="uk-preserve" d="M76.93,59.35l1.61,6-6.67-3.75a18.6,18.6,0,0,1-3.23.53c-.47,0-.94,0-1.43,0h-.34c-8.06-.14-14.56-5.37-14.75-11.84a2.71,2.71,0,0,1,0-.29c0-6.69,6.76-12.12,15.1-12.12s15.1,5.43,15.1,12.12A11.34,11.34,0,0,1,76.93,59.35Z" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="2"/>
+      <circle class="uk-preserve" cx="62.3" cy="50.81" r="1.48" fill="#fff"/>
+      <circle class="uk-preserve" cx="67.06" cy="50.81" r="1.48" fill="#fff"/>
+      <circle class="uk-preserve" cx="71.83" cy="50.81" r="1.48" fill="#fff"/>
+    </mask>
+  </defs>
+
+  <style>
+
+    img[src*="squared-icon-thriving-community.svg"] + svg {
+      filter: drop-shadow(20px 20px 20px rgba(60, 65, 124, 0.12)) drop-shadow(-20px -20px 20px rgba(255, 255, 255, 0.9));
+      will-change: filter;
+    }
+
+  </style>
+
+  <rect class="uk-preserve" x="0" y="0" width="130" height="130" rx="24" fill="#f7f8fc"/>
+  <rect class="uk-preserve" x="35" y="35" width="60" height="60" fill="url(#svg-defs-gradient-squared-icon-thriving-community)" mask="url(#svg-defs-mask-squared-icon-thriving-community)" />
+
+</svg>

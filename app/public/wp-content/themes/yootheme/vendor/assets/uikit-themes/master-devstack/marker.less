@@ -1,0 +1,44 @@
+//
+// Component: Marker
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@marker-padding:                                8px;
+@marker-background:                             @global-background;
+@marker-color:                                  @global-primary-background;
+
+@marker-hover-color:                            fade(@marker-color, 80%);
+
+
+// Component
+// ========================================================================
+
+.hook-marker() {}
+
+.hook-marker-hover() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-marker-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+@inverse-marker-color:                          fade(@global-primary-background, 90%);
+@inverse-marker-hover-color:                    @global-primary-background;
+
+//
+// Master
+//
+
+@inverse-marker-hover-background:               fade(@global-background, 70%);
+
+.hook-inverse-marker() {}
+.hook-inverse-marker-hover() {}

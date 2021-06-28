@@ -1,0 +1,126 @@
+//
+// Component: Form
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@form-padding-horizontal:                       20px;
+
+@form-focus-background:                         darken(@form-background, 3%);
+@form-focus-color:                              @global-emphasis-color;
+
+@form-small-padding-horizontal:                 10px;
+
+@form-large-padding-horizontal:                 25px;
+
+@form-select-icon-color:                        @global-emphasis-color;
+@form-select-option-color:                      @global-emphasis-color;
+
+@form-datalist-icon-color:                      @global-emphasis-color;
+
+@form-icon-width:                               40px;
+@form-icon-color:                               @global-color;
+@form-icon-hover-color:                         @global-emphasis-color;
+
+//
+// Master
+//
+
+@form-border-width:                             @global-border-width;
+
+@form-danger-border:                            @global-danger-background;
+@form-success-border:                           @global-success-background;
+
+@form-border-radius:                            500px;
+
+@form-multi-line-border-radius:                 0;
+
+
+// Component
+// ========================================================================
+
+.hook-form() {}
+
+.hook-form-single-line() {}
+
+.hook-form-multi-line() {}
+
+.hook-form-focus() {}
+
+.hook-form-disabled() {}
+
+
+// Style modifiers
+// ========================================================================
+
+.hook-form-danger() {}
+
+.hook-form-success() {}
+
+.hook-form-blank() {}
+
+.hook-form-blank-focus() {}
+
+
+// Radio and checkbox
+// ========================================================================
+
+.hook-form-radio() {}
+
+.hook-form-radio-focus() {}
+
+.hook-form-radio-checked() {}
+
+.hook-form-radio-checked-focus() { }
+
+.hook-form-radio-disabled() {}
+
+
+// Legend
+// ========================================================================
+
+.hook-form-legend() {}
+
+
+// Label
+// ========================================================================
+
+.hook-form-label() {}
+
+
+// Layout
+// ========================================================================
+
+.hook-form-stacked-label() {}
+
+.hook-form-horizontal-label() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-form-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+@inverse-form-focus-background:                fade(@global-inverse-color, 20%);
+@inverse-form-focus-color:                     @global-inverse-color;
+
+@inverse-form-icon-color:                      @inverse-global-color;
+@inverse-form-icon-hover-color:                @global-inverse-color;
+
+.hook-inverse-form() {}
+.hook-inverse-form-focus() {}
+
+.hook-inverse-form-radio() {}
+.hook-inverse-form-radio-focus() {}
+
+.hook-inverse-form-radio-checked() {}
+.hook-inverse-form-radio-checked-focus() {}
+
+.hook-inverse-form-label() {}

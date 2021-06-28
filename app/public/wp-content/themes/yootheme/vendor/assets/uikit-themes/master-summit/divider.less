@@ -1,0 +1,66 @@
+//
+// Component: Divider
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@divider-icon-width:                            40px;
+@divider-icon-height:                           20px;
+@divider-icon-color:                            darken(@global-primary-background, 12%);
+@internal-divider-icon-image:                   "../../../../uikit-themes/master-summit/images/divider-icon.svg";
+
+@divider-small-width:                           160px;
+@divider-small-border-width:                    10px;
+@divider-small-border:                          darken(@global-primary-background, 12%);
+
+//
+// Master
+//
+
+@internal-divider-small-image:                  "../../../../uikit-themes/master-summit/images/divider-small-image.svg";
+
+
+// Icon
+// ========================================================================
+
+.hook-divider-icon() {}
+
+.hook-divider-icon-line() {}
+
+.hook-divider-icon-line-left() {}
+
+.hook-divider-icon-line-right() {}
+
+
+// Small
+// ========================================================================
+
+.hook-divider-small() {}
+
+
+// Vertical
+// ========================================================================
+
+.hook-divider-vertical() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-divider-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+@inverse-divider-small-border:                 fade(@inverse-global-primary-background, 40%);
+
+.hook-inverse-divider-icon() {}
+.hook-inverse-divider-icon-line() {}
+
+.hook-inverse-divider-small() {}
+
+.hook-inverse-divider-vertical() {}

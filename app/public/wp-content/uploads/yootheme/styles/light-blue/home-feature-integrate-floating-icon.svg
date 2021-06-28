@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150">
+
+  <defs>
+    <linearGradient id="svg-defs-gradient-home-feature-integrate-floating-icon" x1="15" y1="65" x2="65" y2="15" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1865E0"/>
+      <stop offset="0.5" stop-color="#199EF2"/>
+      <stop offset="1" stop-color="#16B6F5"/>
+    </linearGradient>
+    <mask id="svg-defs-mask-home-feature-integrate-floating-icon">
+      <line class="uk-preserve" x1="75" y1="50" x2="75" y2="100" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <line class="uk-preserve" x1="100" y1="75" x2="50" y2="75" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    </mask>
+  </defs>
+
+  <style>
+
+    img[src*="home-feature-integrate-floating-icon.svg"] + svg {
+      background-color: rgba(232,239,250, 0.7);
+      border-radius: 30px;
+    }
+
+    @supports (backdrop-filter:blur(0)) or (-webkit-backdrop-filter:blur(0)) {
+
+      img[src*="home-feature-integrate-floating-icon.svg"] + svg {
+        background-color: rgba(25,145,238, 0.02);
+        -webkit-backdrop-filter: blur(12px);
+        backdrop-filter: blur(12px);
+      }
+
+    }
+
+  </style>
+
+  <rect class="uk-preserve" x="30" y="30" width="90" height="90" fill="url(#svg-defs-gradient-home-feature-integrate-floating-icon)" mask="url(#svg-defs-mask-home-feature-integrate-floating-icon)"/>
+
+</svg>

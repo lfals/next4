@@ -1,0 +1,37 @@
+<svg id="Ebene_1_Kopie" data-name="Ebene 1 Kopie" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1072" height="555" viewBox="0 0 1072 555">
+  <defs>
+    <radialGradient id="Unbenannter_Verlauf_83" cx="627.5" cy="419.5" r="220.08" gradientUnits="userSpaceOnUse">
+      <stop offset="0.12"/>
+      <stop offset="0.92" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="Unbenannter_Verlauf_83-2" cx="430.5" cy="389.5" r="253.03" xlink:href="#Unbenannter_Verlauf_83"/>
+    <filter id="luminosity-noclip" x="175.67" y="2.56" width="816.24" height="620.44" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask" x="175.67" y="2.56" width="816.24" height="620.44" maskUnits="userSpaceOnUse">
+      <ellipse cx="627.5" cy="419.5" rx="235.5" ry="203.5" fill="url(#Unbenannter_Verlauf_83)" filter="url(#luminosity-noclip)"/>
+    </mask>
+    <radialGradient id="Unbenannter_Verlauf" cx="-4682.28" cy="5307.18" r="0.5" gradientTransform="matrix(816.83, 0, 0, -550, 3825219, 2919227.39)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7141f1" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#7141f1" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="luminosity-noclip-2" x="80.02" y="64.7" width="621.24" height="558.76" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask-2" x="80.02" y="64.7" width="621.24" height="558.76" maskUnits="userSpaceOnUse">
+      <ellipse cx="430.5" cy="389.5" rx="270.75" ry="233.96" fill="url(#Unbenannter_Verlauf_83-2)" filter="url(#luminosity-noclip-2)"/>
+    </mask>
+    <radialGradient id="Unbenannter_Verlauf_84" cx="-4679.23" cy="5307.72" r="0.5" gradientTransform="matrix(535, 0, 0, -468, 2503737.7, 2484310.89)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3183e2" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#3183e2" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g mask="url(#mask)">
+    <ellipse cx="583.79" cy="278.03" rx="408.42" ry="275" transform="translate(-13.75 30.93) rotate(-3)" opacity="0.35" fill="url(#Unbenannter_Verlauf)" style="isolation: isolate"/>
+  </g>
+  <g mask="url(#mask-2)">
+    <ellipse cx="347.44" cy="298.81" rx="267.5" ry="234" transform="translate(-15.16 18.59) rotate(-3)" opacity="0.56" fill="url(#Unbenannter_Verlauf_84)" style="isolation: isolate"/>
+  </g>
+</svg>

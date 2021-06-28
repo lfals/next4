@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+
+  <defs>
+    <linearGradient id="svg-defs-gradient-icon-getting-started" x1="15" y1="65" x2="65" y2="15" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E52231"/>
+      <stop offset="0.65" stop-color="#E0271A"/>
+      <stop offset="1" stop-color="#e65522"/>
+    </linearGradient>
+    <mask id="svg-defs-mask-icon-getting-started">
+      <polyline class="uk-preserve" points="49.559 48.115 43.823 60.599 40 60.031 39.472 52.604" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <line class="uk-preserve" x1="18.64583" y1="51.42505" x2="10.40219" y2="59.59581" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <line class="uk-preserve" x1="28.56407" y1="61.34329" x2="20.32043" y2="69.51405" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <line class="uk-preserve" x1="23.64095" y1="56.39666" x2="12.23061" y2="67.70612" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <polyline class="uk-preserve" points="31.629 30.684 19.401 36.171 20.101 40 27.639 40.383" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <circle class="uk-preserve" cx="49.40654" cy="30.7259" r="4.80804" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <line class="uk-preserve" x1="51.74813" y1="12.29753" x2="67.7101" y2="28.2595" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path class="uk-preserve" d="M23.95039,49.80068S30.66014,31.78231,34.70452,25.695A33.403,33.403,0,0,1,49.52009,12.76382C56.18231,9.63,69.41282,10.612,69.41282,10.612s.97681,13.2253-2.15766,19.88691A33.414,33.414,0,0,1,54.32365,45.31413c-6.087,4.04474-24.10336,10.75645-24.10336,10.75645Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </mask>
+  </defs>
+
+  <rect class="uk-preserve" x="3" y="3" width="74" height="74" fill="url(#svg-defs-gradient-icon-getting-started)" mask="url(#svg-defs-mask-icon-getting-started)"/>
+
+</svg>

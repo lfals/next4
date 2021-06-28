@@ -1,0 +1,389 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding-top: 50px;
+  color: var(--cor-texto);
+  margin: 0;
+}
+
+#wpadminbar {
+  z-index: 10 !important;
+}
+
+.ht__testimony-wrapper {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ht__testimony-wrapper > h1 {
+  margin-top: 100px;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: slateblue;
+}
+
+.ht__testimony-wrapper > p {
+  margin-top: 24px;
+  font-weight: 500;
+  color: #a8a8a8;
+}
+
+.ht__testimony-wrapper .ht__testimony-cards-wrapper {
+  margin-top: 28px;
+  min-width: 80%;
+  min-height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ht__testimony-wrapper .ht__testimony-cards-wrapper .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ht__testimony-wrapper .ht__testimony-cards-wrapper .card .img {
+  width: 110px;
+  height: 110px;
+  border: 2px solid #E6BE8A;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ht__testimony-wrapper .ht__testimony-cards-wrapper .card .info {
+  -webkit-transform: translate(0, -30px);
+          transform: translate(0, -30px);
+  width: 330px;
+  height: 230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 12px;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.ht__testimony-wrapper .ht__testimony-cards-wrapper .card .info:hover {
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.ht__testimony-wrapper .ht__testimony-cards-wrapper .card .info .text {
+  margin-top: 45px;
+  padding: 0 12px;
+  font-size: 12px;
+  text-align: center;
+  color: #a8a8a8;
+}
+
+.ht__testimony-wrapper .ht__testimony-cards-wrapper .card .info .name, .ht__testimony-wrapper .ht__testimony-cards-wrapper .card .info .position, .ht__testimony-wrapper .ht__testimony-cards-wrapper .card .info .locale {
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+.ht__testimony-wrapper .ht__testimony-cards-wrapper .card .info .name {
+  color: coral;
+}
+
+.ht__testimony-wrapper .ht__testimony-cards-wrapper .card .info .position {
+  color: #a8a8a8;
+}
+
+.ht__testimony-wrapper .ht__testimony-cards-wrapper .card .info .locale {
+  color: slateblue;
+}
+
+.ht__slider-wrapper {
+  margin-top: 100px;
+}
+
+.ht__slider-wrapper .ht_slider {
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ht__slider-wrapper .ht_slider > h1 {
+  font-size: 22px;
+  max-width: 50vw;
+  text-align: center;
+  color: #fff;
+}
+
+.ht__slider-wrapper .ht_slider > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100px;
+  height: 30px;
+  margin-top: 50px;
+  color: #fff;
+  background-color: coral;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.ht__about-wrapper .about-cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ht__about-wrapper .about-cta img {
+  max-width: 500px;
+}
+
+.ht__about-wrapper .about-cta .cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ht__about-wrapper .about-cta .cta h1 {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: darkslateblue;
+}
+
+.ht__about-wrapper .about-cta .cta p {
+  font-size: 16px;
+}
+
+.ht__about-wrapper .about-cta .cta a {
+  width: 150px;
+  height: 50px;
+  background-color: coral;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.ht__second-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 100px;
+}
+
+.ht__second-about img {
+  max-width: 500px;
+}
+
+.ht__second-about h1 {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: darkslateblue;
+}
+
+.ht__second-about p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.ht__second-about .about-area {
+  width: 30vw;
+}
+
+.ht__second-about .collapse button {
+  background: #fff;
+  border-bottom: 1px solid #a8a8a8;
+}
+
+.ht__header-content {
+  height: 100vh;
+}
+
+.ht__header-content .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ht__header-content .info .text {
+  width: 40vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.ht__header-content .info .text h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.ht__header-content .info .text p {
+  max-width: 75%;
+  border-left: 5px solid #fff;
+  padding-left: 20px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.ht__header-content .info .text a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 150px;
+  height: 50px;
+  border-radius: 24px;
+  background-color: #fff;
+  color: #f4a74f;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.ht__header-content .info img {
+  max-height: 600px;
+}
+
+.collapsible {
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}
+
+.content p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #a8a8a8;
+}
+
+.collapsible:after {
+  content: '\02795';
+  /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796";
+  /* Unicode character for "minus" sign (-) */
+}
+/*# sourceMappingURL=main.css.map */

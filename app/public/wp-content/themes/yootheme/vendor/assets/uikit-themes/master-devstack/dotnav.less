@@ -1,0 +1,56 @@
+//
+// Component: Dotnav
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@dotnav-item-width:                             12px;
+@dotnav-item-background:                        darken(@global-muted-background, 10%);
+@dotnav-item-hover-background:                  @global-primary-background;
+@dotnav-item-onclick-background:                darken(@global-muted-background, 10%);
+@dotnav-item-active-background:                 @global-primary-background;
+
+//
+// Master
+//
+
+@dotnav-item-box-shadow:                        inset 1px 1px 1px rgba(0,0,0, 0.15), 1px 1px 1px #fff;
+
+
+// Component
+// ========================================================================
+
+.hook-dotnav() {}
+
+.hook-dotnav-item() {}
+
+.hook-dotnav-item-hover() {}
+
+.hook-dotnav-item-onclick() {}
+
+.hook-dotnav-item-active() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-dotnav-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+@inverse-dotnav-item-hover-background:          @global-primary-background;
+@inverse-dotnav-item-onclick-background:        @global-primary-background;
+@inverse-dotnav-item-active-background:         @global-primary-background;
+
+@inverse-dotnav-item-box-shadow:                inset 1px 1px 1px rgba(0,0,0, 0.4), inset -1px -1px 1px rgba(255,255,255, 0.2);
+
+.hook-inverse-dotnav() {}
+.hook-inverse-dotnav-item() {}
+.hook-inverse-dotnav-item-hover() {}
+.hook-inverse-dotnav-item-onclick() {}
+.hook-inverse-dotnav-item-active() {}

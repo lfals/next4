@@ -1,0 +1,29 @@
+<svg class="svg" xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 130 130">
+
+  <defs>
+    <linearGradient id="svg-defs-gradient-squared-icon-report-changes" x1="35" y1="95" x2="95" y2="35" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#46d4aa"/>
+      <stop offset="0.65" stop-color="#56dd9a"/>
+      <stop offset="1" stop-color="#72e475"/>
+    </linearGradient>
+    <mask id="svg-defs-mask-squared-icon-report-changes">
+      <polyline class="uk-preserve" points="84.25 61 84.25 45 50.25 45 50.25 78 63.769 78.146" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+      <circle class="uk-preserve" cx="77.9259" cy="74.1493" r="11.03566" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+      <polyline class="uk-preserve" points="49.968 49.215 41.101 50.989 47.641 85.185 65.88 81.804" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+      <polyline class="uk-preserve" points="77.031 67.697 77.031 74.722 82.995 78.433" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+    </mask>
+  </defs>
+
+  <style>
+
+    img[src*="squared-icon-report-changes.svg"] + svg {
+      filter: drop-shadow(20px 20px 20px rgba(60, 65, 124, 0.12)) drop-shadow(-20px -20px 20px rgba(255, 255, 255, 0.9));
+      will-change: filter;
+    }
+
+  </style>
+
+  <rect class="uk-preserve" x="0" y="0" width="130" height="130" rx="24" fill="#f7f8fc" />
+  <rect class="uk-preserve" x="35" y="35" width="60" height="60" fill="url(#svg-defs-gradient-squared-icon-report-changes)" mask="url(#svg-defs-mask-squared-icon-report-changes)" />
+
+</svg>

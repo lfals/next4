@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 130 130">
+
+  <defs>
+    <linearGradient id="svg-defs-gradient-squared-icon-performance-insights" x1="35" y1="95" x2="95" y2="35" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1865E0"/>
+      <stop offset="0.5" stop-color="#199EF2"/>
+      <stop offset="1" stop-color="#16B6F5"/>
+    </linearGradient>
+    <mask id="svg-defs-mask-squared-icon-performance-insights">
+      <line class="uk-preserve" x1="40.52" y1="70.04" x2="70.75" y2="40.75" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+      <polyline class="uk-preserve" points="70.75 47.37 70.75 40.75 64.14 40.75" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <line class="uk-preserve" x1="39.11" y1="89.25" x2="91.06" y2="89.25" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+      <polyline class="uk-preserve" points="77.36 88.93 77.36 48.31 85.87 48.31 85.87 88.93" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <polyline class="uk-preserve" points="61.3 88.93 61.3 63.42 69.81 63.42 69.81 88.93" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <polyline class="uk-preserve" points="44.3 88.93 44.3 76.65 52.8 76.65 52.8 88.93" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </mask>
+  </defs>
+
+  <style>
+
+    img[src*="squared-icon-performance-insights.svg"] + svg {
+      filter: drop-shadow(20px 20px 20px rgba(57,65,124, 0.1)) drop-shadow(-20px -20px 20px rgba(255, 255, 255, 0.6));
+      will-change: filter;
+    }
+
+  </style>
+
+  <rect class="uk-preserve" x="0" y="0" width="130" height="130" rx="24" fill="#EDF1FA" />
+  <rect class="uk-preserve" x="35" y="35" width="60" height="60" fill="url(#svg-defs-gradient-squared-icon-performance-insights)" mask="url(#svg-defs-mask-squared-icon-performance-insights)" />
+
+</svg>

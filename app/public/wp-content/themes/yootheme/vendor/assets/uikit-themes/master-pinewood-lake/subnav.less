@@ -1,0 +1,88 @@
+//
+// Component: Subnav
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@subnav-item-color:                             @global-color;
+@subnav-item-hover-color:                       fade(@subnav-item-color, 70%);
+
+@subnav-divider-border:                         fade(@global-muted-color, 50%);
+@subnav-divider-border-height:                  1em;
+
+@subnav-pill-item-padding-vertical:             7px;
+@subnav-pill-item-padding-horizontal:           14px;
+@subnav-pill-item-hover-background:             fade(@global-secondary-background, 7%);
+
+//
+// Master
+//
+
+@subnav-pill-item-active-box-shadow:            @global-small-box-shadow;
+
+
+// Component
+// ========================================================================
+
+.hook-subnav() {}
+
+.hook-subnav-item() {}
+
+.hook-subnav-item-hover() {}
+
+.hook-subnav-item-active() {}
+
+
+// Divider modifier
+// ========================================================================
+
+.hook-subnav-divider() {}
+
+
+// Pill modifier
+// ========================================================================
+
+.hook-subnav-pill-item() {}
+
+.hook-subnav-pill-item-hover() {}
+
+.hook-subnav-pill-item-onclick() {}
+
+.hook-subnav-pill-item-active() {}
+
+
+// Disabled
+// ========================================================================
+
+.hook-subnav-item-disabled() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-subnav-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+@inverse-subnav-item-color:                    @inverse-global-color;
+@inverse-subnav-item-hover-color:              @inverse-global-emphasis-color;
+@inverse-subnav-pill-item-hover-color:         @inverse-global-emphasis-color;
+@inverse-subnav-pill-item-active-background:   @inverse-global-primary-background;
+
+.hook-inverse-subnav-item() {}
+.hook-inverse-subnav-item-hover() {}
+.hook-inverse-subnav-item-active() {}
+
+.hook-inverse-subnav-divider() {}
+
+.hook-inverse-subnav-pill-item() {}
+.hook-inverse-subnav-pill-item-hover() {}
+.hook-inverse-subnav-pill-item-onclick() {}
+.hook-inverse-subnav-pill-item-active() {}
+
+.hook-inverse-subnav-item-disabled() {}

@@ -1,0 +1,140 @@
+//
+// Component: Card
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@card-hover-background:                        @global-background;
+
+@card-default-background:                      @global-background;
+@card-default-hover-background:                @global-background;
+
+@card-primary-background:                      transparent;
+@card-primary-color:                           @global-color;
+@card-primary-title-color:                     @global-emphasis-color;
+@card-primary-color-mode:                      none;
+
+@card-secondary-background:                    @global-background;
+@card-secondary-color:                         @global-color;
+@card-secondary-title-color:                   @global-emphasis-color;
+@card-secondary-hover-background:              @global-background;
+@card-secondary-color-mode:                    none;
+
+//
+// Master
+//
+
+@card-hover-border-width:                      10px;
+@card-hover-border:                            darken(@global-primary-background, 12%);
+
+@card-default-border-width:                    10px;
+@card-default-border:                          darken(@global-primary-background, 12%);
+@card-default-hover-border:                    darken(@card-default-border, 5%);
+
+@card-primary-border-width:                    10px;
+@card-primary-border:                          @global-primary-background;
+@card-primary-hover-border:                    darken(@card-primary-border, 5%);
+
+@card-secondary-border-width:                  10px;
+@card-secondary-border:                        rgba(0,0,0,0.15);
+@card-secondary-hover-border:                  rgba(0,0,0,0.25);
+
+@internal-card-border-image-slice:             3% fill;
+@internal-card-border-image-width:             10px;
+@internal-card-border-image-repeat:            stretch;
+
+@internal-card-hover-border-image:             "../../../../uikit-themes/master-summit/images/card-default-border-image.svg";
+@internal-card-default-border-image:           "../../../../uikit-themes/master-summit/images/card-default-border-image.svg";
+@internal-card-primary-border-image:           "../../../../uikit-themes/master-summit/images/card-primary-border-image.svg";
+@internal-card-secondary-border-image:         "../../../../uikit-themes/master-summit/images/card-secondary-border-image.svg";
+
+
+// Component
+// ========================================================================
+
+.hook-card() { background-clip: padding-box !important; }
+
+
+// Sections
+// ========================================================================
+
+.hook-card-body() {}
+
+.hook-card-header() {}
+
+.hook-card-footer() {}
+
+
+// Media
+// ========================================================================
+
+.hook-card-media() {}
+
+.hook-card-media-top() {}
+
+.hook-card-media-bottom() {}
+
+.hook-card-media-left() {}
+
+.hook-card-media-right() {}
+
+
+// Title
+// ========================================================================
+
+.hook-card-title() {}
+
+
+// Badge
+// ========================================================================
+
+.hook-card-badge() {}
+
+
+// Hover modifier
+// ========================================================================
+
+.hook-card-hover() {}
+
+
+// Style modifiers
+// ========================================================================
+
+.hook-card-default() {}
+
+.hook-card-default-title() {}
+
+.hook-card-default-hover() {}
+
+.hook-card-default-header() {}
+
+.hook-card-default-footer() {}
+
+//
+// Primary
+//
+
+.hook-card-primary() {}
+
+.hook-card-primary-title() {}
+
+.hook-card-primary-hover() {}
+
+//
+// Secondary
+//
+
+.hook-card-secondary() {}
+
+.hook-card-secondary-title() {}
+
+.hook-card-secondary-hover() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-card-misc() {}

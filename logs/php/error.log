@@ -1,0 +1,39 @@
+[27-Jun-2021 22:55:45 UTC] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF) in C:\Users\luisf\Local Sites\next\app\public\wp-content\themes\htcomunicacao\template\global-header.php on line 31
+[28-Jun-2021 13:22:43 UTC] PHP Parse error:  syntax error, unexpected ':' in C:\Users\luisf\Local Sites\next\app\public\wp-content\themes\htcomunicacao\template\global-testimony.php on line 12
+[28-Jun-2021 13:25:04 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_image_url() in C:\Users\luisf\Local Sites\next\app\public\wp-content\themes\htcomunicacao\template\global-testimony.php:15
+Stack trace:
+#0 C:\Users\luisf\Local Sites\next\app\public\wp-includes\template.php(732): require()
+#1 C:\Users\luisf\Local Sites\next\app\public\wp-includes\template.php(676): load_template('C:\\Users\\luisf\\...', false, Array)
+#2 C:\Users\luisf\Local Sites\next\app\public\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 C:\Users\luisf\Local Sites\next\app\public\wp-content\themes\htcomunicacao\front-page.php(4): get_template_part('template/global', 'testimony')
+#4 C:\Users\luisf\Local Sites\next\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\luisf\\...')
+#5 C:\Users\luisf\Local Sites\next\app\public\wp-blog-header.php(19): require_once('C:\\Users\\luisf\\...')
+#6 C:\Users\luisf\Local Sites\next\app\public\index.php(17): require('C:\\Users\\luisf\\...')
+#7 {main}
+  thrown in C:\Users\luisf\Local Sites\next\app\public\wp-content\themes\htcomunicacao\template\global-testimony.php on line 15
+[28-Jun-2021 13:31:42 UTC] PHP Parse error:  syntax error, unexpected 'get_template_part' (T_STRING) in C:\Users\luisf\Local Sites\next\app\public\wp-content\themes\htcomunicacao\front-page.php on line 5
+[28-Jun-2021 13:46:42 UTC] PHP Parse error:  syntax error, unexpected 'var_dump' (T_STRING) in C:\Users\luisf\Local Sites\next\app\public\wp-content\themes\htcomunicacao\template\global-signin.php on line 3
+[28-Jun-2021 13:49:26 UTC] PHP Parse error:  syntax error, unexpected 'endforeach' (T_ENDFOREACH), expecting end of file in C:\Users\luisf\Local Sites\next\app\public\wp-content\themes\htcomunicacao\template\global-signin.php on line 15
+[28-Jun-2021 13:50:19 UTC] PHP Parse error:  syntax error, unexpected ']', expecting ')' in C:\Users\luisf\Local Sites\next\app\public\wp-content\themes\htcomunicacao\template\global-signin.php on line 7
+[28-Jun-2021 14:59:25 UTC] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF) in C:\Users\luisf\Local Sites\next\app\public\wp-content\themes\htcomunicacao\template\about-system.php on line 32
+[28-Jun-2021 15:08:42 UTC] PHP Parse error:  syntax error, unexpected 'get_template_part' (T_STRING) in C:\Users\luisf\Local Sites\next\app\public\wp-content\themes\htcomunicacao\front-page.php on line 5
+[28-Jun-2021 15:42:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method hattrick::add_default_dashboard() in C:\Users\luisf\Local Sites\next\app\public\wp-content\themes\htcomunicacao\core\setup.php:38
+Stack trace:
+#0 C:\Users\luisf\Local Sites\next\app\public\wp-content\themes\htcomunicacao\functions.php(9): require_once()
+#1 C:\Users\luisf\Local Sites\next\app\public\wp-settings.php(528): include('C:\\Users\\luisf\\...')
+#2 C:\Users\luisf\Local Sites\next\app\public\wp-config.php(77): require_once('C:\\Users\\luisf\\...')
+#3 C:\Users\luisf\Local Sites\next\app\public\wp-load.php(37): require_once('C:\\Users\\luisf\\...')
+#4 C:\Users\luisf\Local Sites\next\app\public\wp-admin\admin.php(34): require_once('C:\\Users\\luisf\\...')
+#5 C:\Users\luisf\Local Sites\next\app\public\wp-admin\options-general.php(10): require_once('C:\\Users\\luisf\\...')
+#6 {main}
+  thrown in C:\Users\luisf\Local Sites\next\app\public\wp-content\themes\htcomunicacao\core\setup.php on line 38
+[28-Jun-2021 15:42:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method hattrick::add_default_dashboard() in C:\Users\luisf\Local Sites\next\app\public\wp-content\themes\htcomunicacao\core\setup.php:38
+Stack trace:
+#0 C:\Users\luisf\Local Sites\next\app\public\wp-content\themes\htcomunicacao\functions.php(9): require_once()
+#1 C:\Users\luisf\Local Sites\next\app\public\wp-settings.php(528): include('C:\\Users\\luisf\\...')
+#2 C:\Users\luisf\Local Sites\next\app\public\wp-config.php(77): require_once('C:\\Users\\luisf\\...')
+#3 C:\Users\luisf\Local Sites\next\app\public\wp-load.php(37): require_once('C:\\Users\\luisf\\...')
+#4 C:\Users\luisf\Local Sites\next\app\public\wp-blog-header.php(13): require_once('C:\\Users\\luisf\\...')
+#5 C:\Users\luisf\Local Sites\next\app\public\index.php(17): require('C:\\Users\\luisf\\...')
+#6 {main}
+  thrown in C:\Users\luisf\Local Sites\next\app\public\wp-content\themes\htcomunicacao\core\setup.php on line 38

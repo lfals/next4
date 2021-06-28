@@ -1,0 +1,908 @@
+[
+    {
+        "key": "group_5c796a0a3317f",
+        "title": "Otimiza\u00e7\u00e3o SEO",
+        "local": "php",
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                }
+            ],
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "page"
+                }
+            ]
+        ],
+        "menu_order": 10,
+        "position": "side",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "active": 1,
+        "description": "",
+        "fields": {
+            "field_5c796a69bd89a": {
+                "key": "field_5c796a69bd89a",
+                "name": "ht_seo_title",
+                "type": "text",
+                "parent": "group_5c796a0a3317f",
+                "label": "Tag title otimizada",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "menu_order": 0
+            },
+            "field_5c796a86bd89b": {
+                "key": "field_5c796a86bd89b",
+                "name": "ht_seo_description",
+                "type": "textarea",
+                "parent": "group_5c796a0a3317f",
+                "label": "Metatag description otimizada",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": 319,
+                "rows": 5,
+                "new_lines": "",
+                "menu_order": 1
+            }
+        }
+    },
+    {
+        "key": "group_5c796b0b47308",
+        "title": "Otimiza\u00e7\u00e3o para Facebook",
+        "local": "php",
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                }
+            ],
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "page"
+                }
+            ]
+        ],
+        "menu_order": 10,
+        "position": "side",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "active": 1,
+        "description": "",
+        "fields": {
+            "field_5c796b3205232": {
+                "key": "field_5c796b3205232",
+                "name": "ht_site_og_title",
+                "type": "text",
+                "parent": "group_5c796b0b47308",
+                "label": "T\u00edtulo",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "menu_order": 0
+            },
+            "field_5c796b9305233": {
+                "key": "field_5c796b9305233",
+                "name": "ht_site_og_type",
+                "type": "select",
+                "parent": "group_5c796b0b47308",
+                "label": "Tipo",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "activity": "activity",
+                    "actor": "actor",
+                    "album": "album",
+                    "article": "article",
+                    "athlete": "athlete",
+                    "author": "author",
+                    "band": "band",
+                    "bar": "bar",
+                    "blog": "blog",
+                    "book": "book",
+                    "cafe": "cafe",
+                    "cause": "cause",
+                    "city": "city",
+                    "company": "company",
+                    "country": "country",
+                    "director": "director",
+                    "drink": "drink",
+                    "food": "food",
+                    "game": "game",
+                    "government": "government",
+                    "hotel": "hotel",
+                    "landmark": "landmark",
+                    "movie": "movie",
+                    "musician": "musician",
+                    "non_profit": "non_profit",
+                    "politician": "politician",
+                    "product": "product",
+                    "public_figure": "public_figure",
+                    "restaurant": "restaurant",
+                    "school": "school",
+                    "song": "song",
+                    "sport": "sport",
+                    "sports_league": "sports_league",
+                    "sports_team": "sports_team",
+                    "state_province": "state_province",
+                    "tv_show": "tv_show",
+                    "university": "university",
+                    "website": "website"
+                },
+                "default_value": [
+                    "article"
+                ],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "return_format": "value",
+                "placeholder": "",
+                "menu_order": 1
+            },
+            "field_5c796dbb05234": {
+                "key": "field_5c796dbb05234",
+                "name": "ht_site_og_description",
+                "type": "textarea",
+                "parent": "group_5c796b0b47308",
+                "label": "Descri\u00e7\u00e3o",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": 297,
+                "rows": 5,
+                "new_lines": "",
+                "menu_order": 2
+            },
+            "field_5c796de905235": {
+                "key": "field_5c796de905235",
+                "name": "ht_site_og_image",
+                "type": "image",
+                "parent": "group_5c796b0b47308",
+                "label": "Imagem",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "",
+                "menu_order": 3
+            }
+        }
+    },
+    {
+        "key": "group_5f42981875468",
+        "title": "Institucional",
+        "local": "php",
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "conf_site_institucional"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "fields": {
+            "field_5f42981ea3458": {
+                "key": "field_5f42981ea3458",
+                "name": "ht_option_logo",
+                "type": "image",
+                "parent": "group_5f42981875468",
+                "label": "Logo",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "33.3",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "",
+                "menu_order": 0
+            },
+            "field_5f42983da3459": {
+                "key": "field_5f42983da3459",
+                "name": "ht_option_logo_negative",
+                "type": "image",
+                "parent": "group_5f42981875468",
+                "label": "Logo negativo",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "33.3",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "",
+                "menu_order": 1
+            },
+            "field_5f429855a345a": {
+                "key": "field_5f429855a345a",
+                "name": "ht_option_favicon",
+                "type": "image",
+                "parent": "group_5f42981875468",
+                "label": "Favicon",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "33.3",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "",
+                "menu_order": 2
+            },
+            "field_5f4298faa345b": {
+                "key": "field_5f4298faa345b",
+                "name": "",
+                "type": "accordion",
+                "parent": "group_5f42981875468",
+                "label": "Endere\u00e7o",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "open": 1,
+                "multi_expand": 1,
+                "endpoint": 0,
+                "menu_order": 3
+            },
+            "field_5f429905a345c": {
+                "key": "field_5f429905a345c",
+                "name": "ht_option_address",
+                "type": "text",
+                "parent": "group_5f42981875468",
+                "label": "Endere\u00e7o completo",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "menu_order": 4
+            },
+            "field_5f42993fa345d": {
+                "key": "field_5f42993fa345d",
+                "name": "ht_option_rote",
+                "type": "url",
+                "parent": "group_5f42981875468",
+                "label": "Link da rota",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "menu_order": 5
+            },
+            "field_5f429954a345e": {
+                "key": "field_5f429954a345e",
+                "name": "ht_option_map",
+                "type": "text",
+                "parent": "group_5f42981875468",
+                "label": "iFrame do Google Maps",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "menu_order": 6
+            },
+            "field_5f429969a345f": {
+                "key": "field_5f429969a345f",
+                "name": "",
+                "type": "accordion",
+                "parent": "group_5f42981875468",
+                "label": "",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "open": 1,
+                "multi_expand": 1,
+                "endpoint": 1,
+                "menu_order": 7
+            },
+            "field_5f429dfcc0cb6": {
+                "key": "field_5f429dfcc0cb6",
+                "name": "",
+                "type": "accordion",
+                "parent": "group_5f42981875468",
+                "label": "Contato",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "open": 1,
+                "multi_expand": 1,
+                "endpoint": 0,
+                "menu_order": 8
+            },
+            "field_5f429abba3460": {
+                "key": "field_5f429abba3460",
+                "name": "ht_option_mail",
+                "type": "email",
+                "parent": "group_5f42981875468",
+                "label": "E-mail principal",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "25",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "menu_order": 9
+            },
+            "field_5f429c46a3461": {
+                "key": "field_5f429c46a3461",
+                "name": "ht_option_whatsapp",
+                "type": "text",
+                "parent": "group_5f42981875468",
+                "label": "WhatsApp",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "25",
+                    "class": "ht-mask__tel",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "menu_order": 10
+            },
+            "field_5f429c46a3w61": {
+                "key": "field_5f429c46a3w61",
+                "name": "ht_option_phone",
+                "type": "text",
+                "parent": "group_5f42981875468",
+                "label": "Telefone fixo",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "25",
+                    "class": "ht-mask__tel",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "menu_order": 11
+            },
+            "field_5f429c6ea3462": {
+                "key": "field_5f429c6ea3462",
+                "name": "ht_option_whatsapp_url",
+                "type": "url",
+                "parent": "group_5f42981875468",
+                "label": "Link para WhatsApp",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "25",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "menu_order": 12
+            },
+            "field_5f429e0ec0cb7": {
+                "key": "field_5f429e0ec0cb7",
+                "name": "",
+                "type": "accordion",
+                "parent": "group_5f42981875468",
+                "label": "",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "open": 1,
+                "multi_expand": 1,
+                "endpoint": 1,
+                "menu_order": 13
+            },
+            "field_5f429cd6a3463": {
+                "key": "field_5f429cd6a3463",
+                "name": "",
+                "type": "accordion",
+                "parent": "group_5f42981875468",
+                "label": "Social",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "open": 1,
+                "multi_expand": 1,
+                "endpoint": 0,
+                "menu_order": 14
+            },
+            "field_5f429ce0a3464": {
+                "key": "field_5f429ce0a3464",
+                "name": "ht_option_social_fb",
+                "type": "url",
+                "parent": "group_5f42981875468",
+                "label": "Facebook",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "33.3",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "Ex.: https:\/\/facebook.com\/seu_usuario",
+                "menu_order": 15
+            },
+            "field_5f429ceda3465": {
+                "key": "field_5f429ceda3465",
+                "name": "ht_option_social_ig",
+                "type": "url",
+                "parent": "group_5f42981875468",
+                "label": "Instagram",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "33.3",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "Ex.: https:\/\/instagram.com\/seu_usuario",
+                "menu_order": 16
+            },
+            "field_5f429d05a3466": {
+                "key": "field_5f429d05a3466",
+                "name": "ht_option_social_yt",
+                "type": "url",
+                "parent": "group_5f42981875468",
+                "label": "YouTube",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "33.3",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "Ex.: https:\/\/youtube.com\/",
+                "menu_order": 17
+            },
+            "field_5f42981ea3499": {
+                "key": "field_5f42981ea3499",
+                "name": "ht_site_og_image",
+                "type": "image",
+                "parent": "group_5f42981875468",
+                "label": "OG Imagem Global",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "33.3",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "",
+                "menu_order": 18
+            },
+            "field_5f429d348b991": {
+                "key": "field_5f429d348b991",
+                "name": "",
+                "type": "accordion",
+                "parent": "group_5f42981875468",
+                "label": "Social",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "open": 1,
+                "multi_expand": 1,
+                "endpoint": 1,
+                "menu_order": 19
+            }
+        }
+    },
+    {
+        "key": "group_5d8d12b2b92a1",
+        "title": "Partes de c\u00f3digos",
+        "local": "php",
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "conf_site_scripts"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "fields": {
+            "field_5d8d12b7a0913": {
+                "key": "field_5d8d12b7a0913",
+                "name": "ht_options_script_header",
+                "type": "textarea",
+                "parent": "group_5d8d12b2b92a1",
+                "label": "C\u00f3digos no cabe\u00e7alho",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": "",
+                "menu_order": 0
+            },
+            "field_5d8d12c9a0914": {
+                "key": "field_5d8d12c9a0914",
+                "name": "ht_options_script_footer",
+                "type": "textarea",
+                "parent": "group_5d8d12b2b92a1",
+                "label": "C\u00f3digos no rodap\u00e9",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": "",
+                "menu_order": 1
+            }
+        }
+    },
+    {
+        "key": "group_5faead0846309",
+        "title": "Navega\u00e7\u00e3o",
+        "local": "php",
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "conf_site_navegacao"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "fields": {
+            "field_5faead0e3f4c5": {
+                "key": "field_5faead0e3f4c5",
+                "name": "ht_nav",
+                "type": "repeater",
+                "parent": "group_5faead0846309",
+                "label": "Itens",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "field_5faead2a3f4c6",
+                "min": 0,
+                "max": 0,
+                "layout": "block",
+                "button_label": "Novo item",
+                "menu_order": 0
+            },
+            "field_60183c8ae11fc": {
+                "key": "field_60183c8ae11fc",
+                "name": "",
+                "type": "accordion",
+                "parent": "group_5faead0846309",
+                "label": "Contato",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "open": 0,
+                "multi_expand": 0,
+                "endpoint": 0,
+                "menu_order": 1
+            },
+            "field_60183b582666a": {
+                "key": "field_60183b582666a",
+                "name": "ht_nav_contact_external",
+                "type": "true_false",
+                "parent": "group_5faead0846309",
+                "label": "Link externo?",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "30",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 0,
+                "ui": 1,
+                "ui_on_text": "",
+                "ui_off_text": "",
+                "menu_order": 2
+            },
+            "field_60183b9c2666c": {
+                "key": "field_60183b9c2666c",
+                "name": "ht_nav_contact_link_internal",
+                "type": "page_link",
+                "parent": "group_5faead0846309",
+                "label": "Link interno",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_60183b582666a",
+                            "operator": "!=",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "40",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": "",
+                "taxonomy": "",
+                "allow_null": 0,
+                "allow_archives": 1,
+                "multiple": 0,
+                "menu_order": 3
+            },
+            "field_60183be42666d": {
+                "key": "field_60183be42666d",
+                "name": "ht_nav_contact_anchor",
+                "type": "text",
+                "parent": "group_5faead0846309",
+                "label": "Ancora",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_60183b582666a",
+                            "operator": "!=",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "30",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "menu_order": 4
+            },
+            "field_60183b7d2666b": {
+                "key": "field_60183b7d2666b",
+                "name": "ht_nav_contact",
+                "type": "url",
+                "parent": "group_5faead0846309",
+                "label": "Link",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_60183b582666a",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "70",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "menu_order": 5
+            }
+        }
+    }
+]

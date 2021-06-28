@@ -1,0 +1,84 @@
+//
+// Component: Slidenav
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@slidenav-padding-vertical:                     12px;
+@slidenav-padding-horizontal:                   17px;
+
+@slidenav-color:                                @global-secondary-background;
+@slidenav-hover-color:                          @global-inverse-color;
+@slidenav-active-color:                         @global-inverse-color;
+
+@slidenav-large-padding-vertical:               15px;
+@slidenav-large-padding-horizontal:             22px;
+
+//
+// Master
+//
+
+@slidenav-hover-background:                     @global-primary-background;
+@slidenav-active-background:                    @global-secondary-background;
+
+@slidenav-border-width:                         @global-border-width;
+
+@slidenav-border:                               @global-secondary-background;
+
+
+// Component
+// ========================================================================
+
+.hook-slidenav() {}
+
+.hook-slidenav-hover() {}
+
+.hook-slidenav-active() {}
+
+
+// Icon modifier
+// ========================================================================
+
+.hook-slidenav-previous() {}
+
+.hook-slidenav-next() {}
+
+
+// Size modifier
+// ========================================================================
+
+.hook-slidenav-large() {}
+
+
+// Container
+// ========================================================================
+
+.hook-slidenav-container() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-icon-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+@inverse-slidenav-color:                        @global-inverse-color;
+
+//
+// Master
+//
+
+@inverse-slidenav-hover-background:             @inverse-global-muted-color;
+@inverse-slidenav-active-background:            @inverse-global-muted-background;
+
+@inverse-slidenav-border:                       @global-inverse-color;
+
+.hook-inverse-slidenav() {}
+.hook-inverse-slidenav-hover() {}
+.hook-inverse-slidenav-active() {}

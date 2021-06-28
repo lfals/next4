@@ -1,0 +1,80 @@
+//
+// Component: Slidenav
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@slidenav-padding-vertical:                     28px;
+@slidenav-padding-horizontal:                   10px;
+
+@slidenav-color:                                fade(@global-inverse-color, 85%);
+@slidenav-hover-color:                          @global-inverse-color;
+@slidenav-active-color:                         fade(@global-inverse-color, 70%);
+
+@slidenav-large-padding-vertical:               40px;
+@slidenav-large-padding-horizontal:             15px;
+
+//
+// Master
+//
+
+@slidenav-background:                           fade(@global-secondary-background, 25%);
+@slidenav-hover-background:                     fade(@global-secondary-background, 30%);
+@slidenav-active-background:                    fade(@global-secondary-background, 20%);
+
+// Component
+// ========================================================================
+
+.hook-slidenav() {}
+
+.hook-slidenav-hover() {}
+
+.hook-slidenav-active() {}
+
+
+// Icon modifier
+// ========================================================================
+
+.hook-slidenav-previous() {}
+
+.hook-slidenav-next() {}
+
+
+// Size modifier
+// ========================================================================
+
+.hook-slidenav-large() {}
+
+
+// Container
+// ========================================================================
+
+.hook-slidenav-container() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-icon-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+@inverse-slidenav-color:                        fade(@inverse-global-color, 85%);
+@inverse-slidenav-hover-color:                  @global-inverse-color;
+
+//
+// Master
+//
+
+@inverse-slidenav-background:                   fade(@global-inverse-color, 25%);
+@inverse-slidenav-hover-background:             fade(@global-inverse-color, 30%);
+@inverse-slidenav-active-background:            fade(@global-inverse-color, 20%);
+
+.hook-inverse-slidenav() {}
+.hook-inverse-slidenav-hover() {}
+.hook-inverse-slidenav-active() {}

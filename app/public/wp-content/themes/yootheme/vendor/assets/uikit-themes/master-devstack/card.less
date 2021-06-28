@@ -1,0 +1,129 @@
+//
+// Component: Card
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@card-hover-background:                         @global-background;
+
+@card-default-background:                       @global-background;
+@card-default-hover-background:                 @global-background;
+
+@card-primary-hover-background:                 @global-primary-background;
+
+@card-secondary-hover-background:               @global-secondary-background;
+
+//
+// Master
+//
+
+@card-border-radius:                            12px;
+@card-hover-translate-vertical:                 -2px;
+
+@card-hover-box-shadow:                         -15px -15px 20px rgba(255, 255, 255, 0.8), 15px 15px 20px rgba(57,65,124, 0.08);
+@internal-card-hover-transition-box-shadow:     0 0 rgba(255, 255, 255, 0), 0 0 0 rgba(80,110,140, 0);
+
+@card-default-box-shadow:                       -15px -15px 20px rgba(255, 255, 255, 0.8), 15px 15px 20px rgba(57,65,124, 0.08);
+@card-default-hover-box-shadow:                 @global-medium-box-shadow;
+@card-default-hover-translate-vertical:         3px;
+
+@card-primary-box-shadow:                       -5px -5px 20px rgba(255, 255, 255, 0.9), 5px 5px 20px fade(darken(@global-primary-background, 20%), 30%);
+@card-primary-hover-box-shadow:                 -2px -2px 10px rgba(255, 255, 255, 0.8), 2px 2px 5px fade(darken(@global-primary-background, 20%), 30%);
+@internal-card-primary-gradient:                linear-gradient(40deg, #7141F1 0%, #4D6BD8 70%, #3183E2 100%);
+@card-primary-hover-translate-vertical:         3px;
+
+@card-secondary-box-shadow:                     -5px -5px 20px rgba(255, 255, 255, 0.9), 5px 5px 20px fade(darken(@global-secondary-background, 20%), 30%);
+@card-secondary-hover-box-shadow:               -2px -2px 10px rgba(255, 255, 255, 0.8), 2px 2px 5px fade(darken(@global-secondary-background, 20%), 30%);
+@internal-card-secondary-gradient:              linear-gradient(40deg, darken(@global-secondary-background, 5%) 0%, lighten(@global-secondary-background, 5%) 90%);
+@card-secondary-hover-translate-vertical:       3px;
+
+
+// Component
+// ========================================================================
+
+.hook-card() {}
+
+
+// Sections
+// ========================================================================
+
+.hook-card-body() {}
+
+.hook-card-header() {}
+
+.hook-card-footer() {}
+
+
+// Media
+// ========================================================================
+
+.hook-card-media() {}
+
+.hook-card-media-top() {}
+
+.hook-card-media-bottom() {}
+
+.hook-card-media-left() {}
+
+.hook-card-media-right() {}
+
+
+// Title
+// ========================================================================
+
+.hook-card-title() {}
+
+
+// Badge
+// ========================================================================
+
+.hook-card-badge() {}
+
+
+// Hover modifier
+// ========================================================================
+
+.hook-card-hover() {}
+
+
+// Style modifiers
+// ========================================================================
+
+.hook-card-default() {}
+
+.hook-card-default-title() {}
+
+.hook-card-default-hover() {}
+
+.hook-card-default-header() {}
+
+.hook-card-default-footer() {}
+
+//
+// Primary
+//
+
+.hook-card-primary() {}
+
+.hook-card-primary-title() {}
+
+.hook-card-primary-hover() {}
+
+//
+// Secondary
+//
+
+.hook-card-secondary() {}
+
+.hook-card-secondary-title() {}
+
+.hook-card-secondary-hover() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-card-misc() {}

@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;900&display=swap');
+:root{
+    /** Geral */
+    --cor-primaria: #052940;
+    --cor-primaria-alpha:rgba(27,60,134,0.3);
+    --cor-secundaria: #052940;
+    --cor-escura: #1A1A1A;
+    --cor-texto: #1A1A1A;
+    --cor-texto-rolagem-caminho: #CCCCCC;
+    --cor-texto-rolagem-alca: #666666;
+    --cor-texto-rolagel-alca-hover: #a91e22;
+    
+    /** Cabeçalho **/
+    --cor-cabecalho-mobile-menu-bg: #0476D9;
+    --cor-cabecalho-mobile-menu-text: #f2f2f2;
+    --cor-cabecalho-mobile-social: #FFFFFF;
+    --cor-cabecalho-mobile-menu-acoes: #ffffff;
+
+    --cor-cabecalho-mobile-subitem-bg: #828282;
+    --cor-cabecalho-mobile-subitem-text: #222222;
+
+    --cor-cabecalho-mobile-cta-bg: #ffffff;
+    --cor-cabecalho-mobile-cta-text: #a91e22;
+
+    --cor-cabecalho-desktop-cta-bg: #a91e22;
+    --cor-cabecalho-desktop-cta-text: #ffffff;
+    --cor-cabecalho-desktop-text: #1a1a1a;
+    --cor-cabecalho-desktop-social: #0476D9;
+
+    --cor-cabecalho-desktop-subitem-bg: #222222;
+    --cor-cabecalho-desktop-subitem-text: #828282;
+
+    /** Contato **/
+    --cor-botao-contato: #0476D9;
+    --cor-whatsapp-bg: #27ae60;
+    --cor-whatsapp-text: #FFFFFF;
+
+    /** Blog **/
+    --cor-blog-bg: #999999;
+    --cor-blog-titulo: #EAEAEA;
+    --cor-blog-descricao: #FFFFFF;
+    --cor-blog-item: #FFFFFF;
+    --cor-blog-cabecalho: #828282;
+    --cor-blog-busca: #F2F4F8;
+
+    /** Produtos **/
+    --cor-produto-titulo: #333333;
+    --cor-produto-box-bg: #333333;
+    --cor-produto-box-text: #ffffff;
+    --cor-produto-filter: #333333;
+    --cor-produto-filter-text: #ffffff;
+    --cor-produto-botao: #27ae60;
+
+    /** Footer **/
+    --cor-rodape-bg: #F2F2F2;
+    --cor-rodape-text: #222222;
+    --cor-rodape-social: #a91e22;
+}
+html{
+    font-family: Montserrat, sans-serif;
+}
+.footer__contact{
+    background-image: url("../image/bg-contato.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+pre[class*="language-"]{
+    border-radius: 10px;
+    border:3px solid #CCCCCC;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.45);
+    margin-bottom: 50px !important;
+}
+
+.ht-home__about__image img{ max-width: 350px; }

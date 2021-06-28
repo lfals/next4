@@ -1,0 +1,69 @@
+//
+// Component: Accordion
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@accordion-item-border-width:                  @global-border-width;
+@accordion-item-border:                        fade(@global-border, 10%);
+
+@accordion-title-hover-color:                  @global-muted-color;
+
+@accordion-title-font-size:                    20px;
+@accordion-title-line-height:                  1.1;
+
+//
+// Master
+//
+
+@accordion-item-padding-top:                   @accordion-item-margin-top;
+@accordion-title-font-weight:                  500;
+
+@internal-accordion-icon-close-image:          "../../../../uikit-themes/master-district/images/accordion-close.svg";
+@internal-accordion-icon-open-image:           "../../../../uikit-themes/master-district/images/accordion-open.svg";
+
+
+// Component
+// ========================================================================
+
+.hook-accordion() {}
+
+
+// Item
+// ========================================================================
+
+.hook-accordion-item() {}
+
+
+// Title
+// ========================================================================
+
+.hook-accordion-title() {}
+
+.hook-accordion-title-hover() {}
+
+
+// Content
+// ========================================================================
+
+.hook-accordion-content() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-accordion-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+@inverse-accordion-title-hover-color:       @inverse-global-muted-color;
+
+.hook-inverse-accordion-item() {}
+
+.hook-inverse-accordion-title() {}
+.hook-inverse-accordion-title-hover() {}

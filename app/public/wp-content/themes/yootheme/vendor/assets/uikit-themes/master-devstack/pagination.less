@@ -1,0 +1,76 @@
+//
+// Component: Pagination
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@pagination-margin-horizontal:                  15px;
+
+@pagination-item-padding-horizontal:            16px;
+@pagination-item-padding-vertical:              10px;
+
+@pagination-item-color:                         @global-emphasis-color;
+@pagination-item-hover-color:                   @global-primary-background;
+@pagination-item-active-color:                  @global-primary-background;
+
+//
+// Master
+//
+
+@pagination-item-min-width:                     42px;
+
+@pagination-item-font-size:                     15px;
+
+@pagination-item-border-radius:                 500px;
+@pagination-item-box-shadow:                    @global-large-box-shadow;
+@pagination-item-hover-box-shadow:              @global-medium-box-shadow;
+
+
+// Component
+// ========================================================================
+
+.hook-pagination() {}
+
+
+// Items
+// ========================================================================
+
+.hook-pagination-item() {}
+
+.hook-pagination-item-hover() {}
+
+.hook-pagination-item-active() {}
+
+.hook-pagination-item-disabled() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-pagination-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+@inverse-pagination-item-hover-color:           @inverse-global-emphasis-color;
+@inverse-pagination-item-active-color:          @inverse-global-emphasis-color;
+
+//
+// Master
+//
+
+@inverse-pagination-item-background:            @inverse-global-muted-background;
+@inverse-pagination-item-hover-background:      fadein(@inverse-global-muted-background, 10%);
+@inverse-pagination-item-active-background:     fadein(@inverse-global-muted-background, 15%);
+
+@inverse-pagination-item-box-shadow:            -5px -5px 15px rgba(255, 255, 255, 0.03), 4px 4px 12px rgba(0,0,0, 0.2);
+@inverse-pagination-item-hover-box-shadow:      -2px -2px 5px rgba(255, 255, 255, 0.03), 2px 2px 4px rgba(0,0,0, 0.2);
+
+.hook-inverse-pagination-item() {}
+.hook-inverse-pagination-item-hover() {}
+.hook-inverse-pagination-item-active() {}
+.hook-inverse-pagination-item-disabled() {}

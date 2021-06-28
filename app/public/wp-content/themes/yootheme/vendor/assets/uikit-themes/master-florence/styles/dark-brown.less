@@ -1,0 +1,188 @@
+//
+// Global
+//
+
+@global-color: fade(@global-emphasis-color, 50%);
+@global-emphasis-color: #fff3e6;
+@global-inverse-color: #0f0c0b;
+@global-link-color: #b87f73;
+@global-muted-color: fade(@global-emphasis-color, 30%);
+
+@global-background: #2c2929;
+@global-danger-background: #b45a5f;
+@global-muted-background: fade(lighten(@global-background, 6%), 70%);
+@global-primary-background: #88635b;
+@global-secondary-background: #282525;
+@global-success-background: #6e9c7f;
+@global-warning-background: #d19f7b;
+
+@global-border: rgba(209, 182, 177, 0.1);
+
+@global-large-box-shadow: 2px 3px 10px 0 rgba(25, 20, 17, 0.35);
+@global-medium-box-shadow: 2px 3px 6px 0 rgba(25, 20, 17, 0.35);
+@global-small-box-shadow: 1px 2px 5px 0 rgba(25, 20, 17, 0.35);
+@global-xlarge-box-shadow: 2px 4px 12px 0 rgba(25, 20, 17, 0.35);
+
+//
+// Alert
+//
+
+@alert-background: @global-muted-background;
+@alert-primary-color: lighten(@global-primary-background, 15%);
+@alert-primary-background: @global-muted-background;
+@alert-success-color: lighten(@global-success-background, 15%);
+@alert-success-background: @global-muted-background;
+@alert-warning-color: lighten(@global-warning-background, 15%);
+@alert-warning-background: @global-muted-background;
+@alert-danger-color: lighten(@global-danger-background, 15%);
+@alert-danger-background: @global-muted-background;
+
+//
+// Badge
+//
+
+@badge-color: @global-emphasis-color;
+@badge-hover-color: @global-muted-color;
+
+//
+// Base
+//
+
+@base-ins-background: fade(@global-primary-background, 20%);
+@base-mark-background: fade(@global-primary-background, 20%);
+
+//
+// Button
+//
+
+@internal-button-default-gradient: linear-gradient(90deg, @global-muted-background 62.5%, transparent 62.5%);
+@internal-button-default-hover-gradient: linear-gradient(90deg, @global-muted-background 62.5%, transparent 62.5%);
+@internal-button-default-active-gradient: linear-gradient(90deg, @global-muted-background 62.5%, transparent 62.5%);
+
+@button-secondary-color: @global-emphasis-color;
+@button-secondary-hover-background: desaturate(darken(@button-secondary-background, 2%), 2%);
+@button-secondary-active-background: darken(@button-secondary-hover-background, 4%);
+
+@button-text-border: fade(@global-primary-background, 50%);
+
+//
+// Card
+//
+
+@card-hover-background: @global-muted-background;
+
+@card-default-background: @global-muted-background;
+@card-default-hover-background: @global-muted-background;
+@card-default-box-shadow: @global-medium-box-shadow;
+@card-default-hover-box-shadow: @global-xlarge-box-shadow;
+
+@card-primary-background: @global-primary-background;
+@card-primary-color-mode: light;
+@card-primary-box-shadow: @global-medium-box-shadow;
+@card-primary-hover-box-shadow: @global-xlarge-box-shadow;
+
+@card-secondary-color: @global-color;
+@card-secondary-title-color: @global-emphasis-color;
+@card-secondary-hover-background: desaturate(darken(@card-secondary-background, 2%), 2%);
+
+//
+// Divider
+//
+
+@divider-icon-color: @global-primary-background;
+@divider-small-border: @global-border;
+
+//
+// Form
+//
+
+@form-focus-border: @global-primary-background;
+
+//
+// Inverse
+//
+
+@inverse-global-color-mode: dark;
+
+//
+// Label
+//
+
+@label-background: @global-muted-background;
+@label-color: @global-emphasis-color;
+
+//
+// Marker
+//
+
+@marker-color: @global-emphasis-color;
+@marker-hover-color: @global-muted-color;
+
+@inverse-marker-color: @global-inverse-color;
+@inverse-marker-hover-color: fade(@inverse-marker-color, 60%);
+
+//
+// Notification
+//
+
+@notification-message-primary-color: #ffffff;
+@notification-message-success-color: #ffffff;
+@notification-message-warning-color: #ffffff;
+@notification-message-danger-color: #ffffff;
+
+//
+// List
+//
+
+@list-bullet-icon-color: @global-primary-background;
+
+//
+// Offcanvas
+//
+
+@offcanvas-bar-color-mode: light;
+
+//
+// Section
+//
+
+@section-primary-background: @global-primary-background;
+@section-primary-color-mode: light;
+
+@internal-section-default-image: "../../master-florence/images/styles/dark-brown/section-dark-background.svg";
+@internal-section-muted-image: "../../master-florence/images/styles/dark-brown/section-dark-background.svg";
+@internal-section-primary-image: "../../master-florence/images/styles/dark-brown/section-dark-background.svg";
+@internal-section-secondary-image: "../../master-florence/images/styles/dark-brown/section-dark-background.svg";
+
+//
+// Table
+//
+
+@table-row-active-background: fade(@global-primary-background, 20%);
+
+//
+// Text
+//
+
+@text-primary-color: lighten(@global-primary-background, 15%);
+@text-success-color: lighten(@global-success-background, 15%);
+@text-warning-color: lighten(@global-warning-background, 15%);
+@text-danger-color: lighten(@global-danger-background, 15%);
+
+//
+// Tile
+//
+
+@tile-primary-color-mode: light;
+
+@internal-tile-default-image: "../../master-florence/images/styles/dark-brown/background-noise.png";
+@internal-tile-muted-image: "../../master-florence/images/styles/dark-brown/background-noise.png";
+@internal-tile-primary-image: "../../master-florence/images/styles/dark-brown/background-noise.png";
+@internal-tile-secondary-image: "../../master-florence/images/styles/dark-brown/background-noise.png";
+
+//
+// Tooltip
+//
+
+@tooltip-background: @global-primary-background;
+@tooltip-color: @global-emphasis-color;

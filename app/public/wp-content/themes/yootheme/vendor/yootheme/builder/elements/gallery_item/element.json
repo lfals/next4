@@ -1,0 +1,110 @@
+{
+    "@import": "./element.php",
+    "name": "gallery_item",
+    "title": "Item",
+    "width": 500,
+    "placeholder": {
+        "props": {
+            "image": "${url:~yootheme/theme/assets/images/element-image-placeholder.png}",
+            "title": "Title",
+            "meta": "",
+            "content": "",
+            "hover_image": ""
+        }
+    },
+    "templates": {
+        "render": "./templates/template.php",
+        "content": "./templates/content.php"
+    },
+    "fields": {
+        "image": "${builder.image}",
+        "image_alt": {
+            "label": "Image Alt",
+            "source": true,
+            "enable": "image"
+        },
+        "title": {
+            "label": "Title",
+            "source": true
+        },
+        "meta": {
+            "label": "Meta",
+            "source": true
+        },
+        "content": {
+            "label": "Content",
+            "type": "editor",
+            "source": true
+        },
+        "link": "${builder.link}",
+        "link_text": {
+            "label": "Link Text",
+            "description": "Set a different link text for this item.",
+            "source": true,
+            "enable": "link"
+        },
+        "hover_image": {
+            "label": "Hover Image",
+            "description": "Select an optional image that appears on hover.",
+            "type": "image",
+            "source": true
+        },
+        "tags": {
+            "label": "Tags",
+            "description": "Enter a comma-separated list of tags, for example, <code>blue, white, black</code>.",
+            "source": true
+        },
+        "text_color": {
+            "label": "Text Color",
+            "description": "Set light or dark color mode for text, buttons and controls.",
+            "type": "select",
+            "options": {
+                "None": "",
+                "Light": "light",
+                "Dark": "dark"
+            },
+            "source": true
+        },
+        "text_color_hover": {
+            "type": "checkbox",
+            "text": "Inverse the text color on hover"
+        },
+        "status": "${builder.statusItem}",
+        "source": "${builder.source}"
+    },
+    "fieldset": {
+        "default": {
+            "type": "tabs",
+            "fields": [
+                {
+                    "title": "Content",
+                    "fields": [
+                        "image",
+                        "image_alt",
+                        "title",
+                        "meta",
+                        "content",
+                        "link",
+                        "link_text",
+                        "hover_image",
+                        "tags"
+                    ]
+                },
+                {
+                    "title": "Settings",
+                    "fields": [
+                        {
+                            "label": "Overlay",
+                            "type": "group",
+                            "fields": [
+                                "text_color",
+                                "text_color_hover"
+                            ]
+                        }
+                    ]
+                },
+                "${builder.advancedItem}"
+            ]
+        }
+    }
+}

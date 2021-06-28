@@ -1,0 +1,31 @@
+<svg class="svg" xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 130 130">
+
+  <defs>
+    <linearGradient id="svg-defs-gradient-squared-icon-monitor-activity" x1="35" y1="95" x2="95" y2="35" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#732EDF"/>
+      <stop offset="0.65" stop-color="#A92AE7"/>
+      <stop offset="1" stop-color="#C729F4"/>
+    </linearGradient>
+    <mask id="svg-defs-mask-squared-icon-monitor-activity">
+      <path class="uk-preserve" d="M55.78017,74.73473a8.83171,8.83171,0,1,1,17.66341,0" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2" opacity="0.98"/>
+      <circle class="uk-preserve" cx="64.61027" cy="60.81045" r="5.09263" fill="none" stroke="#fff" stroke-width="2"/>
+      <path class="uk-preserve" d="M48.03831,78.00752a21.50317,21.50317,0,0,1,30.44395-29.9537" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+      <path class="uk-preserve" d="M82.57927,52.40192a21.50368,21.50368,0,0,1-30.8757,29.3028" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+      <polyline class="uk-preserve" points="81.01 57.491 81.832 52.096 87.282 52.917" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <polyline class="uk-preserve" points="48.998 72.696 48.175 78.091 42.725 77.27" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </mask>
+  </defs>
+
+  <style>
+
+    img[src*="squared-icon-monitor-activity.svg"] + svg {
+      filter: drop-shadow(10px 10px 15px rgba(27, 30, 45, 0.4)) drop-shadow(-10px -10px 15px rgba(115, 130, 190, 0.1));
+      will-change: filter;
+    }
+
+  </style>
+
+  <rect class="uk-preserve" x="0" y="0" width="130" height="130" rx="24" fill="#303751" />
+  <rect class="uk-preserve" x="35" y="35" width="60" height="60" fill="url(#svg-defs-gradient-squared-icon-monitor-activity)" mask="url(#svg-defs-mask-squared-icon-monitor-activity)" />
+
+</svg>

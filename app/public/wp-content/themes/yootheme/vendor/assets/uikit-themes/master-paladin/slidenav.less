@@ -1,0 +1,95 @@
+//
+// Component: Slidenav
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@slidenav-padding-vertical:                     12.5px;
+@slidenav-padding-horizontal:                   14px;
+
+@slidenav-color:                                fade(@global-emphasis-color, 90%);
+@slidenav-hover-color:                          @global-emphasis-color;
+@slidenav-active-color:                         @global-emphasis-color;
+
+@slidenav-large-padding-vertical:               20px;
+@slidenav-large-padding-horizontal:             24px;
+
+//
+// Master
+//
+
+@slidenav-background:                           fade(@global-secondary-background, 5%);
+@slidenav-hover-background:                     fade(@global-secondary-background, 20%);
+@slidenav-active-background:                    fade(@global-secondary-background, 15%);
+
+@slidenav-border-width:                         @global-border-width;
+
+@slidenav-border:                               fade(@global-secondary-background, 50%);
+@slidenav-hover-border:                         fade(@global-secondary-background, 70%);
+@slidenav-active-border:                        fade(@global-secondary-background, 65%);
+
+@slidenav-border-radius:                        50%;
+
+
+// Component
+// ========================================================================
+
+.hook-slidenav() {}
+
+.hook-slidenav-hover() {}
+
+.hook-slidenav-active() {}
+
+
+// Icon modifier
+// ========================================================================
+
+.hook-slidenav-previous() {}
+
+.hook-slidenav-next() {}
+
+
+// Size modifier
+// ========================================================================
+
+.hook-slidenav-large() {}
+
+
+// Container
+// ========================================================================
+
+.hook-slidenav-container() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-icon-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+@inverse-slidenav-color:                        fade(@inverse-global-emphasis-color, 90%);
+@inverse-slidenav-hover-color:                  @inverse-global-emphasis-color;
+@inverse-slidenav-active-color:                 @inverse-global-emphasis-color;
+
+//
+// Master
+//
+
+@inverse-slidenav-background:                  fade(@inverse-global-primary-background, 20%);
+@inverse-slidenav-hover-background:            fade(@inverse-global-primary-background, 30%);
+@inverse-slidenav-active-background:           fade(@inverse-global-primary-background, 25%);
+
+@inverse-slidenav-border:                      fade(@inverse-global-primary-background, 60%);
+@inverse-slidenav-hover-border:                @inverse-global-primary-background;
+@inverse-slidenav-active-border:               fade(@inverse-global-primary-background, 70%);
+@inverse-slidenav-active-border:               fade(@inverse-global-primary-background, 65%);
+
+.hook-inverse-slidenav() {}
+.hook-inverse-slidenav-hover() {}
+.hook-inverse-slidenav-active() {}

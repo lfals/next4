@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 130 130">
+
+  <defs>
+    <linearGradient id="svg-defs-gradient-squared-icon-latest-technology-stack" x1="35" y1="95" x2="95" y2="35" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fe3966"/>
+      <stop offset="0.5" stop-color="#ff4538"/>
+      <stop offset="1" stop-color="#ff8a42"/>
+    </linearGradient>
+    <mask id="svg-defs-mask-squared-icon-latest-technology-stack">
+      <path class="uk-preserve" d="M35.62,79.49H94.38a.43.43,0,0,1,.43.43v1.56a2.39,2.39,0,0,1-2.39,2.39H37.59a2.39,2.39,0,0,1-2.39-2.39V79.92a.43.43,0,0,1,.43-.43Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path class="uk-preserve" d="M40.74,74.79V49a2.83,2.83,0,0,1,2.83-2.83H86.43A2.83,2.83,0,0,1,89.26,49V74.79" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <line class="uk-preserve" x1="60.89" y1="50.37" x2="69.11" y2="50.37" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </mask>
+  </defs>
+
+  <style>
+
+    img[src*="squared-icon-latest-technology-stack.svg"] + svg {
+      filter: drop-shadow(20px 20px 20px rgba(60, 65, 124, 0.12)) drop-shadow(-20px -20px 20px rgba(255, 255, 255, 0.9));
+      will-change: filter;
+    }
+
+  </style>
+
+  <rect class="uk-preserve" x="0" y="0" width="130" height="130" rx="24" fill="#f7f8fc" />
+  <rect class="uk-preserve" x="32" y="35" width="66" height="60" fill="url(#svg-defs-gradient-squared-icon-latest-technology-stack)" mask="url(#svg-defs-mask-squared-icon-latest-technology-stack)" />
+
+</svg>

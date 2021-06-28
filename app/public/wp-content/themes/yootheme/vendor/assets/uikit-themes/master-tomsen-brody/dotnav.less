@@ -1,0 +1,70 @@
+//
+// Component: Dotnav
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@dotnav-item-width:                             14px;
+
+@dotnav-item-background:                        transparent;
+@dotnav-item-hover-background:                  transparent;
+@dotnav-item-onclick-background:                @global-primary-background;
+@dotnav-item-active-background:                 transparent;
+
+//
+// Master
+//
+
+@dotnav-item-border-width:                      2px;
+
+@dotnav-item-border:                            @global-secondary-background;
+@dotnav-item-hover-border:                      @global-primary-background;
+@dotnav-item-onclick-border:                    transparent;
+@dotnav-item-active-border:                     @global-primary-background;
+
+
+// Component
+// ========================================================================
+
+.hook-dotnav() {}
+
+.hook-dotnav-item() {}
+
+.hook-dotnav-item-hover() {}
+
+.hook-dotnav-item-onclick() {}
+
+.hook-dotnav-item-active() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-dotnav-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+@inverse-dotnav-item-background:                             transparent;
+@inverse-dotnav-item-hover-background:                       transparent;
+@inverse-dotnav-item-onclick-background:                     @global-inverse-color;
+@inverse-dotnav-item-active-background:                      transparent;
+
+//
+// Master
+//
+
+@inverse-dotnav-item-border:                                 @inverse-global-border;
+@inverse-dotnav-item-hover-border:                           @global-inverse-color;
+@inverse-dotnav-item-onclick-border:                         transparent;
+@inverse-dotnav-item-active-border:                          @global-inverse-color;
+
+.hook-inverse-dotnav() {}
+.hook-inverse-dotnav-item() {}
+.hook-inverse-dotnav-item-hover() {}
+.hook-inverse-dotnav-item-onclick() {}
+.hook-inverse-dotnav-item-active() {}

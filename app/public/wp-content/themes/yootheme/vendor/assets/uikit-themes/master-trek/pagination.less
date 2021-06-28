@@ -1,0 +1,68 @@
+//
+// Component: Pagination
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@pagination-margin-horizontal:                  20px;
+
+@pagination-item-padding-vertical:              0;
+@pagination-item-padding-horizontal:            0;
+
+@pagination-item-color:                         @global-color;
+@pagination-item-hover-color:                   @global-primary-background;
+@pagination-item-active-color:                  @global-primary-background;
+
+//
+// Master
+//
+
+@pagination-item-border-mode:                   -bottom;
+
+@pagination-item-border-width:                  2px;
+
+@pagination-item-hover-border:                  @global-primary-background;
+@pagination-item-active-border:                 @global-primary-background;
+
+@pagination-item-font-family:                   @global-font-family;
+@pagination-item-font-weight:                   inherit;
+@pagination-item-text-transform:                none;
+
+
+// Component
+// ========================================================================
+
+.hook-pagination() {}
+
+
+// Items
+// ========================================================================
+
+.hook-pagination-item() {}
+
+.hook-pagination-item-hover() {}
+
+.hook-pagination-item-active() {}
+
+.hook-pagination-item-disabled() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-pagination-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+@inverse-pagination-item-hover-border:                           @inverse-pagination-item-hover-color;
+@inverse-pagination-item-active-border:                          @inverse-pagination-item-active-color;
+
+.hook-inverse-pagination-item() {}
+.hook-inverse-pagination-item-hover() {}
+.hook-inverse-pagination-item-active() {}
+.hook-inverse-pagination-item-disabled() {}

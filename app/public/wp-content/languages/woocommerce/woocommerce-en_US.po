@@ -1,0 +1,21 @@
+# Copyright (C) 2021 Automattic
+# This file is distributed under the same license as the WooCommerce plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce 5.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/woocommerce\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2021-03-09T20:59:43+00:00\n"
+"PO-Revision-Date: 2021-04-15 16:32+0200\n"
+"X-Generator: Poedit 2.4.2\n"
+"X-Domain: woocommerce\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: en\n"
+
+#: templates/loop/sale-flash.php:27 templates/single-product/sale-flash.php:27
+msgid "Sale!"
+msgstr "Sale"

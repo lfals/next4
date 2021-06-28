@@ -1,0 +1,208 @@
+//
+// Component: Navbar
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@navbar-background:                             @global-secondary-background;
+@navbar-color-mode:                             light;
+
+@navbar-nav-item-padding-horizontal:            20px;
+
+@navbar-nav-item-height:                        80px;
+@navbar-nav-item-font-size:                     (@global-small-font-size + 1px);
+
+@navbar-toggle-color:                           @global-color;
+@navbar-toggle-hover-color:                     @global-primary-background;
+
+@navbar-dropdown-background:                    @global-primary-background;
+@navbar-dropdown-color:                         fade(@global-inverse-color, 70%);
+
+@navbar-nav-item-color:                         @global-color;
+@navbar-nav-item-hover-color:                   @global-primary-background;
+@navbar-nav-item-onclick-color:                 @global-primary-background;
+@navbar-nav-item-active-color:                  @global-primary-background;
+@navbar-dropdown-nav-divider-border:            fade(@global-inverse-color, 20%);
+@navbar-dropdown-nav-sublist-item-color:        fade(@global-inverse-color, 70%);
+@navbar-dropdown-nav-sublist-item-hover-color:  @global-inverse-color;
+
+@navbar-dropdown-nav-item-color:                fade(@global-inverse-color, 70%);
+@navbar-dropdown-nav-item-hover-color:          @global-inverse-color;
+@navbar-dropdown-nav-item-active-color:         @global-inverse-color;
+@navbar-dropdown-nav-header-color:              @global-inverse-color;
+
+@navbar-dropbar-background:                     @global-primary-background;
+
+//
+// Master
+//
+
+@navbar-nav-item-line-mode:                     true;
+@navbar-nav-item-line-height:                   0;
+@navbar-nav-item-line-transition-duration:      0.3s;
+
+@navbar-nav-item-line-hover-height:             4px;
+
+@navbar-nav-item-line-onclick-height:           6px;
+
+@navbar-nav-item-line-active-height:            4px;
+
+@navbar-dropdown-grid-divider-border:           fade(@global-inverse-color, 20%);
+
+@navbar-dropdown-nav-font-family:               @global-font-family;
+@navbar-dropdown-nav-font-weight:               inherit;
+@navbar-dropdown-nav-text-transform:            none;
+@navbar-dropdown-nav-letter-spacing:            0;
+
+//
+// New
+//
+
+@navbar-nav-item-height-m:                     100px;
+
+
+// Component
+// ========================================================================
+
+.hook-navbar() {}
+
+
+// Container
+// ========================================================================
+
+.hook-navbar-container() {}
+
+
+// Nav
+// ========================================================================
+
+.hook-navbar-nav-item() {}
+
+.hook-navbar-nav-item-hover() {}
+
+.hook-navbar-nav-item-onclick() {}
+
+.hook-navbar-nav-item-active() {}
+
+
+// Item
+// ========================================================================
+
+.hook-navbar-item() {}
+
+
+// Toggle
+// ========================================================================
+
+.hook-navbar-toggle() {}
+
+.hook-navbar-toggle-hover() {}
+
+.hook-navbar-toggle-icon() {}
+
+.hook-navbar-toggle-icon-hover() {}
+
+
+// Subtitle
+// ========================================================================
+
+.hook-navbar-subtitle() {}
+
+
+// Style modifiers
+// ========================================================================
+
+.hook-navbar-primary() {}
+
+.hook-navbar-transparent() {}
+
+.hook-navbar-sticky() {}
+
+
+// Dropdown
+// ========================================================================
+
+.hook-navbar-dropdown() {}
+
+.hook-navbar-dropdown-dropbar() {}
+
+
+// Dropdown nav
+// ========================================================================
+
+.hook-navbar-dropdown-nav() {}
+
+.hook-navbar-dropdown-nav-item() {}
+
+.hook-navbar-dropdown-nav-item-hover() {}
+
+.hook-navbar-dropdown-nav-header() {}
+
+.hook-navbar-dropdown-nav-divider() {}
+
+
+// Dropbar
+// ========================================================================
+
+.hook-navbar-dropbar() {}
+
+.hook-navbar-dropbar-slide() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-navbar-misc() {
+
+    /* Tablet landscape and bigger */
+    @media (min-width: @breakpoint-medium) {
+
+        .uk-navbar-nav > li > a,
+        .uk-navbar-item,
+        .uk-navbar-toggle { min-height: @navbar-nav-item-height-m; }
+
+    }
+
+}
+
+
+// Inverse
+// ========================================================================
+
+@inverse-navbar-nav-item-hover-color:          @global-primary-background;
+@inverse-navbar-nav-item-onclick-color:        @global-primary-background;
+@inverse-navbar-nav-item-active-color:         @global-primary-background;
+@inverse-navbar-toggle-color:                  @inverse-global-emphasis-color;
+@inverse-navbar-toggle-hover-color:            @global-primary-background;
+
+//
+// Master
+//
+
+@inverse-navbar-nav-item-line-hover-background:         @global-primary-background;
+@inverse-navbar-nav-item-line-onclick-background:       @global-primary-background;
+@inverse-navbar-nav-item-line-active-background:        @global-primary-background;
+
+//
+// New
+//
+
+@inverse-navbar-dropdown-nav-item-color:                @inverse-global-muted-color;
+
+.hook-inverse-navbar-nav-item() {}
+.hook-inverse-navbar-nav-item-hover() {}
+.hook-inverse-navbar-nav-item-onclick() {}
+.hook-inverse-navbar-nav-item-active() {}
+
+.hook-inverse-navbar-item() {}
+
+.hook-inverse-navbar-toggle() {}
+.hook-inverse-navbar-toggle-hover() {}
+
+.hook-inverse() {
+    // FIX
+    .uk-navbar-dropdown-nav > li:not(.uk-active) > a:not(:hover) { color: @inverse-navbar-dropdown-nav-item-color !important; }
+}

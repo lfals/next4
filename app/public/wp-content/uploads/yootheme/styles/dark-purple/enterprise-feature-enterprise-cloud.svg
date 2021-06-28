@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="340" viewBox="0 0 500 340">
+
+  <style>
+
+    img[src*="enterprise-feature-enterprise-cloud.svg"] + svg {
+      filter: drop-shadow(10px 10px 20px rgba(27, 30, 45, 0.6)) drop-shadow(-10px -10px 15px rgba(115, 130, 190, 0.2));
+      will-change: filter;
+    }
+
+  </style>
+
+  <path class="uk-preserve" d="M394.745,322.494C452.9,322.494,500,275.926,500,218.285S452.9,114.077,394.745,114.077a104.27,104.27,0,0,0-42.365,8.95C337.1,62.23,281.32,17.241,215.244,17.241c-77.076,0-139.451,60.753-141.294,136.841A84.862,84.862,0,0,0,0,238.015c0,46.847,38.428,84.744,85.526,84.744Z" fill="#303751"/>
+
+</svg>

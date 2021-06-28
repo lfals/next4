@@ -1,0 +1,217 @@
+//
+// Component: Button
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@button-large-font-size:                        18px;
+
+@button-default-background:                     transparent;
+@button-default-color:                          @global-emphasis-color;
+@button-default-hover-background:               transparent;
+@button-default-hover-color:                    @global-inverse-color;
+@button-default-active-background:              transparent;
+@button-default-active-color:                   fade(@button-default-hover-color, 80%);
+
+@button-primary-background:                     @global-primary-background;
+@button-primary-hover-background:               darken(@button-primary-background, 4%);
+@button-primary-hover-color:                    fade(@button-primary-color, 85%);
+@button-primary-active-background:              darken(@button-primary-background, 8%);
+@button-primary-active-color:                   fade(@button-primary-color, 60%);
+
+@button-secondary-background:                   @global-secondary-background;
+@button-secondary-color:                        @global-inverse-color;
+@button-secondary-hover-background:             lighten(@button-secondary-background, 8%);
+@button-secondary-hover-color:                  fade(@button-secondary-color, 85%);
+@button-secondary-active-background:            darken(@button-secondary-background, 8%);
+@button-secondary-active-color:                 fade(@button-secondary-color, 60%);
+
+@button-danger-background:                      @global-danger-background;
+@button-danger-color:                           @global-inverse-color;
+@button-danger-hover-background:                lighten(@button-danger-background, 4%);
+@button-danger-hover-color:                     fade(@button-danger-color, 85%);
+@button-danger-active-background:               darken(@button-danger-background, 4%);
+@button-danger-active-color:                    @button-danger-color;
+
+//
+// Master
+//
+
+@button-font-weight:                            400;
+
+@button-transition-duration:                    0.25s;
+
+@button-background-size:                        ~'calc(200% + 1px)';
+@button-background-position-x:                  ~'calc(100% + 1px)';
+@button-hover-background-position-x:            0;
+
+@button-primary-box-shadow:                     1px 3px 15px fade(@button-primary-background, 20%);
+@button-primary-hover-box-shadow:               3px 5px 25px fade(@button-primary-background, 23%);
+
+@button-secondary-box-shadow:                   1px 3px 15px fade(@button-secondary-background, 15%);
+@button-secondary-hover-box-shadow:             3px 5px 25px fade(@button-secondary-background, 18%);
+
+@internal-button-default-gradient:              linear-gradient(90deg, @global-secondary-background 50%, @button-default-background 50%);
+@internal-button-default-hover-gradient:        linear-gradient(90deg, @global-secondary-background 50%, @button-default-hover-background 50%);
+@internal-button-default-active-gradient:       linear-gradient(90deg, lighten(@global-secondary-background, 8%) 0%, darken(@global-secondary-background, 12%) 100%);
+
+@internal-button-primary-gradient:              linear-gradient(90deg, @button-primary-background 0%, spin(@button-primary-background, 15%) 50%, @button-primary-background 100%);
+@internal-button-primary-hover-gradient:        @internal-button-primary-gradient;
+@internal-button-primary-active-gradient:       @internal-button-primary-gradient;
+
+@internal-button-secondary-gradient:            linear-gradient(90deg, @button-secondary-background 0%, lighten(@button-secondary-background, 12%) 50%, @button-secondary-background 100%);
+@internal-button-secondary-hover-gradient:      @internal-button-secondary-gradient;
+@internal-button-secondary-active-gradient:     @internal-button-secondary-gradient;
+
+@button-border-width:                           @global-border-width;
+
+@button-default-border:                         @global-secondary-background;
+@button-default-hover-border:                   @button-default-border;
+@button-default-active-border:                  @button-default-border;
+
+@button-disabled-border:                        @global-border;
+
+
+// Component
+// ========================================================================
+
+.hook-button() {}
+
+.hook-button-hover() {}
+
+.hook-button-focus() {}
+
+.hook-button-active() {}
+
+
+// Style modifiers
+// ========================================================================
+
+.hook-button-default() {}
+
+.hook-button-default-hover() {}
+
+.hook-button-default-active() {}
+
+//
+// Primary
+//
+
+.hook-button-primary() {}
+
+.hook-button-primary-hover() {}
+
+.hook-button-primary-active() {}
+
+//
+// Secondary
+//
+
+.hook-button-secondary() {}
+
+.hook-button-secondary-hover() {}
+
+.hook-button-secondary-active() {}
+
+//
+// Danger
+//
+
+.hook-button-danger() {}
+
+.hook-button-danger-hover() {}
+
+.hook-button-danger-active() {}
+
+
+// Disabled
+// ========================================================================
+
+.hook-button-disabled() {}
+
+
+// Size modifiers
+// ========================================================================
+
+.hook-button-small() {}
+
+.hook-button-large() {}
+
+
+// Text modifier
+// ========================================================================
+
+.hook-button-text() {}
+
+.hook-button-text-hover() {}
+
+.hook-button-text-disabled() {}
+
+
+// Link modifier
+// ========================================================================
+
+.hook-button-link() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-button-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+@inverse-button-default-background:                     transparent;
+@inverse-button-default-color:                          @inverse-global-emphasis-color;
+@inverse-button-default-hover-background:               @global-inverse-color;
+@inverse-button-default-hover-color:                    @inverse-global-inverse-color;
+@inverse-button-default-active-background:              fade(@global-inverse-color, 80%);
+@inverse-button-default-active-color:                   @inverse-global-inverse-color;
+
+@inverse-button-primary-background:                     fade(@global-inverse-color, 90%);
+@inverse-button-primary-color:                          @inverse-global-inverse-color;
+@inverse-button-primary-hover-background:               @global-inverse-color;
+@inverse-button-primary-hover-color:                    @inverse-global-inverse-color;
+@inverse-button-primary-active-background:              @global-inverse-color;
+@inverse-button-primary-active-color:                   fade(@inverse-global-inverse-color, 70%);
+
+@inverse-button-secondary-background:                   darken(@global-secondary-background, 5%);
+@inverse-button-secondary-color:                        @global-inverse-color;
+@inverse-button-secondary-hover-background:             darken(@inverse-button-secondary-background, 8%);
+@inverse-button-secondary-hover-color:                  fade(@inverse-button-secondary-color, 85%);
+@inverse-button-secondary-active-background:            darken(@inverse-button-secondary-background, 3%);
+@inverse-button-secondary-active-color:                 fade(@inverse-global-color, 70%);
+
+@inverse-button-text-color:                             @inverse-global-emphasis-color;
+@inverse-button-text-hover-color:                       @inverse-global-color;
+
+//
+// Master
+//
+
+@inverse-button-default-border:                         @inverse-global-color;
+@inverse-button-default-hover-border:                   @inverse-button-default-hover-background;
+@inverse-button-default-active-border:                  @inverse-button-default-active-background;
+
+.hook-inverse-button-default() {}
+.hook-inverse-button-default-hover() {}
+.hook-inverse-button-default-active() {}
+
+.hook-inverse-button-primary() {}
+.hook-inverse-button-primary-hover() {}
+.hook-inverse-button-primary-active() {}
+
+.hook-inverse-button-secondary() {}
+.hook-inverse-button-secondary-hover() {}
+.hook-inverse-button-secondary-active() {}
+
+.hook-inverse-button-text() {}
+.hook-inverse-button-text-hover() {}
+.hook-inverse-button-text-disabled() {}
+
+.hook-inverse-button-link() {}

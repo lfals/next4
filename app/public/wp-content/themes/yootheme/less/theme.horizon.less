@@ -1,0 +1,83 @@
+/*
+
+Name: Horizon
+Background: White
+Color: Red
+Type: Material
+Preview: https://downloads-yootheme.storage.googleapis.com/library/horizon/styles/default.jpg
+
+Style: white-blue
+Name: White Blue
+Background: White
+Color: Blue
+Type: Material
+Preview: https://downloads-yootheme.storage.googleapis.com/library/horizon/styles/white-blue.jpg
+
+Style: white-green
+Name: White Green
+Background: White
+Color: Green
+Type: Material
+Preview: https://downloads-yootheme.storage.googleapis.com/library/horizon/styles/white-green.jpg
+
+Style: white-dove
+Name: White Dove
+Background: White
+Color: Blue
+Type: Material
+Preview: https://downloads-yootheme.storage.googleapis.com/library/horizon/styles/white-dove.jpg
+
+Style: dark-turquoise
+Name: Dark Turquoise
+Background: Dark
+Color: Turquoise
+Type: Material
+Preview: https://downloads-yootheme.storage.googleapis.com/library/horizon/styles/dark-turquoise.jpg
+
+Style: black-orange
+Name: Black Orange
+Background: Black
+Color: Orange
+Type: Material
+Preview: https://downloads-yootheme.storage.googleapis.com/library/horizon/styles/black-orange.jpg
+
+*/
+
+// Platform
+@import "platform.less";
+
+// UIkit Core
+@import "../vendor/assets/uikit/src/less/uikit.less";
+
+// UIkit Theme
+@import "../vendor/assets/uikit-themes/master/_import.less";
+@import "../vendor/assets/uikit-themes/master-horizon/_import.less";
+
+// Theme
+@import "theme.less";
+
+
+// Variables
+// ========================================================================
+
+//
+// Toolbar
+//
+
+@theme-toolbar-font-size:                                13px;
+
+//
+// Box Decoration
+//
+
+@theme-box-decoration-default-background:                darken(@global-muted-background, 3%);
+@theme-box-decoration-primary-background:                darken(@global-muted-background, 3%);
+@theme-box-decoration-secondary-background:              darken(@global-muted-background, 3%);
+
+
+// Style
+// ========================================================================
+
+@import (optional) "../vendor/assets/uikit-themes/master-horizon/styles/@{internal-style}.less";
+
+@internal-style: ;

@@ -1,0 +1,111 @@
+//
+// Component: Heading
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@heading-small-font-size-m:                     @heading-medium-font-size-l * 0.77;		// 54px
+
+@heading-medium-font-size-l:                    70px;
+@heading-large-font-size-l:                     92px;
+
+@heading-small-line-height:                     1.3;
+
+@heading-divider-border-width:                  ~'calc(0.2px + 0.04em)';
+
+@heading-bullet-height:                         ~'calc(0.2px + 0.05em)';
+@heading-bullet-border-width:                   ~'calc(8px + 0.3em)';
+@heading-bullet-border:                         @global-primary-background;
+
+@heading-line-width:                            80px;
+@heading-line-border-width:                     ~'calc(0.6px + 0.03em)';
+@heading-line-border:                           @global-primary-background;
+@heading-line-margin-horizontal:                20px;
+
+//
+// Master
+//
+
+@heading-small-font-weight:                     600;
+@heading-small-letter-spacing:                  0.75px;
+
+@heading-medium-font-weight:                    600;
+@heading-medium-letter-spacing:                 0.75px;
+
+@heading-large-font-weight:                     700;
+@heading-large-text-transform:                  uppercase;
+@heading-large-letter-spacing:                  2px;
+
+@heading-xlarge-font-weight:                    700;
+@heading-xlarge-text-transform:                 uppercase;
+@heading-xlarge-letter-spacing:                 2px;
+
+@heading-2xlarge-font-weight:                   700;
+@heading-2xlarge-text-transform:                uppercase;
+@heading-2xlarge-letter-spacing:                2px;
+
+
+// Component
+// ========================================================================
+
+.hook-heading-small() {}
+
+.hook-heading-medium() {}
+
+.hook-heading-large() {}
+
+.hook-heading-xlarge() {}
+
+.hook-heading-2xlarge() {}
+
+
+// Divider
+// ========================================================================
+
+.hook-heading-divider() {}
+
+
+// Bullet
+// ========================================================================
+
+.hook-heading-bullet() {}
+
+
+// Line
+// ========================================================================
+
+.hook-heading-line() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-heading-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+@inverse-heading-bullet-border:                   @inverse-global-primary-background;
+@inverse-heading-line-border:                     @inverse-global-primary-background;
+
+.hook-inverse-heading-small() {}
+
+.hook-inverse-heading-medium() {}
+
+.hook-inverse-heading-large() {}
+
+.hook-inverse-heading-xlarge() {}
+
+.hook-inverse-heading-2xlarge() {}
+
+.hook-inverse-heading-divider() {}
+
+.hook-inverse-heading-bullet() {}
+
+.hook-inverse-heading-line() {}
+
+.hook-inverse() {}

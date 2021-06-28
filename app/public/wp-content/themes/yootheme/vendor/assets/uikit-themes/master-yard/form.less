@@ -1,0 +1,142 @@
+//
+// Component: Form
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@form-background:                               transparent;
+@form-focus-background:                         transparent;
+
+@form-danger-color:                             @form-color;
+@form-success-color:                            @form-color;
+
+@form-radio-background:                         transparent;
+@form-radio-checked-background:                 @global-primary-background;
+@form-radio-checked-focus-background:           darken(@form-radio-checked-background, 6%);
+
+@form-stacked-margin-bottom:                    5px;
+
+//
+// Master
+//
+
+@form-border-mode:                              -bottom;
+@form-border-width:                             @global-border-width;
+@form-border:                                   @global-border;
+@form-focus-border:                             @form-focus-color;
+
+@form-disabled-border:                          @global-border;
+
+@form-danger-border:                            @global-danger-background;
+@form-success-border:                           @global-success-background;
+
+@form-blank-focus-border:                       @global-border;
+@form-blank-focus-border-style:                 dashed;
+
+@form-radio-border-width:                       @global-border-width;
+@form-radio-border:                             @global-border;
+@form-radio-focus-border:                       @global-primary-background;
+@form-radio-checked-border:                     transparent;
+@form-radio-disabled-border:                    @global-border;
+
+
+// Component
+// ========================================================================
+
+.hook-form() {}
+
+.hook-form-single-line() {}
+
+.hook-form-multi-line() {}
+
+.hook-form-focus() {}
+
+.hook-form-disabled() {}
+
+
+// Style modifiers
+// ========================================================================
+
+.hook-form-danger() {}
+
+.hook-form-success() {}
+
+.hook-form-blank() {}
+
+.hook-form-blank-focus() {}
+
+
+// Radio and checkbox
+// ========================================================================
+
+.hook-form-radio() {}
+
+.hook-form-radio-focus() {}
+
+.hook-form-radio-checked() {}
+
+.hook-form-radio-checked-focus() { }
+
+.hook-form-radio-disabled() {}
+
+
+// Legend
+// ========================================================================
+
+.hook-form-legend() {}
+
+
+// Label
+// ========================================================================
+
+.hook-form-label() {}
+
+
+// Layout
+// ========================================================================
+
+.hook-form-stacked-label() {}
+
+.hook-form-horizontal-label() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-form-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+@inverse-form-background:                      transparent;
+@inverse-form-color:                           @inverse-global-color;
+@inverse-form-focus-background:                transparent;
+@inverse-form-focus-color:                     @inverse-global-emphasis-color;
+@inverse-form-placeholder-color:               @inverse-global-muted-color;
+
+@inverse-form-radio-background:                transparent;
+
+//
+// Master
+//
+
+@inverse-form-border:                          @inverse-global-muted-color;
+@inverse-form-focus-border:                    @global-primary-background;
+@inverse-form-radio-border:                    @inverse-global-muted-color;
+@inverse-form-radio-focus-border:              @inverse-global-primary-background;
+@inverse-form-radio-checked-border:            @inverse-global-primary-background;
+
+.hook-inverse-form() {}
+.hook-inverse-form-focus() {}
+
+.hook-inverse-form-radio() {}
+.hook-inverse-form-radio-focus() {}
+
+.hook-inverse-form-radio-checked() {}
+.hook-inverse-form-radio-checked-focus() {}
+
+.hook-inverse-form-label() {}

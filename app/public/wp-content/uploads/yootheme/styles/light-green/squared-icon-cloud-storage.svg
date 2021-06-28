@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 130 130">
+
+  <defs>
+    <linearGradient id="svg-defs-gradient-squared-icon-cloud-storage" x1="35" y1="95" x2="95" y2="35" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#46d4aa"/>
+      <stop offset="0.65" stop-color="#56dd9a"/>
+      <stop offset="1" stop-color="#72e475"/>
+    </linearGradient>
+    <mask id="svg-defs-mask-squared-icon-cloud-storage">
+      <path class="uk-preserve" d="M50.65,80.69H45.29A10.19,10.19,0,0,1,43.9,60.4a17,17,0,0,1,33.5-3.74,12.56,12.56,0,1,1,5.09,24H77.57" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <polyline class="uk-preserve" points="58.03 78.46 64.24 72.25 70.45 78.46" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path class="uk-preserve" d="M64.24,92V72.25" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </mask>
+  </defs>
+
+  <style>
+  
+    img[src*="squared-icon-cloud-storage.svg"] + svg {
+      filter: drop-shadow(20px 20px 20px rgba(60, 65, 124, 0.12)) drop-shadow(-20px -20px 20px rgba(255, 255, 255, 0.9));
+      will-change: filter;
+    }
+
+  </style>
+
+  <rect class="uk-preserve" x="0" y="0" width="130" height="130" rx="24" fill="#f7f8fc" />
+  <rect class="uk-preserve" x="30" y="30" width="70" height="70" fill="url(#svg-defs-gradient-squared-icon-cloud-storage)" mask="url(#svg-defs-mask-squared-icon-cloud-storage)" />
+
+</svg>

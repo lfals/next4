@@ -1,0 +1,99 @@
+/*
+
+Name: District
+Background: White
+Color: Pink
+Type: Flat
+Preview: https://downloads-yootheme.storage.googleapis.com/library/district/styles/default.jpg
+
+Style: white-black
+Name: White Black
+Background: White
+Color: Black
+Type: Flat
+Preview: https://downloads-yootheme.storage.googleapis.com/library/district/styles/white-black.jpg
+
+Style: white-turquoise
+Name: White Turquoise
+Background: White
+Color: Turquoise
+Type: Flat
+Preview: https://downloads-yootheme.storage.googleapis.com/library/district/styles/white-turquoise.jpg
+
+Style: white-yellow
+Name: White Yellow
+Background: White
+Color: Yellow
+Type: Flat
+Preview: https://downloads-yootheme.storage.googleapis.com/library/district/styles/white-yellow.jpg
+
+Style: white-red
+Name: White red
+Background: White
+Color: Red
+Type: Flat
+Preview: https://downloads-yootheme.storage.googleapis.com/library/district/styles/white-red.jpg
+
+Style: white-blue
+Name: White Blue
+Background: White
+Color: Blue
+Type: Flat
+Preview: https://downloads-yootheme.storage.googleapis.com/library/district/styles/white-blue.jpg
+
+*/
+
+// Platform
+@import "platform.less";
+
+// UIkit Core
+@import "../vendor/assets/uikit/src/less/uikit.less";
+
+// UIkit Theme
+@import "../vendor/assets/uikit-themes/master/_import.less";
+@import "../vendor/assets/uikit-themes/master-district/_import.less";
+
+// Theme
+@import "theme.less";
+
+
+// Variables
+// ========================================================================
+
+//
+// Page border
+//
+
+@theme-page-border-width:                                15px;
+@theme-page-border:                                      @global-background;
+
+
+//
+// Section
+//
+
+@section-title-color:                                    @global-color;
+@section-title-text-transform:                           uppercase;
+@section-title-letter-spacing:                           2px;
+
+//
+// Header
+//
+
+@theme-headerbar-top-padding-bottom:                     0;
+
+//
+// Box Decoration
+//
+
+@theme-box-decoration-default-background:                darken(@global-muted-background, 3%);
+@theme-box-decoration-primary-background:                @global-primary-background;
+@theme-box-decoration-secondary-background:              @global-primary-background;
+
+
+// Style
+// ========================================================================
+
+@import (optional) "../vendor/assets/uikit-themes/master-district/styles/@{internal-style}.less";
+
+@internal-style: ;

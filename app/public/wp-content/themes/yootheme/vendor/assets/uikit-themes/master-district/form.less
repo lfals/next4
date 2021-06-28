@@ -1,0 +1,135 @@
+//
+// Component: Form
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@form-background:                               @global-background;
+@form-placeholder-color:                        @global-color;
+
+@form-focus-background:                         @form-background;
+@form-focus-color:                              fade(@form-color, 70%);
+@form-large-font-size:                          @global-font-size;
+
+@form-icon-color:                               @form-placeholder-color;
+
+@form-radio-background:                         transparent;
+@form-radio-checked-background:                 @global-emphasis-color;
+@form-radio-checked-focus-background:           @global-emphasis-color;
+
+//
+// Master
+//
+
+@form-border:                                   @global-border;
+@form-focus-border:                             fade(@form-border, 30%);
+@form-border-width:                             @global-border-width;
+@form-blank-focus-border:                       @global-border;
+@form-blank-focus-border-style:                 dashed;
+
+@form-danger-border:                            @global-danger-background;
+@form-success-border:                           @global-success-background;
+
+@form-radio-border:                             @global-border;
+@form-radio-border-width:                       @global-border-width;
+@form-radio-focus-border:                       fade(@global-border, 30%);
+@form-radio-checked-border:                     transparent;
+@form-radio-disabled-border:                    @global-border;
+
+
+// Component
+// ========================================================================
+
+.hook-form() {}
+
+.hook-form-single-line() {}
+
+.hook-form-multi-line() {}
+
+.hook-form-focus() {}
+
+.hook-form-disabled() {}
+
+
+// Style modifiers
+// ========================================================================
+
+.hook-form-danger() {}
+
+.hook-form-success() {}
+
+.hook-form-blank() {}
+
+.hook-form-blank-focus() {}
+
+
+// Radio and checkbox
+// ========================================================================
+
+.hook-form-radio() {}
+
+.hook-form-radio-focus() {}
+
+.hook-form-radio-checked() {}
+
+.hook-form-radio-checked-focus() { }
+
+.hook-form-radio-disabled() {}
+
+
+// Legend
+// ========================================================================
+
+.hook-form-legend() {}
+
+
+// Label
+// ========================================================================
+
+.hook-form-label() {}
+
+
+// Layout
+// ========================================================================
+
+.hook-form-stacked-label() {}
+
+.hook-form-horizontal-label() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-form-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+@inverse-form-background:                      transparent;
+@inverse-form-color:                           @inverse-global-emphasis-color;
+@inverse-form-focus-background:                transparent;
+@inverse-form-focus-color:                     @inverse-global-color;
+@inverse-form-placeholder-color:               @inverse-global-emphasis-color;
+
+@inverse-form-radio-background:                transparent;
+
+@inverse-form-border:                          @inverse-global-border;
+@inverse-form-focus-border:                    fade(@inverse-form-border, 30%);
+@inverse-form-radio-border:                    @inverse-global-border;
+@inverse-form-radio-focus-border:              fade(@inverse-form-border, 30%);
+@inverse-form-radio-checked-border:            transparent;
+
+.hook-inverse-form() {}
+.hook-inverse-form-focus() {}
+
+.hook-inverse-form-radio() {}
+.hook-inverse-form-radio-focus() {}
+
+.hook-inverse-form-radio-checked() {}
+.hook-inverse-form-radio-checked-focus() {}
+
+.hook-inverse-form-label() {}

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <defs>
+
+    <linearGradient id="svg-defs-gradient-icon-automated-testing" x1="15" y1="65" x2="65" y2="15" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7141F1"/>
+      <stop offset="0.7" stop-color="#4D6BD8"/>
+      <stop offset="1" stop-color="#3183E2"/>
+    </linearGradient>
+    <mask id="svg-defs-mask-icon-automated-testing">
+      <polyline class="uk-preserve" points="18.106 23.014 22.73 27.639 33.961 16.408" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path class="uk-preserve" d="M35.772,23.345A12.447,12.447,0,1,1,23.285,10.938h0a12.58,12.58,0,0,1,4.136.7" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <polyline class="uk-preserve" points="18.106 56.325 22.73 60.949 33.961 49.718" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path class="uk-preserve" d="M35.772,56.668a12.447,12.447,0,1,1-12.447-12.46,12.223,12.223,0,0,1,4.136.714" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <polyline class="uk-preserve" points="51.469 56.325 56.093 60.949 67.325 49.718" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path class="uk-preserve" d="M69.069,56.668a12.447,12.447,0,1,1-12.434-12.46,12.268,12.268,0,0,1,4.136.714" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <circle class="uk-preserve" cx="56.675" cy="23.345" r="12.447" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </mask>
+  </defs>
+
+  <rect class="uk-preserve" x="9" y="9" width="62" height="62" fill="url(#svg-defs-gradient-icon-automated-testing)" mask="url(#svg-defs-mask-icon-automated-testing)"/>
+
+</svg>

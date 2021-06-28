@@ -1,0 +1,165 @@
+//
+// Global
+//
+
+@global-color: #858eaf;
+@global-emphasis-color: #e6e7ff;
+@global-inverse-color: #1a1c2b;
+@global-muted-color: #565775;
+@global-link-color: @global-primary-background;
+@global-link-hover-color: darken(@global-link-color, 10%);
+
+@global-background: #1a1c2b;
+@global-muted-background: lighten(@global-background, 5%);
+@global-primary-background: #34c6b0;
+@global-secondary-background: darken(@global-background, 3%);
+@global-success-background: #8beca0;
+@global-warning-background: #ffb881;
+@global-danger-background: #fa8a84;
+
+@global-border: #2c2e40;
+
+@global-small-box-shadow: 0 2px 8px rgba(5,5,12, 0.2);
+@global-medium-box-shadow: 0 5px 15px rgba(5,5,12, 0.22);
+@global-large-box-shadow: 0 15px 55px rgba(5,5,12, 0.23);
+@global-xlarge-box-shadow: 0 28px 50px rgba(5,5,12, 0.25);
+
+//
+// Alert
+//
+
+@alert-primary-background: @global-muted-background;
+@alert-success-background: @global-muted-background;
+@alert-warning-background: @global-muted-background;
+@alert-danger-background: @global-muted-background;
+
+//
+// Base
+//
+
+@base-code-color: #43bbad;
+@base-ins-background: rgba(255, 255, 255, 0.1);
+@base-ins-color: #e6e7ff;
+@base-mark-background: @base-ins-background;
+@base-mark-color: @base-ins-color;
+
+//
+// Button
+//
+
+@button-default-background: @global-primary-background;
+@button-default-color: @global-inverse-color;
+@button-default-hover-background: @button-default-background;
+@button-default-hover-color: @button-default-color;
+@button-default-active-background: fade(@button-default-background, 70%);
+@button-default-active-color: @button-default-color;
+
+@button-primary-active-color: @global-primary-background;
+
+@button-secondary-border: @global-muted-background;
+@button-secondary-color: @global-color;
+@button-secondary-hover-background: @global-muted-background;
+@button-secondary-hover-color: @global-emphasis-color;
+@button-secondary-active-background: lighten(@global-muted-background, 5%);
+@button-secondary-active-color: @global-emphasis-color;
+
+//
+// Card
+//
+
+@card-primary-color-mode: none;
+
+@card-secondary-color-mode: light;
+@card-secondary-color: @global-color;
+@card-secondary-title-color: @global-emphasis-color;
+@card-secondary-hover-background: darken(@card-secondary-background, 1%);
+
+//
+// Dotnav
+//
+
+@dotnav-item-border: rgba(255,255,255, 0.8);
+@dotnav-item-hover-border: #fff;
+@dotnav-item-active-border: #fff;
+
+@dotnav-item-hover-background: #fff;
+@dotnav-item-onclick-background: #fff;
+@dotnav-item-active-background: #fff;
+
+//
+// Dropdown
+//
+
+@dropdown-nav-item-hover-color: @global-emphasis-color;
+@dropdown-nav-sublist-item-hover-color: @global-emphasis-color;
+
+//
+// Icon
+//
+
+@icon-button-background: @global-primary-background;
+@icon-button-color: @global-inverse-color;
+@icon-button-hover-background: @global-primary-background;
+@icon-button-hover-color: fade(@icon-button-color, 70%);
+@icon-button-active-background: fade(@icon-button-background, 70%);
+@icon-button-active-color: @icon-button-color;
+
+//
+// Inverse
+//
+
+@inverse-global-color-mode: dark;
+
+//
+// Navbar
+//
+
+@navbar-dropdown-nav-item-hover-color: @global-emphasis-color;
+@navbar-dropdown-nav-item-active-color: @global-emphasis-color;
+@navbar-dropdown-nav-sublist-item-hover-color: @global-emphasis-color;
+
+//
+// Offcanvas
+//
+
+@offcanvas-bar-color-mode: light;
+
+//
+// Overlay
+//
+
+@overlay-primary-color-mode: light;
+
+//
+// Search
+//
+
+@search-default-background: @global-muted-background;
+
+//
+// Section
+//
+
+@section-primary-color-mode: dark;
+@section-secondary-color-mode: light;
+
+//
+// slidenav
+//
+
+@inverse-slidenav-background:                           #fff;
+@inverse-slidenav-hover-background:                     fade(@inverse-slidenav-background, 70%);
+@inverse-slidenav-active-background:                    fade(@inverse-slidenav-background, 70%);
+
+//
+// Tile
+//
+
+@tile-primary-color-mode: dark;
+@tile-secondary-color-mode: light;
+
+//
+// Tooltip
+//
+
+@tooltip-background: @global-primary-background;

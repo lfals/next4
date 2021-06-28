@@ -1,0 +1,43 @@
+//
+// Component: Overlay
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@overlay-default-background:                    transparent;
+@overlay-primary-background:                    fade(@global-primary-background, 80%);
+
+//
+// Master
+//
+
+@internal-overlay-default-gradient:            linear-gradient(to bottom, fade(@global-secondary-background, 0%), fade(@global-secondary-background, 40%));
+
+
+// Component
+// ========================================================================
+
+.hook-overlay() {}
+
+
+// Icon
+// ========================================================================
+
+.hook-overlay-icon() {}
+
+
+// Style modifiers
+// ========================================================================
+
+.hook-overlay-default() {}
+
+.hook-overlay-primary() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-overlay-misc() {}

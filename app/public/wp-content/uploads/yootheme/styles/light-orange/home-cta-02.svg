@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1100" height="450" viewBox="0 0 1100 450">
+  <defs>
+    <linearGradient id="a" data-name="Unbenannter Verlauf 771" x1="320.974" y1="280.416" x2="206.247" y2="50.963" gradientTransform="matrix(1, 0, 0, -1, 0, 452)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b4506c" stop-opacity="0.7"/>
+      <stop offset="0.242" stop-color="#b4506c"/>
+      <stop offset="0.831" stop-color="#b4506c" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="b" data-name="Unbenannter Verlauf 63" x1="241.07" y1="133.87" x2="502.161" y2="98.846" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffb452" stop-opacity="0.5"/>
+      <stop offset="0.141" stop-color="#ffb452" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#ffb452"/>
+    </linearGradient>
+    <radialGradient id="c" data-name="Unbenannter Verlauf 709" cx="8.662" cy="1164.996" r="923.623" gradientTransform="matrix(1.002, 0.004, -0.002, 0.471, 0.515, -539.912)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e8584c" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#e8584c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <path d="M512.7,251.4,210,450H0V316L388.1,61.4a113.606,113.606,0,0,1,124.6,190Z" opacity="0.3" fill="url(#a)" style="isolation: isolate"/>
+  <path d="M545.7,219a113.565,113.565,0,0,1-157.2,32.7h-.1L4.9,0H419.1L513,61.7a113.577,113.577,0,0,1,32.733,157.25Z" opacity="0.65" fill="url(#b)" style="isolation: isolate"/>
+  <rect width="1100" height="450" opacity="0.7" fill="url(#c)" style="isolation: isolate"/>
+</svg>

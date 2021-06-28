@@ -1,0 +1,70 @@
+//
+// Component: Pagination
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@pagination-margin-horizontal:                  @global-small-margin;
+
+@pagination-item-padding-vertical:              10px;
+@pagination-item-padding-horizontal:            10px;
+
+@pagination-item-font-size:                     @global-font-size;
+@pagination-item-color:                         @global-emphasis-color;
+
+@pagination-item-hover-color:                   @global-inverse-color;
+@pagination-item-hover-text-decoration:         none;
+@pagination-item-active-color:                  @global-emphasis-color;
+
+//
+// Master
+//
+
+@pagination-item-min-width:                     41px;
+@pagination-item-hover-background:              @global-secondary-background;
+
+@pagination-item-border-width:                  @global-border-width;
+
+@pagination-item-hover-border:                  transparent;
+@pagination-item-active-border:                 @global-border;
+
+@pagination-item-font-size:                     @global-small-font-size;
+
+
+// Component
+// ========================================================================
+
+.hook-pagination() {}
+
+
+// Items
+// ========================================================================
+
+.hook-pagination-item() {}
+
+.hook-pagination-item-hover() {}
+
+.hook-pagination-item-active() {}
+
+.hook-pagination-item-disabled() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-pagination-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+@inverse-pagination-item-hover-border:         @inverse-global-primary-background;
+@inverse-pagination-item-active-border:        @inverse-global-primary-background;
+
+.hook-inverse-pagination-item() {}
+.hook-inverse-pagination-item-hover() {}
+.hook-inverse-pagination-item-active() {}
+.hook-inverse-pagination-item-disabled() {}

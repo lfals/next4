@@ -1,0 +1,200 @@
+//
+// Component: Navbar
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+//
+// New
+//
+
+@internal-navbar-gradient:                     ;
+
+@internal-navbar-nav-item-line-gradient:       ;
+
+@internal-navbar-nav-item-background-image:    ;
+@internal-navbar-nav-item-background-size:     cover;
+
+@internal-navbar-dropbar-gradient:             ;
+
+
+// Component
+// ========================================================================
+
+.hook-navbar() {}
+
+
+// Container
+// ========================================================================
+
+.hook-navbar-container() when not (@internal-navbar-gradient = ~'') {
+    background-image: @internal-navbar-gradient;
+}
+
+
+// Nav
+// ========================================================================
+
+.hook-navbar-nav-item() {}
+
+.hook-navbar-nav-item-hover() {}
+
+.hook-navbar-nav-item-onclick() {}
+
+.hook-navbar-nav-item-active() {}
+
+// Gradient
+.hook-navbar-nav-item-line() when not (@internal-navbar-nav-item-line-gradient = ~'') and (@internal-navbar-nav-item-background-image = ~'') {
+    background-image: @internal-navbar-nav-item-line-gradient;
+}
+
+// Image
+.hook-navbar-nav-item-line() when not (@internal-navbar-nav-item-background-image = ~'') and (@internal-navbar-nav-item-line-gradient = ~'') {
+    background-color: transparent !important;
+    background-size: @internal-navbar-nav-item-background-size;
+}
+
+.hook-navbar-nav-item-line() when not (@internal-navbar-nav-item-background-image = ~'') and (@internal-navbar-nav-item-line-gradient = ~'')
+                              and not (@navbar-nav-item-line-background = transparent) {
+    .svg-fill(@internal-navbar-nav-item-background-image, "#000", @navbar-nav-item-line-background);
+}
+
+.hook-navbar-nav-item-hover-line() when not (@internal-navbar-nav-item-background-image = ~'') and (@internal-navbar-nav-item-line-gradient = ~'')
+                                    and not (@navbar-nav-item-line-background = @navbar-nav-item-line-hover-background) {
+    .svg-fill(@internal-navbar-nav-item-background-image, "#000", @navbar-nav-item-line-hover-background);
+}
+
+.hook-navbar-nav-item-onclick-line() when not (@internal-navbar-nav-item-background-image = ~'') and (@internal-navbar-nav-item-line-gradient = ~'')
+                                      and not (@navbar-nav-item-line-background = @navbar-nav-item-line-onclick-background) {
+    .svg-fill(@internal-navbar-nav-item-background-image, "#000", @navbar-nav-item-line-onclick-background);
+}
+
+.hook-navbar-nav-item-active-line() when not (@internal-navbar-nav-item-background-image = ~'') and (@internal-navbar-nav-item-line-gradient = ~'')
+                                     and not (@navbar-nav-item-line-background = @navbar-nav-item-line-active-background) {
+    .svg-fill(@internal-navbar-nav-item-background-image, "#000", @navbar-nav-item-line-active-background);
+}
+
+// Item
+// ========================================================================
+
+.hook-navbar-item() {}
+
+
+// Toggle
+// ========================================================================
+
+.hook-navbar-toggle() {}
+
+.hook-navbar-toggle-hover() {}
+
+.hook-navbar-toggle-icon() {}
+
+.hook-navbar-toggle-icon-hover() {}
+
+
+// Subtitle
+// ========================================================================
+
+.hook-navbar-subtitle() {}
+
+
+// Style modifiers
+// ========================================================================
+
+.hook-navbar-primary() {}
+
+.hook-navbar-transparent() {}
+
+.hook-navbar-sticky() {}
+
+
+// Dropdown
+// ========================================================================
+
+.hook-navbar-dropdown() {}
+
+.hook-navbar-dropdown-dropbar() {}
+
+
+// Dropdown nav
+// ========================================================================
+
+.hook-navbar-dropdown-nav() {}
+
+.hook-navbar-dropdown-nav-item() {}
+
+.hook-navbar-dropdown-nav-item-hover() {}
+
+.hook-navbar-dropdown-nav-header() {}
+
+.hook-navbar-dropdown-nav-divider() {}
+
+
+// Dropbar
+// ========================================================================
+
+.hook-navbar-dropbar() when not (@internal-navbar-dropbar-gradient = ~'') {
+    background-image: @internal-navbar-dropbar-gradient;
+}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-navbar-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+.hook-inverse-navbar-nav-item() {}
+.hook-inverse-navbar-nav-item-hover() {}
+.hook-inverse-navbar-nav-item-onclick() {}
+.hook-inverse-navbar-nav-item-active() {}
+
+// Gradient
+.hook-inverse-navbar-nav-item() when not (@internal-navbar-nav-item-line-gradient = ~'') and (@internal-navbar-nav-item-background-image = ~'') {
+
+    &::before { background-image: none; }
+}
+
+// Image
+.hook-inverse-navbar-nav-item() when (@navbar-nav-item-line-mode)
+                                and not (@internal-navbar-nav-item-background-image = ~'') and (@internal-navbar-nav-item-line-gradient = ~'')
+                                and not (@inverse-navbar-nav-item-line-background = transparent) {
+
+    &::before { .svg-fill(@internal-navbar-nav-item-background-image, "#000", @inverse-navbar-nav-item-line-background); }
+
+}
+
+.hook-inverse-navbar-nav-item-hover() when (@navbar-nav-item-line-mode)
+                                      and not (@internal-navbar-nav-item-background-image = ~'') and (@internal-navbar-nav-item-line-gradient = ~'')
+                                      and not (@inverse-navbar-nav-item-line-background = @inverse-navbar-nav-item-line-hover-background) {
+
+    &::before { .svg-fill(@internal-navbar-nav-item-background-image, "#000", @inverse-navbar-nav-item-line-hover-background); }
+
+}
+
+.hook-inverse-navbar-nav-item-onclick() when (@navbar-nav-item-line-mode)
+                                        and not (@internal-navbar-nav-item-background-image = ~'') and (@internal-navbar-nav-item-line-gradient = ~'')
+                                        and not (@inverse-navbar-nav-item-line-background = @inverse-navbar-nav-item-line-onclick-background) {
+
+    &::before { .svg-fill(@internal-navbar-nav-item-background-image, "#000", @inverse-navbar-nav-item-line-onclick-background); }
+
+}
+
+.hook-inverse-navbar-nav-item-active() when (@navbar-nav-item-line-mode) and (@navbar-nav-item-line-active-mode)
+                                       and not (@internal-navbar-nav-item-background-image = ~'') and (@internal-navbar-nav-item-line-gradient = ~'')
+                                       and not (@inverse-navbar-nav-item-line-background = @inverse-navbar-nav-item-line-active-background) {
+
+    &::before { .svg-fill(@internal-navbar-nav-item-background-image, "#000", @inverse-navbar-nav-item-line-active-background); }
+
+}
+
+.hook-inverse-navbar-item() {}
+
+.hook-inverse-navbar-toggle() {}
+.hook-inverse-navbar-toggle-hover() {}

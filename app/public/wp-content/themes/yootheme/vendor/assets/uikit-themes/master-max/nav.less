@@ -1,0 +1,123 @@
+//
+// Component: Nav
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@nav-item-padding-vertical:                     8px;
+@nav-item-padding-horizontal:                   16px;
+
+@nav-sublist-padding-left:                      (@nav-item-padding-horizontal + @nav-sublist-deeper-padding-left);
+@nav-sublist-deeper-padding-left:               16px;
+
+@nav-divider-margin-vertical:                   15px;
+
+@nav-default-item-color:                        @global-color;
+@nav-default-item-active-color:                 @global-inverse-color;
+
+//
+// Master
+//
+
+@nav-parent-icon-margin-right:                  -10px;
+
+@nav-default-item-hover-background:             darken(@global-muted-background, 2%);
+@nav-default-item-active-background:            @global-primary-background;
+@nav-default-item-border-radius:                @global-border-radius;
+
+@nav-primary-item-padding-vertical:             5px;
+@nav-primary-item-padding-horizontal:           0;
+
+@nav-primary-header-padding-vertical:           5px;
+@nav-primary-header-padding-horizontal:         0;
+
+
+// Sublists
+// ========================================================================
+
+.hook-nav-sub() {}
+
+
+// Parent icon modifier
+// ========================================================================
+
+.hook-nav-parent-icon() {}
+
+
+// Header
+// ========================================================================
+
+.hook-nav-header() {}
+
+
+// Divider
+// ========================================================================
+
+.hook-nav-divider() {}
+
+
+// Default style modifier
+// ========================================================================
+
+.hook-nav-default() {}
+
+.hook-nav-default-item() {}
+
+.hook-nav-default-item-hover() {}
+
+.hook-nav-default-item-active() {}
+
+.hook-nav-default-header() {}
+
+.hook-nav-default-divider() {}
+
+
+// Primary style modifier
+// ========================================================================
+
+.hook-nav-primary() {}
+
+.hook-nav-primary-item() {}
+
+.hook-nav-primary-item-hover() {}
+
+.hook-nav-primary-item-active() {}
+
+.hook-nav-primary-header() {}
+
+.hook-nav-primary-divider() {}
+
+
+// Style modifier
+// ========================================================================
+
+.hook-nav-dividers() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-nav-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+.hook-inverse-nav-parent-icon() {}
+
+.hook-inverse-nav-default-item() {}
+.hook-inverse-nav-default-item-hover() {}
+.hook-inverse-nav-default-item-active() {}
+.hook-inverse-nav-default-header() {}
+.hook-inverse-nav-default-divider() {}
+
+.hook-inverse-nav-primary-item() {}
+.hook-inverse-nav-primary-item-hover() {}
+.hook-inverse-nav-primary-item-active() {}
+.hook-inverse-nav-primary-header() {}
+.hook-inverse-nav-primary-divider() {}
+
+.hook-inverse-nav-dividers() {}

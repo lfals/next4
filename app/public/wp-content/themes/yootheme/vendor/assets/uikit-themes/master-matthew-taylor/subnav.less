@@ -1,0 +1,92 @@
+//
+// Component: Subnav
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@subnav-margin-horizontal:                      14px;
+
+@subnav-item-color:                             @global-emphasis-color;
+@subnav-item-hover-color:                       @global-primary-background;
+@subnav-item-active-color:                      @global-primary-background;
+
+@subnav-divider-border-height:                  @global-border-width;
+@subnav-divider-border-width:                   20px;
+@subnav-divider-border:                         @global-emphasis-color;
+
+@subnav-pill-item-hover-background:             @global-primary-background;
+@subnav-pill-item-hover-color:                  @global-inverse-color;
+@subnav-pill-item-onclick-background:           darken(@global-primary-background, 5%);
+
+//
+// Master
+//
+
+@subnav-item-font-size:                         @global-small-font-size;
+@subnav-item-font-family:                       @global-secondary-font-family;
+@subnav-item-font-weight:                       @global-secondary-font-weight;
+@subnav-item-text-transform:                    @global-secondary-text-transform;
+@subnav-item-letter-spacing:                    @global-secondary-letter-spacing;
+@subnav-item-font-style:                        @global-secondary-font-style;
+
+
+// Component
+// ========================================================================
+
+.hook-subnav() {}
+
+.hook-subnav-item() {}
+
+.hook-subnav-item-hover() {}
+
+.hook-subnav-item-active() {}
+
+
+// Divider modifier
+// ========================================================================
+
+.hook-subnav-divider() {}
+
+
+// Pill modifier
+// ========================================================================
+
+.hook-subnav-pill-item() {}
+
+.hook-subnav-pill-item-hover() {}
+
+.hook-subnav-pill-item-onclick() {}
+
+.hook-subnav-pill-item-active() {}
+
+
+// Disabled
+// ========================================================================
+
+.hook-subnav-item-disabled() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-subnav-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+.hook-inverse-subnav-item() {}
+.hook-inverse-subnav-item-hover() {}
+.hook-inverse-subnav-item-active() {}
+
+.hook-inverse-subnav-divider() {}
+
+.hook-inverse-subnav-pill-item() {}
+.hook-inverse-subnav-pill-item-hover() {}
+.hook-inverse-subnav-pill-item-onclick() {}
+.hook-inverse-subnav-pill-item-active() {}
+
+.hook-inverse-subnav-item-disabled() {}

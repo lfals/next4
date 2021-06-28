@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1100" height="450" viewBox="0 0 1100 450">
+  <defs>
+    <linearGradient id="home-cta-gradient-01-01" x1="621.379" y1="9.675" x2="681.236" y2="392.762" gradientUnits="userSpaceOnUse">
+      <stop offset="0.274" stop-color="#eceef7"/>
+      <stop offset="0.395" stop-color="#eeeff8" stop-opacity="0.855"/>
+      <stop offset="0.665" stop-color="#f2f3fa" stop-opacity="0.487"/>
+      <stop offset="1" stop-color="#f7f8fc" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="home-cta-gradient-01-02" x1="345.839" y1="149.789" x2="179.867" y2="416.672" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d6ddeb"/>
+      <stop offset="0.14" stop-color="#dee6f0"/>
+      <stop offset="0.46" stop-color="#f2f3f8"/>
+      <stop offset="0.74" stop-color="#f6f8fb"/>
+      <stop offset="1" stop-color="#f6f8fb"/>
+    </linearGradient>
+    <linearGradient id="home-cta-gradient-01-03" x1="253.377" y1="132.292" x2="432.949" y2="-36.639" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d9ddeb" stop-opacity="0.6"/>
+      <stop offset="0.14" stop-color="#e5e5f0" stop-opacity="0.7"/>
+      <stop offset="0.46" stop-color="#f2f2f8" stop-opacity="0.95"/>
+      <stop offset="0.998" stop-color="#f6f8fb"/>
+    </linearGradient>
+  </defs>
+  <path d="M1100,0V450l-889.96-.05L504.44,256.8l8.23-5.4a113.682,113.682,0,0,0,5.61-186.07c-.34-.25-.67-.5-1.01-.74-.4-.29-.8-.57-1.2-.85-.5-.36-1.01-.71-1.52-1.06-1.05-.73-2.12-1.43-3.2-2.11l-.31-.2L419.08,0Z" fill="url(#home-cta-gradient-01-01)" style="isolation: isolate"/>
+  <path d="M512.67,251.4,209.97,450H0V316.044l388.06-254.6A113.592,113.592,0,0,1,512.67,251.4Z" opacity="0.4" fill="url(#home-cta-gradient-01-02)" style="isolation: isolate"/>
+  <path d="M545.68,219a113.539,113.539,0,0,1-157.2,32.711l-.018-.011h-.07L4.91,0H419.08L513,61.65a113.59,113.59,0,0,1,32.68,157.28h0Z" opacity="0.65" fill="url(#home-cta-gradient-01-03)" style="isolation: isolate"/>
+</svg>

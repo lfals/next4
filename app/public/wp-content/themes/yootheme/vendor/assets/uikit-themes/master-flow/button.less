@@ -1,0 +1,196 @@
+//
+// Component: Button
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@button-line-height:                            @global-control-height;
+@button-small-line-height:                      @global-control-small-height;
+@button-large-line-height:                      @global-control-large-height;
+
+@button-font-size:                              @global-small-font-size;
+@button-small-font-size:                        @global-small-font-size;
+@button-large-font-size:                        @global-small-font-size;
+
+@button-padding-horizontal:                     38px;
+@button-small-padding-horizontal:               20px;
+@button-large-padding-horizontal:               54px;
+
+@button-default-background:                     transparent;
+@button-default-hover-background:               transparent;
+
+@button-text-color:                             @global-emphasis-color;
+@button-text-hover-color:                       @global-color;
+
+@button-link-hover-text-decoration:             none;
+
+//
+// Master
+//
+
+@button-text-mode:                              arrow;
+@button-letter-spacing:                         0.5px;
+@button-text-transform:                         none;
+
+@button-transition-duration:                    0.2s;
+
+@button-default-border:                         darken(@global-border, 10%);
+@button-default-hover-border:                   @global-secondary-background;
+@button-default-hover-box-shadow:               inset 0 0 10px fade(@global-secondary-background, 20%), 0 0 10px fade(@global-secondary-background, 20%);
+@button-default-active-border:                  darken(@button-default-hover-border, 10%);
+
+@button-primary-hover-box-shadow:               0 0 30px 0 saturate(fade(@global-primary-background, 50%), 70%);
+
+@button-secondary-hover-box-shadow:             0 0 30px 0 saturate(fade(@global-secondary-background, 50%), 70%);
+
+@button-border-radius:                          500px;
+@button-border-width:                           @global-border-width;
+
+@button-large-border-radius:                    500px;
+
+@internal-button-primary-gradient:              linear-gradient(45deg, @global-primary-background 40%, saturate(spin(@global-primary-background, 30), 33%));
+@internal-button-secondary-gradient:            linear-gradient(45deg, @global-secondary-background 40%, darken(saturate(spin(@global-secondary-background, 5), 10%), 3%));
+
+@internal-button-primary-hover-gradient:        linear-gradient(45deg, @global-primary-background 40%, saturate(spin(@global-primary-background, 30), 55%));
+@internal-button-secondary-hover-gradient:      linear-gradient(45deg, @global-secondary-background 40%, darken(saturate(spin(@global-secondary-background, 5), 20%), 5%));
+
+@internal-button-text-arrow-image:             "../../../../uikit-themes/master-flow/images/button-text-arrow.svg";
+@internal-button-text-arrow-padding:           20px;
+@internal-button-text-arrow-width:             26px;
+
+
+// Component
+// ========================================================================
+
+.hook-button() {}
+
+.hook-button-hover() {}
+
+.hook-button-focus() {}
+
+.hook-button-active() {}
+
+
+// Style modifiers
+// ========================================================================
+
+.hook-button-default() {}
+
+.hook-button-default-hover() {}
+
+.hook-button-default-active() {}
+
+//
+// Primary
+//
+
+.hook-button-primary() {}
+
+.hook-button-primary-hover() {}
+
+.hook-button-primary-active() {}
+
+//
+// Secondary
+//
+
+.hook-button-secondary() {}
+
+.hook-button-secondary-hover() {}
+
+.hook-button-secondary-active() {}
+
+//
+// Danger
+//
+
+.hook-button-danger() {}
+
+.hook-button-danger-hover() {}
+
+.hook-button-danger-active() {}
+
+
+// Disabled
+// ========================================================================
+
+.hook-button-disabled() {}
+
+
+// Size modifiers
+// ========================================================================
+
+.hook-button-small() {}
+
+.hook-button-large() {}
+
+
+// Text modifier
+// ========================================================================
+
+.hook-button-text() {}
+
+.hook-button-text-hover() {}
+
+.hook-button-text-disabled() {}
+
+
+// Link modifier
+// ========================================================================
+
+.hook-button-link() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-button-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+@inverse-button-default-background:                    transparent;
+@inverse-button-default-border:                        @global-inverse-color;
+@inverse-button-default-color:                         @global-inverse-color;
+@inverse-button-default-hover-background:              transparent;
+@inverse-button-default-hover-border:                  fade(@global-inverse-color, 70%);
+@inverse-button-default-hover-color:                   fade(@global-inverse-color, 70%);
+@inverse-button-default-active-background:             transparent;
+@inverse-button-default-active-border:                 fade(@global-inverse-color, 70%);
+@inverse-button-default-active-color:                  @global-inverse-color;
+
+@inverse-button-primary-color:                         @global-emphasis-color;
+@inverse-button-primary-hover-color:                   @global-emphasis-color;
+@inverse-button-primary-hover-background:              rgba(255, 255, 255, 0.85);
+@inverse-button-primary-active-color:                  @global-emphasis-color;
+@inverse-button-primary-active-background:             @global-inverse-color;
+
+@inverse-button-secondary-color:                       @global-emphasis-color;
+@inverse-button-secondary-hover-color:                 @global-emphasis-color;
+@inverse-button-secondary-hover-background:            rgba(255, 255, 255, 0.85);
+@inverse-button-secondary-active-color:                @global-emphasis-color;
+@inverse-button-secondary-active-background:           @global-inverse-color;
+
+@inverse-button-text-color:                            rgba(255, 255, 255, 0.85);
+
+.hook-inverse-button-default() {}
+.hook-inverse-button-default-hover() {}
+.hook-inverse-button-default-active() {}
+
+.hook-inverse-button-primary() {}
+.hook-inverse-button-primary-hover() {}
+.hook-inverse-button-primary-active() {}
+
+.hook-inverse-button-secondary() {}
+.hook-inverse-button-secondary-hover() {}
+.hook-inverse-button-secondary-active() {}
+
+.hook-inverse-button-text() {}
+.hook-inverse-button-text-hover() {}
+.hook-inverse-button-text-disabled() {}
+
+.hook-inverse-button-link() {}

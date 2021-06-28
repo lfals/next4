@@ -1,0 +1,19 @@
+<svg viewBox="0 0 130 90" width="130" height="90" xmlns="http://www.w3.org/2000/svg">
+    <path class="uk-preserve" fill="#fff" d="M2 2h126v18H2z"/>
+    <path fill="none" stroke="#444" stroke-width="2" d="M1 1h128v79H1z"/>
+    <circle cx="106.6" cy="10.4" r="2.9" fill="none" stroke="#444" stroke-width="1.2"/>
+    <path fill="none" stroke="#444" stroke-width="1.2" d="M111.2 15l-2.3-2.3"/>
+    <rect width="129" height="1" x="1" y="19" fill="#444"/>
+    <path class="uk-preserve" fill="#fff" d="M78.5,16.5h43v73h-43Z" />
+    <path fill="none" stroke="#444" d="M78.5,16.5h43v73h-43Z" />
+    <circle cx="86.5" cy="44.5" r="1.5" fill="#444"/>
+    <circle cx="91.5" cy="44.5" r="1.5" fill="#444"/>
+    <circle cx="96.5" cy="44.5" r="1.5" fill="#444"/>
+    <rect width="7" height="1" x="115" y="10" fill="#444"/>
+    <rect width="7" height="1" x="115" y="12" fill="#444"/>
+    <rect width="17" height="3" x="8" y="9" fill="#444"/>
+    <rect width="17" height="2" x="85" y="25" fill="#444"/>
+    <rect width="17" height="2" x="85" y="35" fill="#444"/>
+    <rect width="20" height="2" x="85" y="30" fill="#444"/>
+    <rect width="7" height="1" x="115" y="8" fill="#444"/>
+</svg>

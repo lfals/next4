@@ -1,0 +1,60 @@
+//
+// Component: Thumbnav
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+//
+// New
+//
+
+@thumbnav-item-border-width:                         0;
+
+@thumbnav-item-border:                               transparent;
+@thumbnav-item-hover-border:                         transparent;
+@thumbnav-item-active-border:                        transparent;
+
+
+// Component
+// ========================================================================
+
+.hook-thumbnav() {}
+
+.hook-thumbnav-item() when not (@thumbnav-item-border-width = 0) {
+    &::after { border: @thumbnav-item-border-width solid @thumbnav-item-border; }
+}
+
+.hook-thumbnav-item-hover() when not (@thumbnav-item-border-width = 0) {
+    &::after { border-color: @thumbnav-item-hover-border; }
+}
+
+.hook-thumbnav-item-active() when not (@thumbnav-item-border-width = 0) {
+    &::after { border-color: @thumbnav-item-active-border; }
+}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-thumbnav-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+@inverse-thumbnav-item-border:                          transparent;
+@inverse-thumbnav-item-hover-border:                    transparent;
+@inverse-thumbnav-item-active-border:                   transparent;
+
+.hook-inverse-thumbnav-item() when not (@thumbnav-item-border-width = 0) {
+    &::after { border-color: @inverse-thumbnav-item-border; }
+}
+.hook-inverse-thumbnav-item-hover() when not (@thumbnav-item-border-width = 0) {
+    &::after { border-color: @inverse-thumbnav-item-hover-border; }
+}
+.hook-inverse-thumbnav-item-active() when not (@thumbnav-item-border-width = 0) {
+    &::after { border-color: @inverse-thumbnav-item-active-border; }
+}

@@ -1,0 +1,170 @@
+//
+// Component: Navbar
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@navbar-background:                             @global-inverse-color;
+
+@navbar-nav-item-padding-horizontal:            25px;
+@navbar-nav-item-hover-color:                   @global-primary-background;
+@navbar-nav-item-active-color:                  @global-primary-background;
+
+@navbar-dropdown-padding:                       30px;
+@navbar-dropdown-background:                    @global-inverse-color;
+
+//
+// Master
+//
+
+@navbar-padding-bottom:                         10px;
+@navbar-padding-bottom-m:                       35px;
+@navbar-padding-top:                            10px;
+@navbar-padding-top-m:                          15px;
+
+@navbar-dropdown-nav-sublist-padding-left:      10px;
+
+@navbar-mode:                                   frame;
+@navbar-mode-border-vertical:                   true;
+
+@navbar-group-border:                           fade(@global-border, 10%);
+@navbar-group-border-width:                     @global-border-width;
+
+@navbar-border-width:                           @global-border-width;
+@navbar-border:                                 fade(@global-border, 10%);
+
+@navbar-dropdown-border-width:                  @global-border-width;
+@navbar-dropdown-border:                        fade(@global-muted-color, 30%);
+
+@navbar-nav-item-font-weight:                   400;
+
+@navbar-primary-nav-item-font-size:             @global-medium-font-size;
+@navbar-primary-nav-item-font-weight:           @global-primary-font-weight;
+
+@navbar-dropdown-nav-font-weight:               400;
+
+
+// Component
+// ========================================================================
+
+.hook-navbar() {}
+
+
+// Container
+// ========================================================================
+
+.hook-navbar-container() {}
+
+
+// Nav
+// ========================================================================
+
+.hook-navbar-nav-item() {}
+
+.hook-navbar-nav-item-hover() {}
+
+.hook-navbar-nav-item-onclick() {}
+
+.hook-navbar-nav-item-active() {}
+
+
+// Item
+// ========================================================================
+
+.hook-navbar-item() {}
+
+
+// Toggle
+// ========================================================================
+
+.hook-navbar-toggle() {}
+
+.hook-navbar-toggle-hover() {}
+
+.hook-navbar-toggle-icon() {}
+
+.hook-navbar-toggle-icon-hover() {}
+
+
+// Subtitle
+// ========================================================================
+
+.hook-navbar-subtitle() {}
+
+
+// Style modifiers
+// ========================================================================
+
+.hook-navbar-primary() {}
+
+.hook-navbar-transparent() {}
+
+.hook-navbar-sticky() {}
+
+
+// Dropdown
+// ========================================================================
+
+.hook-navbar-dropdown() {}
+
+.hook-navbar-dropdown-dropbar() {}
+
+
+// Dropdown nav
+// ========================================================================
+
+.hook-navbar-dropdown-nav() {}
+
+.hook-navbar-dropdown-nav-item() {}
+
+.hook-navbar-dropdown-nav-item-hover() {}
+
+.hook-navbar-dropdown-nav-header() {}
+
+.hook-navbar-dropdown-nav-divider() {}
+
+
+// Dropbar
+// ========================================================================
+
+.hook-navbar-dropbar() {}
+
+.hook-navbar-dropbar-slide() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-navbar-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+@inverse-navbar-nav-item-color:                         fade(@global-inverse-color, 60%);
+@inverse-navbar-nav-item-hover-color:                   fade(@global-inverse-color, 90%);
+@inverse-navbar-nav-item-onclick-color:                 fade(@global-inverse-color, 50%);
+@inverse-navbar-nav-item-active-color:                  @global-inverse-color;
+
+@inverse-navbar-item-color:                             @global-inverse-color;
+@inverse-navbar-toggle-color:                           @global-inverse-color;
+@inverse-navbar-toggle-hover-color:                     fade(@global-inverse-color, 70%);
+
+//
+// Master
+//
+
+@inverse-navbar-border:                                 fade(@global-inverse-color, 60%);
+
+.hook-inverse-navbar-nav-item() {}
+.hook-inverse-navbar-nav-item-hover() {}
+.hook-inverse-navbar-nav-item-onclick() {}
+.hook-inverse-navbar-nav-item-active() {}
+
+.hook-inverse-navbar-item() {}
+
+.hook-inverse-navbar-toggle() {}
+.hook-inverse-navbar-toggle-hover() {}

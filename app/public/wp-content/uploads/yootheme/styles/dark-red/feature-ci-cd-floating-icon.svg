@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="195" height="195" viewBox="0 0 195 195">
+
+  <defs>
+    <linearGradient id="svg-defs-feature-ci-cd-floating-icon" x1="73.93" y1="446.09" x2="115.9" y2="404.11" gradientTransform="translate(0 -316.11)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E52231"/>
+      <stop offset="0.65" stop-color="#E0271A"/>
+      <stop offset="1" stop-color="#e65522"/>
+    </linearGradient>
+  </defs>
+
+  <mask id="svg-mask-feature-ci-cd-floating-icon">
+    <path class="uk-preserve" d="M105.83,112.91c6.85,8,17.18,17.35,28,17.35,37.77-1.5,37.74-55.44,0-56.93-18,.34-32.44,22.34-35.95,28.12-2.55,4.35-17.57,28.46-36.37,28.81-37.74-1.49-37.76-55.43,0-56.93,10.65,0,20.84,9.12,27.69,17" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="4"/>
+    <polyline class="uk-preserve" points="89.2 75.46 89.2 90.43 74.22 90.43" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+  </mask>
+
+  <style>
+
+    img[src*="feature-ci-cd-floating-icon.svg"] + svg {
+      background-color: rgba(45,36,37, 0.75);
+      border-radius: 50px;
+    }
+
+    @supports (backdrop-filter:blur(0)) or (-webkit-backdrop-filter:blur(0)) {
+
+      img[src*="feature-ci-cd-floating-icon.svg"] + svg {
+        background-color: rgba(226,59,29, 0.02);
+        -webkit-backdrop-filter: blur(12px);
+        backdrop-filter: blur(12px);
+      }
+
+    }
+
+  </style>
+
+  <rect class="uk-preserve" x="23.56" y="58.01" width="145.36" height="79.82" fill="url(#svg-defs-feature-ci-cd-floating-icon)" mask="url(#svg-mask-feature-ci-cd-floating-icon)"/>
+
+</svg>
